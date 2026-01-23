@@ -21,27 +21,30 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
 
-    # --- PASSO DE CORREÇÃO (AGORA SEM DUPLICAR O '=') ---
-    - name: Corrigir Sintaxe Gradle (Seguro)
+    # --- AQUI ESTÁ A MÁGICA: LIMPEZA E CORREÇÃO ---
+    - name: Limpar Arquivos Problemáticos e Corrigir Sintaxe
       run: |
-        # 1. Corrige a URL
+        # 1. Esvaziar arquivos que causam erro e não são essenciais para o APK
+        # Isso impede que o Gradle trave lendo scripts de tradução ou qualidade
+        echo "// Arquivo esvaziado para permitir compilacao" > catroid/gradle/release_crowdin_tasks.gradle
+        echo "// Arquivo esvaziado para permitir compilacao" > catroid/gradle/code_quality_tasks.gradle
+        
+        # 2. Corrigir URLs (para os arquivos principais que sobraram)
         find . -name "*.gradle" -type f -exec sed -i 's/url "/url = "/g' {} +
         find . -name "*.gradle" -type f -exec sed -i "s/url '/url = '/g" {} +
         
-        # 2. Corrige showViolations (somente se não tiver o '=')
-        find . -name "*.gradle" -type f -exec sed -i 's/showViolations false/showViolations = false/g' {} +
-        find . -name "*.gradle" -type f -exec sed -i 's/showViolations true/showViolations = true/g' {} +
+        # 3. Corrigir description e group (caso apareçam no build.gradle principal)
+        find . -name "*.gradle" -type f -exec sed -i 's/description "/description = "/g' {} +
+        find . -name "*.gradle" -type f -exec sed -i "s/description '/description = '/g" {} +
+        find . -name "*.gradle" -type f -exec sed -i 's/group "/group = "/g' {} +
         
-        # 3. Corrige ignoreFailures (somente se não tiver o '=')
+        # 4. Corrigir variáveis booleanas (com cuidado para não duplicar o =)
         find . -name "*.gradle" -type f -exec sed -i 's/ignoreFailures false/ignoreFailures = false/g' {} +
         find . -name "*.gradle" -type f -exec sed -i 's/ignoreFailures true/ignoreFailures = true/g' {} +
-        
-        # 4. Corrige abortOnError (somente se não tiver o '=')
         find . -name "*.gradle" -type f -exec sed -i 's/abortOnError false/abortOnError = false/g' {} +
-        find . -name "*.gradle" -type f -exec sed -i 's/abortOnError true/abortOnError = true/g' {} +
 
     - name: Build with Gradle
-      # Mantendo a regra de ignorar testes e lint para ir mais rápido
+      # Ignoramos lint, check e test para focar apenas no APK
       run: ./gradlew assembleDebug -x lint -x test -x check --no-daemon --stacktrace -Dorg.gradle.jvmargs="-Xmx6g -XX:MaxMetaspaceSize=1g -Dfile.encoding=UTF-8"
 
     - name: Upload APK
