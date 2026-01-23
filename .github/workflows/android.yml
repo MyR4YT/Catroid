@@ -8,8 +8,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-      with:
-        submodules: recursive
 
     - name: Set up JDK 21
       uses: actions/setup-java@v4
@@ -21,34 +19,13 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
 
-    # --- AQUI ESTÁ A MÁGICA: LIMPEZA E CORREÇÃO ---
-    - name: Limpar Arquivos Problemáticos e Corrigir Sintaxe
-      run: |
-        # 1. Esvaziar arquivos que causam erro e não são essenciais para o APK
-        # Isso impede que o Gradle trave lendo scripts de tradução ou qualidade
-        echo "// Arquivo esvaziado para permitir compilacao" > catroid/gradle/release_crowdin_tasks.gradle
-        echo "// Arquivo esvaziado para permitir compilacao" > catroid/gradle/code_quality_tasks.gradle
-        
-        # 2. Corrigir URLs (para os arquivos principais que sobraram)
-        find . -name "*.gradle" -type f -exec sed -i 's/url "/url = "/g' {} +
-        find . -name "*.gradle" -type f -exec sed -i "s/url '/url = '/g" {} +
-        
-        # 3. Corrigir description e group (caso apareçam no build.gradle principal)
-        find . -name "*.gradle" -type f -exec sed -i 's/description "/description = "/g' {} +
-        find . -name "*.gradle" -type f -exec sed -i "s/description '/description = '/g" {} +
-        find . -name "*.gradle" -type f -exec sed -i 's/group "/group = "/g' {} +
-        
-        # 4. Corrigir variáveis booleanas (com cuidado para não duplicar o =)
-        find . -name "*.gradle" -type f -exec sed -i 's/ignoreFailures false/ignoreFailures = false/g' {} +
-        find . -name "*.gradle" -type f -exec sed -i 's/ignoreFailures true/ignoreFailures = true/g' {} +
-        find . -name "*.gradle" -type f -exec sed -i 's/abortOnError false/abortOnError = false/g' {} +
-
     - name: Build with Gradle
-      # Ignoramos lint, check e test para focar apenas no APK
-      run: ./gradlew assembleDebug -x lint -x test -x check --no-daemon --stacktrace -Dorg.gradle.jvmargs="-Xmx6g -XX:MaxMetaspaceSize=1g -Dfile.encoding=UTF-8"
+      # O comando 'assembleDebug' vai tentar compilar o projeto
+      run: ./gradlew assembleDebug
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
         name: Meus-APKs
+        # A MUDANÇA ESTÁ AQUI EMBAIXO:
         path: '**/*.apk'
