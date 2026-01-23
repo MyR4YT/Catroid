@@ -7,7 +7,7 @@ import java.io.File
 import org.luaj.vm2.Globals
 import org.luaj.vm2.lib.jse.JsePlatform
 import org.luaj.vm2.LuaValue
-import org.luaj.vm2.lib.TwoArgFunction
+import org.luaj.vm2.lib.ThreeArgFunction
 import org.luaj.vm2.lib.OneArgFunction
 import com.myradev.lunarcode.content.Sprite
 import com.myradev.lunarcode.CatroidApplication
@@ -17,10 +17,11 @@ object ModManager {
     private val activeMods = mutableListOf<ModData>()
     private lateinit var globals: Globals
     private val customCategories = mutableListOf<CustomCategory>()
-    private val customBricks = mutableMapOf<String, LuaValue>()
+    private val customBricks = mutableListOf<CustomBrickData>()
 
     data class ModData(val id: String, val name: String, val path: String)
     data class CustomCategory(val name: String, val color: String)
+    data class CustomBrickData(val name: String, val category: String, val callback: LuaValue)
 
     fun init(context: Context) {
         globals = JsePlatform.standardGlobals()
@@ -31,16 +32,16 @@ object ModManager {
     private fun setupLuaBridge(context: Context) {
         val lunarLib = LuaValue.tableOf()
         
-        lunarLib.set("register_category", object : TwoArgFunction() {
+        lunarLib.set("register_category", object : org.luaj.vm2.lib.TwoArgFunction() {
             override fun call(name: LuaValue, color: LuaValue): LuaValue {
                 customCategories.add(CustomCategory(name.tojstring(), color.tojstring()))
                 return LuaValue.NIL
             }
         })
 
-        lunarLib.set("register_brick", object : TwoArgFunction() {
-            override fun call(brickName: LuaValue, callback: LuaValue): LuaValue {
-                customBricks[brickName.tojstring()] = callback
+        lunarLib.set("register_brick", object : ThreeArgFunction() {
+            override fun call(name: LuaValue, category: LuaValue, callback: LuaValue): LuaValue {
+                customBricks.add(CustomBrickData(name.tojstring(), category.tojstring(), callback))
                 return LuaValue.NIL
             }
         })
@@ -56,12 +57,13 @@ object ModManager {
     }
 
     fun executeBrick(name: String, sprite: Sprite?) {
-        val callback = customBricks[name]
-        if (callback != null && callback.isfunction()) {
-            try {
-                callback.call(LuaValue.userdataOf(sprite))
-            } catch (e: Exception) {
-                Log.e("ModManager", "Lua execution error: ${e.message}")
+        customBricks.find { it.name == name }?.callback?.let { callback ->
+            if (callback.isfunction()) {
+                try {
+                    callback.call(LuaValue.userdataOf(sprite))
+                } catch (e: Exception) {
+                    Log.e("ModManager", "Lua execution error: ${e.message}")
+                }
             }
         }
     }
@@ -84,10 +86,10 @@ object ModManager {
     }
 
     fun getCustomCategories(): List<CustomCategory> = customCategories
-    fun getCustomBricks(): List<String> = customBricks.keys.toList()
+    fun getCustomBricks(): List<CustomBrickData> = customBricks
 
     fun getOverrideFile(resourceName: String): File? {
-        val context = CatroidApplication.getAppContext()
+        val context = CatroidApplication.getAppContext() ?: return null
         val modDir = File(context.filesDir, MODS_DIR)
         if (!modDir.exists()) return null
         modDir.listFiles()?.forEach { mod ->
