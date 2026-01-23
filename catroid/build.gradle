@@ -112,8 +112,8 @@ android {
     }
 
     defaultConfig {
-        minSdkVersion 28
-        targetSdkVersion 34
+        minSdkVersion = 28
+        targetSdkVersion = 34
         applicationId appId
         testInstrumentationRunner 'com.myradev.lunarcode.runner.UiTestApplicationRunner'
         versionCode defaultVersionCode
@@ -298,7 +298,7 @@ android {
             if (!project.hasProperty('packageName')) {
                 applicationIdSuffix '.standalone'
             }
-            versionCode 1
+            versionCode = 1
             versionName '1.0'
 
             buildConfigField "String", "START_PROJECT", "\"$projectId\""
@@ -536,7 +536,7 @@ tasks.register('copyAndroidNatives') {
                 copy {
                     from zipTree(jar)
                     into outputDir
-                    include "*.so"
+                    include("*.so")
                 }
             }
         }

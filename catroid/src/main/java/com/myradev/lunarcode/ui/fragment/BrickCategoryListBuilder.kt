@@ -104,13 +104,23 @@ class BrickCategoryListBuilder(private val activity: FragmentActivity) {
         }
 
 
-        ModManager.getCustomCategories().forEach { customCat ->
             val catView = inflater.inflate(R.layout.brick_category_motion, null) as LinearLayout
             catView.setBackgroundColor(Color.parseColor(customCat.color))
             val textView = catView.getChildAt(1) as TextView
             textView.text = customCat.name
             // For now, reuse motion icon but we could allow custom icons too
             categories.add(catView)
+        }
+        ModManager.getCustomCategories().forEach { customCat -> 
+            val catView = inflater.inflate(R.layout.brick_category_motion, null) as LinearLayout 
+            try { 
+                catView.setBackgroundColor(Color.parseColor(customCat.color)) 
+            } catch (e: Exception) { 
+                catView.setBackgroundColor(Color.MAGENTA) 
+            } 
+            val textView = catView.getChildAt(1) as TextView 
+            textView.text = customCat.name 
+            categories.add(catView) 
         }
         return categories
     }

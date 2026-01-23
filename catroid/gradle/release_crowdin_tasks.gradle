@@ -159,7 +159,7 @@ android.productFlavors.all { flavor ->
         doLast {
             logger.lifecycle("Generating App Store info files.")
             FileTree tree = fileTree(project.ext.crowdinPlayStorePath)
-            tree.include "**/google_play_${flavor.name}.xml"
+            tree.include("**/google_play_${flavor.name}.xml")
 
             tree.each { File file ->
                 logger.info("Processing file: " + file)

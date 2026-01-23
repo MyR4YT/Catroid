@@ -22,6 +22,9 @@
  */
 package com.myradev.lunarcode.ui.fragment
 
+import com.myradev.lunarcode.content.bricks.LuaBrick
+import com.myradev.lunarcode.modloader.ModManager
+
 import android.content.Context
 import com.myradev.lunarcode.BuildConfig
 import com.myradev.lunarcode.ProjectManager
@@ -316,7 +319,11 @@ open class CategoryBricksFactory {
                 context
             )
 
-            else -> return emptyList()
+            else -> {
+                val customBricksFromLua = ModManager.getCustomBricks().filter { it.category == category }.map { LuaBrick(it.name, it.category) }
+                if (customBricksFromLua.isNotEmpty()) return customBricksFromLua
+                return emptyList()
+            }
         }
     }
 
