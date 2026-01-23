@@ -111,6 +111,7 @@
     <!-- Main Menu -->
     <string formatted="false" name="main_menu_continue">Continue project</string>
     <string formatted="false" name="main_menu_new">New project</string>
+    <string formatted="false" name="main_menu_mods">Mods</string>
     <string formatted="false" name="main_menu_programs">Projects on device</string>
     <string formatted="false" name="main_menu_help">Help</string>
     <string formatted="false" name="main_menu_web">Catrobat community</string>

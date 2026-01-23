@@ -77,6 +77,12 @@
         android:icon="@drawable/ic_logout"/>
 
     <item
+        android:id="@+id/menu_mods"
+        android:title="@string/main_menu_mods"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_settings"/>
+
+    <item
         android:id="@+id/menu_help"
         android:title="@string/main_menu_help"
         android:icon="@drawable/ic_main_menu_help"

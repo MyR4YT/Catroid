@@ -63,6 +63,7 @@ import org.catrobat.catroid.ui.dialogs.TermsOfUseDialogFragment
 import org.catrobat.catroid.ui.recyclerview.dialog.AboutDialogFragment
 import org.catrobat.catroid.ui.recyclerview.fragment.MainMenuFragment
 import org.catrobat.catroid.ui.settingsfragments.SettingsFragment
+import org.catrobat.catroid.modloader.ModLoaderActivity
 import org.catrobat.catroid.utils.FileMetaDataExtractor
 import org.catrobat.catroid.utils.ScreenValueHandler
 import org.catrobat.catroid.utils.ToastUtil
@@ -306,6 +307,7 @@ class MainMenuActivity : BaseCastActivity(), ProjectLoadListener {
             R.id.menu_scratch_converter -> if (Utils.checkIsNetworkAvailableAndShowErrorMessage(this)) {
                 startActivity(Intent(this, ScratchConverterActivity::class.java))
             }
+            R.id.menu_mods -> startActivity(Intent(this, ModLoaderActivity::class.java))
             R.id.settings -> startActivity(Intent(this, SettingsActivity::class.java))
             R.id.menu_login -> startActivity(Intent(this, SignInActivity::class.java))
             R.id.menu_logout -> {
