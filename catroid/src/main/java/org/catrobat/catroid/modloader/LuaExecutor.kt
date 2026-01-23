@@ -33,9 +33,9 @@ class LuaExecutor {
                     val content = trimmed.substringAfter("(").substringBefore(")")
                     val parts = content.split(",")
                     if (parts.size >= 3) {
-                        val name = parts[0].trim().replace(""", "")
-                        val category = parts[1].trim().replace(""", "")
-                        val functionName = parts[2].trim().replace(""", "")
+                        val name = parts[0].trim().replace("\"", "")
+                        val category = parts[1].trim().replace("\"", "")
+                        val functionName = parts[2].trim().replace("\"", "")
                         
                         LuaBrickRegistry.register(name, category, functionName)
                     }
