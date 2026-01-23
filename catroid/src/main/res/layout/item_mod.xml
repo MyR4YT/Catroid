@@ -1,24 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:padding="16dp"
-    android:gravity="center_vertical">
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
 
-    <ImageView
-        android:id="@+id/mod_icon"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:src="@drawable/ic_placeholder" />
-
-    <TextView
-        android:id="@+id/mod_name"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="Mod Name"
-        android:textSize="18sp"
-        android:textColor="?android:attr/textColorPrimary" />
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
 
-</LinearLayout>
+        <ImageView
+            android:id="@+id/mod_icon"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_placeholder" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mod_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mod Name"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="?android:attr/textColorPrimary" />
+
+            <TextView
+                android:id="@+id/mod_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No description"
+                android:textSize="14sp"
+                android:textColor="?android:attr/textColorSecondary" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_delete_mod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete"
+            android:background="?selectableItemBackgroundBorderless"
+            android:contentDescription="Delete Mod"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
