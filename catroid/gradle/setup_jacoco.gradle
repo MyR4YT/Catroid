@@ -44,7 +44,7 @@ project.afterEvaluate {
             group = "Reporting"
             description = "Generate Jacoco coverage reports for the ${variantName} build."
 
-            reports = {
+            reports {
                 csv.required = false
                 html.required = true
                 xml.required = true
