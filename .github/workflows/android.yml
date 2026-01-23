@@ -9,7 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        submodules: recursive  # 1. Garante que baixe partes extras do projeto
+        submodules: recursive
 
     - name: Set up JDK 21
       uses: actions/setup-java@v4
@@ -21,9 +21,20 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
 
+    # --- NOVO PASSO: CORREÇÃO AUTOMÁTICA DO CÓDIGO ---
+    - name: Corrigir Sintaxe do Gradle (Fix Deprecation)
+      run: |
+        # Procura por url "http..." e troca por url = "http..." no build.gradle
+        sed -i 's/url "/url = "/g' build.gradle
+        sed -i "s/url '/url = '/g" build.gradle
+        # Às vezes o problema está no settings.gradle também
+        if [ -f settings.gradle ]; then
+          sed -i 's/url "/url = "/g' settings.gradle
+          sed -i "s/url '/url = '/g" settings.gradle
+        fi
+
     - name: Build with Gradle
-      # 2. --no-daemon: economiza memória
-      # 3. -Dorg.gradle.jvmargs: força o uso de 6GB de RAM (o limite é 7GB)
+      # Mantivemos a memória aumentada (6GB) para não travar
       run: ./gradlew assembleDebug --no-daemon --stacktrace -Dorg.gradle.jvmargs="-Xmx6g -XX:MaxMetaspaceSize=1g -Dfile.encoding=UTF-8"
 
     - name: Upload APK
