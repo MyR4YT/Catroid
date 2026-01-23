@@ -23,6 +23,9 @@
 package org.catrobat.catroid.ui.fragment
 
 import android.content.Context
+import org.catrobat.catroid.modloader.LuaBrickRegistry
+import org.catrobat.catroid.modloader.LuaDynamicBrick
+
 import org.catrobat.catroid.BuildConfig
 import org.catrobat.catroid.ProjectManager
 import org.catrobat.catroid.R
@@ -316,7 +319,18 @@ open class CategoryBricksFactory {
                 context
             )
 
-            else -> return emptyList()
+            
+            else -> {
+                // Check Lua Registry
+                val luaBricks = LuaBrickRegistry.getAll().filter { it.category == category }
+                if (luaBricks.isNotEmpty()) {
+                    return luaBricks.map { def ->
+                        LuaDynamicBrick(def.codeToExecute, def.name)
+                    }
+                }
+                return emptyList()
+            }
+
         }
     }
 

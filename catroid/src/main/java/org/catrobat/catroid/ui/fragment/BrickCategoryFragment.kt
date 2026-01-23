@@ -23,6 +23,10 @@
 package org.catrobat.catroid.ui.fragment
 
 import android.content.Context
+import org.catrobat.catroid.modloader.LuaBrickRegistry
+import android.widget.TextView
+import android.widget.LinearLayout
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.Menu
@@ -133,7 +137,36 @@ class BrickCategoryFragment : ListFragment() {
         val brickCategoryFactory = BrickCategoryListBuilder(requireActivity())
         val categories = brickCategoryFactory.getBrickCategoryViews()
 
+        
+        // Inject Custom Lua Categories
+        val customCategories = LuaBrickRegistry.getAll().map { it.category }.distinct()
+        val inflater = requireActivity().layoutInflater
+        
+        for (categoryName in customCategories) {
+            // Check if already exists (basic check)
+            var exists = false
+            for (view in categories) {
+                 if (view is LinearLayout) {
+                     val textView = view.getChildAt(1) as TextView
+                     if (textView.text == categoryName) {
+                         exists = true
+                         break
+                     }
+                 }
+            }
+            
+            if (!exists) {
+                // We use "User Bricks" layout as a template for now
+                val view = inflater.inflate(R.layout.brick_category_userbrick, null) as LinearLayout
+                val textView = view.getChildAt(1) as TextView
+                textView.text = categoryName
+                // Ideally we should also change the icon
+                categories.add(view)
+            }
+        }
+
         adapter = BrickCategoryAdapter(categories)
+
         listAdapter = adapter
     }
 
