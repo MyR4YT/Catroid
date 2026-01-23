@@ -21,20 +21,19 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
 
-    # --- NOVO PASSO: CORREÇÃO AUTOMÁTICA DO CÓDIGO ---
-    - name: Corrigir Sintaxe do Gradle (Fix Deprecation)
+    # --- CORREÇÃO GERAL (TODAS AS PASTAS) ---
+    - name: Corrigir Sintaxe Gradle (Recursivo)
       run: |
-        # Procura por url "http..." e troca por url = "http..." no build.gradle
-        sed -i 's/url "/url = "/g' build.gradle
-        sed -i "s/url '/url = '/g" build.gradle
-        # Às vezes o problema está no settings.gradle também
-        if [ -f settings.gradle ]; then
-          sed -i 's/url "/url = "/g' settings.gradle
-          sed -i "s/url '/url = '/g" settings.gradle
-        fi
+        # O comando 'find' procura arquivos .gradle em TODAS as subpastas
+        # O comando 'sed' troca url "..." por url = "..."
+        find . -name "*.gradle" -type f -exec sed -i 's/url "/url = "/g' {} +
+        find . -name "*.gradle" -type f -exec sed -i "s/url '/url = '/g" {} +
+        
+        # Correção extra para garantir (caso haja espaços extras)
+        find . -name "*.gradle" -type f -exec sed -i 's/url  "/url = "/g' {} +
 
     - name: Build with Gradle
-      # Mantivemos a memória aumentada (6GB) para não travar
+      # Mantendo a memória alta (6GB)
       run: ./gradlew assembleDebug --no-daemon --stacktrace -Dorg.gradle.jvmargs="-Xmx6g -XX:MaxMetaspaceSize=1g -Dfile.encoding=UTF-8"
 
     - name: Upload APK
