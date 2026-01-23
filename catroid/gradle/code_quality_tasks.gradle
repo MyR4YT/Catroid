@@ -52,7 +52,7 @@ tasks.register('checkstyle', Checkstyle) {
 }
 
 tasks.withType(Checkstyle) {
-    reports = {
+    reports {
         xml.required = false
 
         html.required = true
@@ -95,7 +95,7 @@ tasks.register('pmd', Pmd) {
 
     ignoreFailures = true
 
-    reports = {
+    reports {
         html.required = true
         html.outputLocation = file("build/reports/html/pmd.html")
         // not supported yet by gradle pmd, see https://github.com/gradle/gradle/pull/22979
@@ -114,7 +114,7 @@ detekt {
 tasks.named("detekt").configure {
     basePath = rootProject.projectDir.absolutePath
 
-    reports = {
+    reports {
         xml.required.set(false)
         md.required.set(false)
         txt.required.set(false)
