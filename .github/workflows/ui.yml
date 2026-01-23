@@ -26,5 +26,5 @@ jobs:
     name: UI Tests
     uses: ./.github/workflows/emulated_tests.yml
     with:
-      gradle-test-config: org.catrobat.catroid.testsuites.UiEspressoPullRequestTriggerSuite
+      gradle-test-config: com.myradev.lunarcode.testsuites.UiEspressoPullRequestTriggerSuite
       calling-job: ${{github.job}}

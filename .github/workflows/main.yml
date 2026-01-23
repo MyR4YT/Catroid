@@ -159,7 +159,7 @@ jobs:
     name: Instrumented Unit Tests
     uses: ./.github/workflows/emulated_tests.yml
     with:
-      gradle-test-config: org.catrobat.catroid.testsuites.LocalHeadlessTestSuite
+      gradle-test-config: com.myradev.lunarcode.testsuites.LocalHeadlessTestSuite
       calling-job: ${{github.job}}
 
   testrunner-tests:
@@ -167,7 +167,7 @@ jobs:
     name: Testrunner Tests
     uses: ./.github/workflows/emulated_tests.yml
     with:
-      gradle-test-config: org.catrobat.catroid.catrobattestrunner.CatrobatTestRunner
+      gradle-test-config: com.myradev.lunarcode.catrobattestrunner.CatrobatTestRunner
       calling-job: ${{github.job}}
 
   quarantined-tests:
@@ -175,7 +175,7 @@ jobs:
     name: Quarantined Tests
     uses: ./.github/workflows/emulated_tests.yml
     with:
-      gradle-test-config: org.catrobat.catroid.testsuites.UiEspressoQuarantineTestSuite
+      gradle-test-config: com.myradev.lunarcode.testsuites.UiEspressoQuarantineTestSuite
       calling-job: ${{github.job}}
 
   rtl-tests:
@@ -183,5 +183,5 @@ jobs:
     name: RTL Tests
     uses: ./.github/workflows/emulated_tests.yml
     with:
-      gradle-test-config: org.catrobat.catroid.testsuites.UiEspressoRtlTestSuite
+      gradle-test-config: com.myradev.lunarcode.testsuites.UiEspressoRtlTestSuite
       calling-job: ${{github.job}}

@@ -14,7 +14,7 @@ def getVersion():
 def updateBuildGradle():
     shutil.copyfile("../catroid/build.gradle", "../catroid/build.gradle_backup")
     buildGradle = open("../catroid/build.gradle", "r").read()
-    buildGradle = buildGradle.replace("appId = 'org.catrobat.catroid'", "appId = 'org.catrobat.testapk'")
+    buildGradle = buildGradle.replace("appId = 'com.myradev.lunarcode'", "appId = 'org.catrobat.testapk'")
     debugBuildTypesBlock = buildGradle.split("debug {")[1].split("}")[0]
     releaseBuildTypesBlock = buildGradle.split("release {")[1].split("}")[0]
     buildGradle = buildGradle.replace(debugBuildTypesBlock, releaseBuildTypesBlock)

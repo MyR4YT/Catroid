@@ -36,7 +36,7 @@
             "isUserScript": false,
             "brickList": [
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.UserBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.UserBrick",
                 "properties": {
                   "definitionBrick": {
                     "script": {
@@ -73,13 +73,13 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.physics.content.bricks.SetPhysicsObjectTypeBrick",
+                "bricktype": "com.myradev.lunarcode.physics.content.bricks.SetPhysicsObjectTypeBrick",
                 "properties": {
                   "type": "DYNAMIC"
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.physics.content.bricks.SetVelocityBrick",
+                "bricktype": "com.myradev.lunarcode.physics.content.bricks.SetVelocityBrick",
                 "properties": {
                   "formulaMap": {
                     "PHYSICS_VELOCITY_X": {
@@ -98,7 +98,7 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.physics.content.bricks.TurnLeftSpeedBrick",
+                "bricktype": "com.myradev.lunarcode.physics.content.bricks.TurnLeftSpeedBrick",
                 "properties": {
                   "formulaMap": {
                     "PHYSICS_TURN_LEFT_SPEED": {
@@ -111,7 +111,7 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.physics.content.bricks.SetFrictionBrick",
+                "bricktype": "com.myradev.lunarcode.physics.content.bricks.SetFrictionBrick",
                 "properties": {
                   "formulaMap": {
                     "PHYSICS_FRICTION": {
@@ -124,7 +124,7 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.physics.content.bricks.SetBounceBrick",
+                "bricktype": "com.myradev.lunarcode.physics.content.bricks.SetBounceBrick",
                 "properties": {
                   "formulaMap": {
                     "PHYSICS_BOUNCE_FACTOR": {
@@ -137,7 +137,7 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.physics.content.bricks.SetMassBrick",
+                "bricktype": "com.myradev.lunarcode.physics.content.bricks.SetMassBrick",
                 "properties": {
                   "formulaMap": {
                     "PHYSICS_MASS": {
@@ -150,7 +150,7 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.physics.content.bricks.SetGravityBrick",
+                "bricktype": "com.myradev.lunarcode.physics.content.bricks.SetGravityBrick",
                 "properties": {
                   "formulaMap": {
                     "PHYSICS_GRAVITY_Y": {
@@ -173,7 +173,7 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.physics.content.bricks.TurnRightSpeedBrick",
+                "bricktype": "com.myradev.lunarcode.physics.content.bricks.TurnRightSpeedBrick",
                 "properties": {
                   "formulaMap": {
                     "PHYSICS_TURN_RIGHT_SPEED": {
@@ -186,7 +186,7 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.PlaceAtBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.PlaceAtBrick",
                 "properties": {
                   "formulaMap": {
                     "Y_POSITION": {
@@ -205,7 +205,7 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.SetXBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.SetXBrick",
                 "properties": {
                   "formulaMap": {
                     "X_POSITION": {
@@ -218,7 +218,7 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.SetYBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.SetYBrick",
                 "properties": {
                   "formulaMap": {
                     "Y_POSITION": {
@@ -231,7 +231,7 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.ChangeXByNBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.ChangeXByNBrick",
                 "properties": {
                   "formulaMap": {
                     "X_POSITION_CHANGE": {
@@ -244,7 +244,7 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.ChangeYByNBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.ChangeYByNBrick",
                 "properties": {
                   "formulaMap": {
                     "Y_POSITION_CHANGE": {
@@ -257,11 +257,11 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.IfOnEdgeBounceBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.IfOnEdgeBounceBrick",
                 "properties": {}
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.MoveNStepsBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.MoveNStepsBrick",
                 "properties": {
                   "formulaMap": {
                     "STEPS": {
@@ -274,7 +274,7 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.NoteBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.NoteBrick",
                 "properties": {
                   "formulaMap": {
                     "NOTE": {
@@ -287,7 +287,7 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.TurnLeftBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.TurnLeftBrick",
                 "properties": {
                   "formulaMap": {
                     "TURN_LEFT_DEGREES": {
@@ -300,7 +300,7 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.TurnRightBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.TurnRightBrick",
                 "properties": {
                   "formulaMap": {
                     "TURN_RIGHT_DEGREES": {
@@ -313,7 +313,7 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.PointInDirectionBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.PointInDirectionBrick",
                 "properties": {
                   "formulaMap": {
                     "DEGREES": {
@@ -326,7 +326,7 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.WaitBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.WaitBrick",
                 "properties": {
                   "formulaMap": {
                     "TIME_TO_WAIT_IN_SECONDS": {
@@ -339,7 +339,7 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.PointToBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.PointToBrick",
                 "properties": {
                   "pointedObject": {
                     "lookList": [
@@ -357,13 +357,13 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.BroadcastWaitBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.BroadcastWaitBrick",
                 "properties": {
                   "broadcastMessage": "Test Message"
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.SetVariableBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.SetVariableBrick",
                 "properties": {
                   "backPackedData": {
                     "userVariable": {
@@ -387,7 +387,7 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.GlideToBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.GlideToBrick",
                 "properties": {
                   "formulaMap": {
                     "DURATION_IN_SECONDS": {
@@ -412,7 +412,7 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.GoNStepsBackBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.GoNStepsBackBrick",
                 "properties": {
                   "formulaMap": {
                     "STEPS": {
@@ -425,13 +425,13 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.BroadcastBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.BroadcastBrick",
                 "properties": {
                   "broadcastMessage": "Test Message"
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.ComeToFrontBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.ComeToFrontBrick",
                 "properties": {}
               }
             ]
@@ -443,7 +443,7 @@
             "receivedMessage": "Test Message",
             "brickList": [
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.IfLogicBeginBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.IfLogicBeginBrick",
                 "properties": {
                   "formulaMap": {
                     "IF_CONDITION": {
@@ -464,7 +464,7 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.LegoNxtMotorTurnAngleBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.LegoNxtMotorTurnAngleBrick",
                 "properties": {
                   "motor": "MOTOR_B",
                   "formulaMap": {
@@ -478,13 +478,13 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.LegoNxtMotorStopBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.LegoNxtMotorStopBrick",
                 "properties": {
                   "motor": "MOTOR_B_C"
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.LegoNxtMotorMoveBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.LegoNxtMotorMoveBrick",
                 "properties": {
                   "motor": "MOTOR_A",
                   "formulaMap": {
@@ -498,7 +498,7 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.SetLookBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.SetLookBrick",
                 "properties": {
                   "look": {
                     "fileName": "f006c8afefc8b82287be1b7b47d985a2_Image 2.png",
@@ -507,7 +507,7 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.SetSizeToBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.SetSizeToBrick",
                 "properties": {
                   "formulaMap": {
                     "SIZE": {
@@ -520,7 +520,7 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.ChangeTransparencyByNBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.ChangeTransparencyByNBrick",
                 "properties": {
                   "formulaMap": {
                     "TRANSPARENCY_CHANGE": {
@@ -533,7 +533,7 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.LegoNxtPlayToneBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.LegoNxtPlayToneBrick",
                 "properties": {
                   "formulaMap": {
                     "LEGO_NXT_DURATION_IN_SECONDS": {
@@ -552,11 +552,11 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.HideBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.HideBrick",
                 "properties": {}
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.SetTransparencyBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.SetTransparencyBrick",
                 "properties": {
                   "formulaMap": {
                     "TRANSPARENCY": {
@@ -569,15 +569,15 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.IfLogicElseBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.IfLogicElseBrick",
                 "properties": {}
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.ShowBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.ShowBrick",
                 "properties": {}
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.SetBrightnessBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.SetBrightnessBrick",
                 "properties": {
                   "formulaMap": {
                     "BRIGHTNESS": {
@@ -590,11 +590,11 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.NextLookBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.NextLookBrick",
                 "properties": {}
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.ChangeSizeByNBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.ChangeSizeByNBrick",
                 "properties": {
                   "formulaMap": {
                     "SIZE_CHANGE": {
@@ -607,11 +607,11 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.ClearGraphicEffectBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.ClearGraphicEffectBrick",
                 "properties": {}
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.IfLogicEndBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.IfLogicEndBrick",
                 "properties": {}
               }
             ]
@@ -623,11 +623,11 @@
             "action": "Tapped",
             "brickList": [
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.ForeverBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.ForeverBrick",
                 "properties": {}
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.PlaySoundBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.PlaySoundBrick",
                 "properties": {
                   "sound": {
                     "fileName": "cd8fa8390b0efdd281882533fbfcfcfb_title.mp3",
@@ -636,7 +636,7 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.ChangeBrightnessByNBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.ChangeBrightnessByNBrick",
                 "properties": {
                   "formulaMap": {
                     "BRIGHTNESS_CHANGE": {
@@ -649,11 +649,11 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.StopAllSoundsBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.StopAllSoundsBrick",
                 "properties": {}
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.ChangeVolumeByNBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.ChangeVolumeByNBrick",
                 "properties": {
                   "formulaMap": {
                     "VOLUME_CHANGE": {
@@ -670,7 +670,7 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.RepeatBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.RepeatBrick",
                 "properties": {
                   "formulaMap": {
                     "TIMES_TO_REPEAT": {
@@ -683,7 +683,7 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.ChangeVariableBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.ChangeVariableBrick",
                 "properties": {
                   "backPackedData": {
                     "userVariable": {
@@ -707,11 +707,11 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.LoopEndBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.LoopEndBrick",
                 "properties": {}
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.SetVolumeToBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.SetVolumeToBrick",
                 "properties": {
                   "formulaMap": {
                     "VOLUME": {
@@ -724,7 +724,7 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.SpeakBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.SpeakBrick",
                 "properties": {
                   "formulaMap": {
                     "SPEAK": {
@@ -737,7 +737,7 @@
                 }
               },
               {
-                "bricktype": "org.catrobat.catroid.content.bricks.LoopEndlessBrick",
+                "bricktype": "com.myradev.lunarcode.content.bricks.LoopEndlessBrick",
                 "properties": {}
               }
             ]
@@ -801,7 +801,7 @@
           "isUserScript": false,
           "brickList": [
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.UserBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.UserBrick",
               "properties": {
                 "definitionBrick": {
                   "script": {
@@ -838,13 +838,13 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.physics.content.bricks.SetPhysicsObjectTypeBrick",
+              "bricktype": "com.myradev.lunarcode.physics.content.bricks.SetPhysicsObjectTypeBrick",
               "properties": {
                 "type": "DYNAMIC"
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.physics.content.bricks.SetVelocityBrick",
+              "bricktype": "com.myradev.lunarcode.physics.content.bricks.SetVelocityBrick",
               "properties": {
                 "formulaMap": {
                   "PHYSICS_VELOCITY_X": {
@@ -863,7 +863,7 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.physics.content.bricks.TurnLeftSpeedBrick",
+              "bricktype": "com.myradev.lunarcode.physics.content.bricks.TurnLeftSpeedBrick",
               "properties": {
                 "formulaMap": {
                   "PHYSICS_TURN_LEFT_SPEED": {
@@ -876,7 +876,7 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.physics.content.bricks.SetFrictionBrick",
+              "bricktype": "com.myradev.lunarcode.physics.content.bricks.SetFrictionBrick",
               "properties": {
                 "formulaMap": {
                   "PHYSICS_FRICTION": {
@@ -889,7 +889,7 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.physics.content.bricks.SetBounceBrick",
+              "bricktype": "com.myradev.lunarcode.physics.content.bricks.SetBounceBrick",
               "properties": {
                 "formulaMap": {
                   "PHYSICS_BOUNCE_FACTOR": {
@@ -902,7 +902,7 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.physics.content.bricks.SetMassBrick",
+              "bricktype": "com.myradev.lunarcode.physics.content.bricks.SetMassBrick",
               "properties": {
                 "formulaMap": {
                   "PHYSICS_MASS": {
@@ -915,7 +915,7 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.physics.content.bricks.SetGravityBrick",
+              "bricktype": "com.myradev.lunarcode.physics.content.bricks.SetGravityBrick",
               "properties": {
                 "formulaMap": {
                   "PHYSICS_GRAVITY_Y": {
@@ -938,7 +938,7 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.physics.content.bricks.TurnRightSpeedBrick",
+              "bricktype": "com.myradev.lunarcode.physics.content.bricks.TurnRightSpeedBrick",
               "properties": {
                 "formulaMap": {
                   "PHYSICS_TURN_RIGHT_SPEED": {
@@ -951,7 +951,7 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.PlaceAtBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.PlaceAtBrick",
               "properties": {
                 "formulaMap": {
                   "Y_POSITION": {
@@ -970,7 +970,7 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.SetXBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.SetXBrick",
               "properties": {
                 "formulaMap": {
                   "X_POSITION": {
@@ -983,7 +983,7 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.SetYBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.SetYBrick",
               "properties": {
                 "formulaMap": {
                   "Y_POSITION": {
@@ -996,7 +996,7 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.ChangeXByNBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.ChangeXByNBrick",
               "properties": {
                 "formulaMap": {
                   "X_POSITION_CHANGE": {
@@ -1009,7 +1009,7 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.ChangeYByNBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.ChangeYByNBrick",
               "properties": {
                 "formulaMap": {
                   "Y_POSITION_CHANGE": {
@@ -1022,11 +1022,11 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.IfOnEdgeBounceBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.IfOnEdgeBounceBrick",
               "properties": {}
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.MoveNStepsBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.MoveNStepsBrick",
               "properties": {
                 "formulaMap": {
                   "STEPS": {
@@ -1039,7 +1039,7 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.NoteBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.NoteBrick",
               "properties": {
                 "formulaMap": {
                   "NOTE": {
@@ -1052,7 +1052,7 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.TurnLeftBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.TurnLeftBrick",
               "properties": {
                 "formulaMap": {
                   "TURN_LEFT_DEGREES": {
@@ -1065,7 +1065,7 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.TurnRightBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.TurnRightBrick",
               "properties": {
                 "formulaMap": {
                   "TURN_RIGHT_DEGREES": {
@@ -1078,7 +1078,7 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.PointInDirectionBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.PointInDirectionBrick",
               "properties": {
                 "formulaMap": {
                   "DEGREES": {
@@ -1091,7 +1091,7 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.WaitBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.WaitBrick",
               "properties": {
                 "formulaMap": {
                   "TIME_TO_WAIT_IN_SECONDS": {
@@ -1104,7 +1104,7 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.PointToBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.PointToBrick",
               "properties": {
                 "pointedObject": {
                   "lookList": [
@@ -1122,13 +1122,13 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.BroadcastWaitBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.BroadcastWaitBrick",
               "properties": {
                 "broadcastMessage": "Test Message"
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.SetVariableBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.SetVariableBrick",
               "properties": {
                 "backPackedData": {
                   "userVariable": {
@@ -1152,7 +1152,7 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.GlideToBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.GlideToBrick",
               "properties": {
                 "formulaMap": {
                   "DURATION_IN_SECONDS": {
@@ -1177,7 +1177,7 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.GoNStepsBackBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.GoNStepsBackBrick",
               "properties": {
                 "formulaMap": {
                   "STEPS": {
@@ -1190,13 +1190,13 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.BroadcastBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.BroadcastBrick",
               "properties": {
                 "broadcastMessage": "Test Message"
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.ComeToFrontBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.ComeToFrontBrick",
               "properties": {}
             }
           ]
@@ -1208,7 +1208,7 @@
           "receivedMessage": "Test Message",
           "brickList": [
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.IfLogicBeginBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.IfLogicBeginBrick",
               "properties": {
                 "formulaMap": {
                   "IF_CONDITION": {
@@ -1229,7 +1229,7 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.LegoNxtMotorTurnAngleBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.LegoNxtMotorTurnAngleBrick",
               "properties": {
                 "motor": "MOTOR_B",
                 "formulaMap": {
@@ -1243,13 +1243,13 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.LegoNxtMotorStopBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.LegoNxtMotorStopBrick",
               "properties": {
                 "motor": "MOTOR_B_C"
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.LegoNxtMotorMoveBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.LegoNxtMotorMoveBrick",
               "properties": {
                 "motor": "MOTOR_A",
                 "formulaMap": {
@@ -1263,7 +1263,7 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.SetLookBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.SetLookBrick",
               "properties": {
                 "look": {
                   "fileName": "f006c8afefc8b82287be1b7b47d985a2_Image 2.png",
@@ -1272,7 +1272,7 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.SetSizeToBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.SetSizeToBrick",
               "properties": {
                 "formulaMap": {
                   "SIZE": {
@@ -1285,7 +1285,7 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.ChangeTransparencyByNBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.ChangeTransparencyByNBrick",
               "properties": {
                 "formulaMap": {
                   "TRANSPARENCY_CHANGE": {
@@ -1298,7 +1298,7 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.LegoNxtPlayToneBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.LegoNxtPlayToneBrick",
               "properties": {
                 "formulaMap": {
                   "LEGO_NXT_DURATION_IN_SECONDS": {
@@ -1317,11 +1317,11 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.HideBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.HideBrick",
               "properties": {}
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.SetTransparencyBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.SetTransparencyBrick",
               "properties": {
                 "formulaMap": {
                   "TRANSPARENCY": {
@@ -1334,15 +1334,15 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.IfLogicElseBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.IfLogicElseBrick",
               "properties": {}
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.ShowBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.ShowBrick",
               "properties": {}
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.SetBrightnessBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.SetBrightnessBrick",
               "properties": {
                 "formulaMap": {
                   "BRIGHTNESS": {
@@ -1355,11 +1355,11 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.NextLookBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.NextLookBrick",
               "properties": {}
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.ChangeSizeByNBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.ChangeSizeByNBrick",
               "properties": {
                 "formulaMap": {
                   "SIZE_CHANGE": {
@@ -1372,11 +1372,11 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.ClearGraphicEffectBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.ClearGraphicEffectBrick",
               "properties": {}
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.IfLogicEndBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.IfLogicEndBrick",
               "properties": {}
             }
           ]
@@ -1388,11 +1388,11 @@
           "action": "Tapped",
           "brickList": [
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.ForeverBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.ForeverBrick",
               "properties": {}
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.PlaySoundBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.PlaySoundBrick",
               "properties": {
                 "sound": {
                   "fileName": "cd8fa8390b0efdd281882533fbfcfcfb_title.mp3",
@@ -1401,7 +1401,7 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.ChangeBrightnessByNBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.ChangeBrightnessByNBrick",
               "properties": {
                 "formulaMap": {
                   "BRIGHTNESS_CHANGE": {
@@ -1414,11 +1414,11 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.StopAllSoundsBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.StopAllSoundsBrick",
               "properties": {}
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.ChangeVolumeByNBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.ChangeVolumeByNBrick",
               "properties": {
                 "formulaMap": {
                   "VOLUME_CHANGE": {
@@ -1435,7 +1435,7 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.RepeatBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.RepeatBrick",
               "properties": {
                 "formulaMap": {
                   "TIMES_TO_REPEAT": {
@@ -1448,7 +1448,7 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.ChangeVariableBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.ChangeVariableBrick",
               "properties": {
                 "backPackedData": {
                   "userVariable": {
@@ -1472,11 +1472,11 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.LoopEndBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.LoopEndBrick",
               "properties": {}
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.SetVolumeToBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.SetVolumeToBrick",
               "properties": {
                 "formulaMap": {
                   "VOLUME": {
@@ -1489,7 +1489,7 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.SpeakBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.SpeakBrick",
               "properties": {
                 "formulaMap": {
                   "SPEAK": {
@@ -1502,7 +1502,7 @@
               }
             },
             {
-              "bricktype": "org.catrobat.catroid.content.bricks.LoopEndlessBrick",
+              "bricktype": "com.myradev.lunarcode.content.bricks.LoopEndlessBrick",
               "properties": {}
             }
           ]

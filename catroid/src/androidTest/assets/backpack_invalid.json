@@ -8,7 +8,7 @@
           "isUserScript": false,
           "brickList": [
             {
-              "bricktype": "invalid.org.catrobat.catroid.physics.content.bricks.SetMassBrick",
+              "bricktype": "invalid.com.myradev.lunarcode.physics.content.bricks.SetMassBrick",
               "properties": {
                 "formulaMap": {
                   "PHYSICS_MASS": {

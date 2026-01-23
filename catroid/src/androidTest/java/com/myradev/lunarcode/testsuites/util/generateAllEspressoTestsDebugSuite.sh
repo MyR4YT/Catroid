@@ -1,6 +1,6 @@
 #!/bin/bash
 
-IMPORTS="$(find .. -name '*Test.java' | sed 's/\.\.\//import org.catrobat.catroid.uiespresso./' | sed 's/\//\./g' | sed 's/.java/;/' | sort)"
+IMPORTS="$(find .. -name '*Test.java' | sed 's/\.\.\//import com.myradev.lunarcode.uiespresso./' | sed 's/\//\./g' | sed 's/.java/;/' | sort)"
 IMPORTED_CLASSES="$(find .. -name '*Test.java' | sed 's/^.*\///' | sed 's/java/class/' | sed 's/$/,/' | sed '$s/,//' | sed 's/^/		/')"
 
 echo "/*
@@ -26,7 +26,7 @@ echo "/*
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.testsuites.testsuites;
+package com.myradev.lunarcode.testsuites.testsuites;
 
 ${IMPORTS}
 import org.junit.runner.RunWith;

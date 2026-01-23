@@ -59,12 +59,12 @@ jobs:
         build:
           - name: "Catroid"
             enabled: ${{ inputs.RELEASE_CATROID }}
-            packageName: "org.catrobat.catroid"
+            packageName: "com.myradev.lunarcode"
             buildPath: "catroid/build/outputs/bundle/catroidSignedRelease/catroid-catroid-signedRelease.aab"
             buildName: Catroid
           - name: "Embroidery Designer"
             enabled: ${{ inputs.RELEASE_EMBROIDERY }}
-            packageName: "org.catrobat.catroid.embroiderydesigner"
+            packageName: "com.myradev.lunarcode.embroiderydesigner"
             buildPath: "catroid/build/outputs/bundle/embroideryDesignerSignedRelease/catroid-embroideryDesigner-signedRelease.aab"
             buildName: EmbroideryDesigner
 
