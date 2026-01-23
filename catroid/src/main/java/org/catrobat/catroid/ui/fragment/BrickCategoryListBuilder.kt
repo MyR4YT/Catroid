@@ -33,6 +33,11 @@ import org.catrobat.catroid.ui.settingsfragments.AccessibilityProfile
 import org.catrobat.catroid.ui.settingsfragments.RaspberryPiSettingsFragment
 import org.catrobat.catroid.ui.settingsfragments.SettingsFragment
 import java.util.ArrayList
+import android.widget.LinearLayout
+import android.widget.TextView
+import android.widget.ImageView
+import android.graphics.Color
+import org.catrobat.catroid.modloader.ModManager
 
 class BrickCategoryListBuilder(private val activity: FragmentActivity) {
 
@@ -98,6 +103,15 @@ class BrickCategoryListBuilder(private val activity: FragmentActivity) {
             categories.add(inflater.inflate(R.layout.brick_category_assert, null))
         }
 
+
+        ModManager.getCustomCategories().forEach { customCat ->
+            val catView = inflater.inflate(R.layout.brick_category_motion, null) as LinearLayout
+            catView.setBackgroundColor(Color.parseColor(customCat.color))
+            val textView = catView.getChildAt(1) as TextView
+            textView.text = customCat.name
+            // For now, reuse motion icon but we could allow custom icons too
+            categories.add(catView)
+        }
         return categories
     }
 
