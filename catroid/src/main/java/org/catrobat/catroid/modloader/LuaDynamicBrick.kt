@@ -29,10 +29,6 @@ class LuaDynamicBrick : BrickBaseType {
         return R.layout.brick_user_brick 
     }
 
-    override fun copyBrick(): Brick {
-        return LuaDynamicBrick(luaFunctionName, brickName)
-    }
-
     override fun addRequiredResources(requiredResourcesSet: Brick.ResourcesSet) {
         // Add resources if needed, e.g., Brick.Resources.USER_DEFINED_BRICK if that existed
         // For now, we can leave it empty or add general resources
