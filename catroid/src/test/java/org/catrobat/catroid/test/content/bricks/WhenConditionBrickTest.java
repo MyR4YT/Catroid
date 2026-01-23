@@ -21,11 +21,11 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.content.bricks;
+package com.myradev.lunarcode.test.content.bricks;
 
-import org.catrobat.catroid.content.WhenConditionScript;
-import org.catrobat.catroid.content.bricks.WhenConditionBrick;
-import org.catrobat.catroid.formulaeditor.Formula;
+import com.myradev.lunarcode.content.WhenConditionScript;
+import com.myradev.lunarcode.content.bricks.WhenConditionBrick;
+import com.myradev.lunarcode.formulaeditor.Formula;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;

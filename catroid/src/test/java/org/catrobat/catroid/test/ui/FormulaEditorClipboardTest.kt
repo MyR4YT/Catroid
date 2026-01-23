@@ -21,15 +21,15 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 /*
-package org.catrobat.catroid.test.ui
+package com.myradev.lunarcode.test.ui
 
 import junit.framework.TestCase.assertEquals
 import junit.framework.TestCase.assertNotSame
 import junit.framework.TestCase.assertNull
-import org.catrobat.catroid.formulaeditor.FormulaEditorEditText
-import org.catrobat.catroid.formulaeditor.InternToken
-import org.catrobat.catroid.formulaeditor.InternTokenType
-import org.catrobat.catroid.ui.FormulaEditorClipboard
+import com.myradev.lunarcode.formulaeditor.FormulaEditorEditText
+import com.myradev.lunarcode.formulaeditor.InternToken
+import com.myradev.lunarcode.formulaeditor.InternTokenType
+import com.myradev.lunarcode.ui.FormulaEditorClipboard
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.ArgumentCaptor

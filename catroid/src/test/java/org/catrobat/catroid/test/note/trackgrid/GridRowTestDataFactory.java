@@ -20,12 +20,12 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.catrobat.catroid.test.note.trackgrid;
+package com.myradev.lunarcode.test.note.trackgrid;
 
-import org.catrobat.catroid.pocketmusic.note.NoteLength;
-import org.catrobat.catroid.pocketmusic.note.NoteName;
-import org.catrobat.catroid.pocketmusic.note.trackgrid.GridRow;
-import org.catrobat.catroid.pocketmusic.note.trackgrid.GridRowPosition;
+import com.myradev.lunarcode.pocketmusic.note.NoteLength;
+import com.myradev.lunarcode.pocketmusic.note.NoteName;
+import com.myradev.lunarcode.pocketmusic.note.trackgrid.GridRow;
+import com.myradev.lunarcode.pocketmusic.note.trackgrid.GridRowPosition;
 
 import java.util.ArrayList;
 import java.util.List;

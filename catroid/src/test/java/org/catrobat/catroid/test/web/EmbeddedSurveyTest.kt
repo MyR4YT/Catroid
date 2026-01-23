@@ -21,16 +21,16 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 /*
-package org.catrobat.catroid.test.web
+package com.myradev.lunarcode.test.web
 
 import android.content.Context
 import android.content.SharedPreferences
 import android.preference.PreferenceManager
 import android.text.format.DateUtils
-import org.catrobat.catroid.common.SharedPreferenceKeys
-import org.catrobat.catroid.common.Survey
-import org.catrobat.catroid.transfers.GetSurveyTask
-import org.catrobat.catroid.utils.Utils
+import com.myradev.lunarcode.common.SharedPreferenceKeys
+import com.myradev.lunarcode.common.Survey
+import com.myradev.lunarcode.transfers.GetSurveyTask
+import com.myradev.lunarcode.utils.Utils
 import org.json.JSONException
 import org.junit.Before
 import org.junit.Test

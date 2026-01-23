@@ -21,17 +21,17 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 /*
-package org.catrobat.catroid.test.ui.brickadapter;
+package com.myradev.lunarcode.test.ui.brickadapter;
 
-import org.catrobat.catroid.content.Sprite;
-import org.catrobat.catroid.content.StartScript;
-import org.catrobat.catroid.content.bricks.Brick;
-import org.catrobat.catroid.content.bricks.GlideToBrick;
-import org.catrobat.catroid.content.bricks.ScriptBrick;
-import org.catrobat.catroid.content.bricks.WhenStartedBrick;
-import org.catrobat.catroid.ui.dragndrop.BrickListView;
-import org.catrobat.catroid.ui.recyclerview.adapter.BrickAdapter;
-import org.catrobat.catroid.ui.recyclerview.fragment.ScriptFragment;
+import com.myradev.lunarcode.content.Sprite;
+import com.myradev.lunarcode.content.StartScript;
+import com.myradev.lunarcode.content.bricks.Brick;
+import com.myradev.lunarcode.content.bricks.GlideToBrick;
+import com.myradev.lunarcode.content.bricks.ScriptBrick;
+import com.myradev.lunarcode.content.bricks.WhenStartedBrick;
+import com.myradev.lunarcode.ui.dragndrop.BrickListView;
+import com.myradev.lunarcode.ui.recyclerview.adapter.BrickAdapter;
+import com.myradev.lunarcode.ui.recyclerview.fragment.ScriptFragment;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

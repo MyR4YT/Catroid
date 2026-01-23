@@ -21,18 +21,18 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 /*
-package org.catrobat.catroid.test.content.project;
+package com.myradev.lunarcode.test.content.project;
 
 import android.content.Context;
 
-import org.catrobat.catroid.BuildConfig;
-import org.catrobat.catroid.ProjectManager;
-import org.catrobat.catroid.content.Project;
-import org.catrobat.catroid.content.bricks.Brick;
-import org.catrobat.catroid.exceptions.CompatibilityProjectException;
-import org.catrobat.catroid.exceptions.OutdatedVersionProjectException;
-import org.catrobat.catroid.io.XstreamSerializer;
-import org.catrobat.catroid.test.StaticSingletonInitializer;
+import com.myradev.lunarcode.BuildConfig;
+import com.myradev.lunarcode.ProjectManager;
+import com.myradev.lunarcode.content.Project;
+import com.myradev.lunarcode.content.bricks.Brick;
+import com.myradev.lunarcode.exceptions.CompatibilityProjectException;
+import com.myradev.lunarcode.exceptions.OutdatedVersionProjectException;
+import com.myradev.lunarcode.io.XstreamSerializer;
+import com.myradev.lunarcode.test.StaticSingletonInitializer;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -43,7 +43,7 @@ import org.powermock.modules.junit4.PowerMockRunner;
 
 import java.io.File;
 
-import static org.catrobat.catroid.common.Constants.CURRENT_CATROBAT_LANGUAGE_VERSION;
+import static com.myradev.lunarcode.common.Constants.CURRENT_CATROBAT_LANGUAGE_VERSION;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.times;

@@ -21,19 +21,19 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.content.bricks;
+package com.myradev.lunarcode.test.content.bricks;
 
-import org.catrobat.catroid.ProjectManager;
-import org.catrobat.catroid.content.Project;
-import org.catrobat.catroid.content.Scene;
-import org.catrobat.catroid.content.Script;
-import org.catrobat.catroid.content.Sprite;
-import org.catrobat.catroid.content.WhenScript;
-import org.catrobat.catroid.content.bricks.BroadcastBrick;
-import org.catrobat.catroid.content.bricks.CompositeBrick;
-import org.catrobat.catroid.content.bricks.IfLogicBeginBrick;
-import org.catrobat.catroid.content.bricks.PhiroIfLogicBeginBrick;
-import org.catrobat.catroid.content.bricks.RaspiIfLogicBeginBrick;
+import com.myradev.lunarcode.ProjectManager;
+import com.myradev.lunarcode.content.Project;
+import com.myradev.lunarcode.content.Scene;
+import com.myradev.lunarcode.content.Script;
+import com.myradev.lunarcode.content.Sprite;
+import com.myradev.lunarcode.content.WhenScript;
+import com.myradev.lunarcode.content.bricks.BroadcastBrick;
+import com.myradev.lunarcode.content.bricks.CompositeBrick;
+import com.myradev.lunarcode.content.bricks.IfLogicBeginBrick;
+import com.myradev.lunarcode.content.bricks.PhiroIfLogicBeginBrick;
+import com.myradev.lunarcode.content.bricks.RaspiIfLogicBeginBrick;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -45,7 +45,7 @@ import java.util.Set;
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertTrue;
 
-import static org.catrobat.catroid.test.StaticSingletonInitializer.initializeStaticSingletonMethods;
+import static com.myradev.lunarcode.test.StaticSingletonInitializer.initializeStaticSingletonMethods;
 
 @RunWith(Parameterized.class)
 public class CompositeBrickWithSecondaryListBroadcastMessageTest {

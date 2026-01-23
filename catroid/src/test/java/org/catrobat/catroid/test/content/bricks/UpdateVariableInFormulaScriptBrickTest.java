@@ -20,21 +20,21 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.catrobat.catroid.test.content.bricks;
+package com.myradev.lunarcode.test.content.bricks;
 
-import org.catrobat.catroid.CatroidApplication;
-import org.catrobat.catroid.ProjectManager;
-import org.catrobat.catroid.content.Project;
-import org.catrobat.catroid.content.Scene;
-import org.catrobat.catroid.content.Sprite;
-import org.catrobat.catroid.content.bricks.ConcurrentFormulaHashMap;
-import org.catrobat.catroid.content.bricks.FormulaBrick;
-import org.catrobat.catroid.content.bricks.ScriptBrick;
-import org.catrobat.catroid.formulaeditor.Formula;
-import org.catrobat.catroid.formulaeditor.FormulaElement;
-import org.catrobat.catroid.formulaeditor.UserList;
-import org.catrobat.catroid.formulaeditor.UserVariable;
-import org.catrobat.catroid.test.MockUtil;
+import com.myradev.lunarcode.CatroidApplication;
+import com.myradev.lunarcode.ProjectManager;
+import com.myradev.lunarcode.content.Project;
+import com.myradev.lunarcode.content.Scene;
+import com.myradev.lunarcode.content.Sprite;
+import com.myradev.lunarcode.content.bricks.ConcurrentFormulaHashMap;
+import com.myradev.lunarcode.content.bricks.FormulaBrick;
+import com.myradev.lunarcode.content.bricks.ScriptBrick;
+import com.myradev.lunarcode.formulaeditor.Formula;
+import com.myradev.lunarcode.formulaeditor.FormulaElement;
+import com.myradev.lunarcode.formulaeditor.UserList;
+import com.myradev.lunarcode.formulaeditor.UserVariable;
+import com.myradev.lunarcode.test.MockUtil;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -44,9 +44,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-import static org.catrobat.catroid.test.xmlformat.ClassDiscoverer.getAllSubClassesOf;
-import static org.catrobat.catroid.test.xmlformat.ClassDiscoverer.removeAbstractClasses;
-import static org.catrobat.catroid.test.xmlformat.ClassDiscoverer.removeInnerClasses;
+import static com.myradev.lunarcode.test.xmlformat.ClassDiscoverer.getAllSubClassesOf;
+import static com.myradev.lunarcode.test.xmlformat.ClassDiscoverer.removeAbstractClasses;
+import static com.myradev.lunarcode.test.xmlformat.ClassDiscoverer.removeInnerClasses;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)

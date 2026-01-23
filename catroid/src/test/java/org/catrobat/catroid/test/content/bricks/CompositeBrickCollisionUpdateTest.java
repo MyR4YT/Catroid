@@ -21,26 +21,26 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 /*
-package org.catrobat.catroid.test.content.bricks;
+package com.myradev.lunarcode.test.content.bricks;
 
-import org.catrobat.catroid.CatroidApplication;
-import org.catrobat.catroid.ProjectManager;
-import org.catrobat.catroid.content.Project;
-import org.catrobat.catroid.content.Scene;
-import org.catrobat.catroid.content.Script;
-import org.catrobat.catroid.content.Sprite;
-import org.catrobat.catroid.content.WhenScript;
-import org.catrobat.catroid.content.bricks.CompositeBrick;
-import org.catrobat.catroid.content.bricks.ConcurrentFormulaHashMap;
-import org.catrobat.catroid.content.bricks.ForeverBrick;
-import org.catrobat.catroid.content.bricks.FormulaBrick;
-import org.catrobat.catroid.content.bricks.IfThenLogicBeginBrick;
-import org.catrobat.catroid.content.bricks.RepeatBrick;
-import org.catrobat.catroid.content.bricks.RepeatUntilBrick;
-import org.catrobat.catroid.content.bricks.SetXBrick;
-import org.catrobat.catroid.formulaeditor.Formula;
-import org.catrobat.catroid.formulaeditor.FormulaElement;
-import org.catrobat.catroid.test.PowerMockUtil;
+import com.myradev.lunarcode.CatroidApplication;
+import com.myradev.lunarcode.ProjectManager;
+import com.myradev.lunarcode.content.Project;
+import com.myradev.lunarcode.content.Scene;
+import com.myradev.lunarcode.content.Script;
+import com.myradev.lunarcode.content.Sprite;
+import com.myradev.lunarcode.content.WhenScript;
+import com.myradev.lunarcode.content.bricks.CompositeBrick;
+import com.myradev.lunarcode.content.bricks.ConcurrentFormulaHashMap;
+import com.myradev.lunarcode.content.bricks.ForeverBrick;
+import com.myradev.lunarcode.content.bricks.FormulaBrick;
+import com.myradev.lunarcode.content.bricks.IfThenLogicBeginBrick;
+import com.myradev.lunarcode.content.bricks.RepeatBrick;
+import com.myradev.lunarcode.content.bricks.RepeatUntilBrick;
+import com.myradev.lunarcode.content.bricks.SetXBrick;
+import com.myradev.lunarcode.formulaeditor.Formula;
+import com.myradev.lunarcode.formulaeditor.FormulaElement;
+import com.myradev.lunarcode.test.PowerMockUtil;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

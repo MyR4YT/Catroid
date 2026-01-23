@@ -53,7 +53,7 @@
         android:layout_marginBottom="@dimen/activity_text_view_margin_large"
         android:background="@color/button_border_top" />
 
-    <org.catrobat.catroid.soundrecorder.RecordButton
+    <com.myradev.lunarcode.soundrecorder.RecordButton
         android:id="@id/soundrecorder_record_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

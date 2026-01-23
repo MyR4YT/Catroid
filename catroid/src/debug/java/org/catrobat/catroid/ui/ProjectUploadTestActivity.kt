@@ -21,9 +21,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.ui
+package com.myradev.lunarcode.ui
 
-import org.catrobat.catroid.ui.controller.ProjectUploadController
+import com.myradev.lunarcode.ui.controller.ProjectUploadController
 import org.mockito.Mockito.spy
 
 class ProjectUploadTestActivity : ProjectUploadActivity() {

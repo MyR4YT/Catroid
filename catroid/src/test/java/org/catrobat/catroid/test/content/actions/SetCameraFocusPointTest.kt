@@ -21,12 +21,12 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.content.actions
+package com.myradev.lunarcode.test.content.actions
 
 import com.badlogic.gdx.graphics.OrthographicCamera
 import com.badlogic.gdx.math.Vector3
-import org.catrobat.catroid.content.Sprite
-import org.catrobat.catroid.stage.CameraPositioner
+import com.myradev.lunarcode.content.Sprite
+import com.myradev.lunarcode.stage.CameraPositioner
 import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test

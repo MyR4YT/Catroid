@@ -21,9 +21,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.formulaeditor;
+package com.myradev.lunarcode.test.formulaeditor;
 
-import org.catrobat.catroid.formulaeditor.ExternInternRepresentationMapping;
+import com.myradev.lunarcode.formulaeditor.ExternInternRepresentationMapping;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;

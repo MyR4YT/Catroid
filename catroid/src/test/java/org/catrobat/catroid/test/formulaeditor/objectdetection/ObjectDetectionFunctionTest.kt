@@ -21,18 +21,18 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.formulaeditor.objectdetection
+package com.myradev.lunarcode.test.formulaeditor.objectdetection
 
 import android.graphics.Rect
 import com.google.mlkit.vision.objects.DetectedObject
 import com.google.mlkit.vision.objects.DetectedObject.Label
-import org.catrobat.catroid.camera.mlkitdetectors.ObjectDetectorOnSuccessListener
-import org.catrobat.catroid.formulaeditor.Functions
-import org.catrobat.catroid.formulaeditor.Functions.ID_OF_DETECTED_OBJECT
-import org.catrobat.catroid.formulaeditor.Functions.OBJECT_WITH_ID_VISIBLE
-import org.catrobat.catroid.formulaeditor.InternToken
-import org.catrobat.catroid.formulaeditor.InternTokenType.NUMBER
-import org.catrobat.catroid.test.formulaeditor.FormulaEditorTestUtil.testSingleParameterFunction
+import com.myradev.lunarcode.camera.mlkitdetectors.ObjectDetectorOnSuccessListener
+import com.myradev.lunarcode.formulaeditor.Functions
+import com.myradev.lunarcode.formulaeditor.Functions.ID_OF_DETECTED_OBJECT
+import com.myradev.lunarcode.formulaeditor.Functions.OBJECT_WITH_ID_VISIBLE
+import com.myradev.lunarcode.formulaeditor.InternToken
+import com.myradev.lunarcode.formulaeditor.InternTokenType.NUMBER
+import com.myradev.lunarcode.test.formulaeditor.FormulaEditorTestUtil.testSingleParameterFunction
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith

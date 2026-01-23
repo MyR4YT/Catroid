@@ -20,10 +20,10 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.catrobat.catroid.test.utiltests
+package com.myradev.lunarcode.test.utiltests
 
-import org.catrobat.catroid.utils.StringFinder
-import org.catrobat.catroid.utils.StringFinder.Companion.encodeSpecialChars
+import com.myradev.lunarcode.utils.StringFinder
+import com.myradev.lunarcode.utils.StringFinder.Companion.encodeSpecialChars
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNull
 import org.junit.Rule

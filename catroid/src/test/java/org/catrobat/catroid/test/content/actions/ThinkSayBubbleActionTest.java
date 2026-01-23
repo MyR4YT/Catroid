@@ -21,27 +21,27 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 /*
-package org.catrobat.catroid.test.content.actions;
+package com.myradev.lunarcode.test.content.actions;
 
 import android.content.Context;
 
 import com.badlogic.gdx.scenes.scene2d.actions.SequenceAction;
 import com.badlogic.gdx.utils.GdxNativesLoader;
 
-import org.catrobat.catroid.ProjectManager;
-import org.catrobat.catroid.common.Constants;
-import org.catrobat.catroid.content.ActionFactory;
-import org.catrobat.catroid.content.Project;
-import org.catrobat.catroid.content.Sprite;
-import org.catrobat.catroid.content.actions.ThinkSayBubbleAction;
-import org.catrobat.catroid.formulaeditor.Formula;
-import org.catrobat.catroid.formulaeditor.FormulaElement;
-import org.catrobat.catroid.formulaeditor.InterpretationException;
-import org.catrobat.catroid.stage.ShowBubbleActor;
-import org.catrobat.catroid.stage.StageActivity;
-import org.catrobat.catroid.stage.StageListener;
-import org.catrobat.catroid.test.MockUtil;
-import org.catrobat.catroid.utils.ShowTextUtils.AndroidStringProvider;
+import com.myradev.lunarcode.ProjectManager;
+import com.myradev.lunarcode.common.Constants;
+import com.myradev.lunarcode.content.ActionFactory;
+import com.myradev.lunarcode.content.Project;
+import com.myradev.lunarcode.content.Sprite;
+import com.myradev.lunarcode.content.actions.ThinkSayBubbleAction;
+import com.myradev.lunarcode.formulaeditor.Formula;
+import com.myradev.lunarcode.formulaeditor.FormulaElement;
+import com.myradev.lunarcode.formulaeditor.InterpretationException;
+import com.myradev.lunarcode.stage.ShowBubbleActor;
+import com.myradev.lunarcode.stage.StageActivity;
+import com.myradev.lunarcode.stage.StageListener;
+import com.myradev.lunarcode.test.MockUtil;
+import com.myradev.lunarcode.utils.ShowTextUtils.AndroidStringProvider;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

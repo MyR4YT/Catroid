@@ -21,10 +21,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 /*
-package org.catrobat.catroid.test.note.trackgrid;
+package com.myradev.lunarcode.test.note.trackgrid;
 
-import org.catrobat.catroid.pocketmusic.mididriver.MidiNotePlayer;
-import org.catrobat.catroid.pocketmusic.note.trackgrid.TrackGrid;
+import com.myradev.lunarcode.pocketmusic.mididriver.MidiNotePlayer;
+import com.myradev.lunarcode.pocketmusic.note.trackgrid.TrackGrid;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

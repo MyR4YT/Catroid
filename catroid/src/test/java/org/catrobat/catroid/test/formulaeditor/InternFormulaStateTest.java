@@ -21,13 +21,13 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.formulaeditor;
+package com.myradev.lunarcode.test.formulaeditor;
 
-import org.catrobat.catroid.formulaeditor.InternFormula.TokenSelectionType;
-import org.catrobat.catroid.formulaeditor.InternFormulaState;
-import org.catrobat.catroid.formulaeditor.InternFormulaTokenSelection;
-import org.catrobat.catroid.formulaeditor.InternToken;
-import org.catrobat.catroid.formulaeditor.InternTokenType;
+import com.myradev.lunarcode.formulaeditor.InternFormula.TokenSelectionType;
+import com.myradev.lunarcode.formulaeditor.InternFormulaState;
+import com.myradev.lunarcode.formulaeditor.InternFormulaTokenSelection;
+import com.myradev.lunarcode.formulaeditor.InternToken;
+import com.myradev.lunarcode.formulaeditor.InternTokenType;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -35,11 +35,11 @@
         android:gravity="center_vertical"
         android:visibility="gone"/>
 
-        <org.catrobat.catroid.ui.BrickLayout
+        <com.myradev.lunarcode.ui.BrickLayout
             android:id="@+id/brick_user_brick"
             style="@style/BrickContainer.UserDefinedBrick.Medium"
             app:userDefinedBrick="true">
             <include layout="@layout/icon_brick_category_userbrick"/>
-        </org.catrobat.catroid.ui.BrickLayout>
+        </com.myradev.lunarcode.ui.BrickLayout>
 
 </LinearLayout>

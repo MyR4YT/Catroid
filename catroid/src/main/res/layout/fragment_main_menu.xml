@@ -141,7 +141,7 @@
                     android:textSize="?attr/x_large"
                     app:drawableEndCompat="@drawable/ic_arrow_forward_vector" />
 
-                <org.catrobat.catroid.ui.recyclerview.AutoScrollableRecyclerView
+                <com.myradev.lunarcode.ui.recyclerview.AutoScrollableRecyclerView
                     android:id="@+id/featuredProjectsRecyclerView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

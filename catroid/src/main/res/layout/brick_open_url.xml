@@ -36,7 +36,7 @@
         android:gravity="center_vertical"
         android:visibility="gone" />
 
-    <org.catrobat.catroid.ui.BrickLayout
+    <com.myradev.lunarcode.ui.BrickLayout
         android:id="@+id/brick_open_url_layout"
         style="@style/BrickContainer.Device.Small">
 
@@ -58,6 +58,6 @@
             android:text="@string/brick_in_browser">
         </TextView>
 
-    </org.catrobat.catroid.ui.BrickLayout>
+    </com.myradev.lunarcode.ui.BrickLayout>
 
 </LinearLayout>

@@ -21,10 +21,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.content.sprite;
+package com.myradev.lunarcode.test.content.sprite;
 
-import org.catrobat.catroid.content.Look;
-import org.catrobat.catroid.content.Sprite;
+import com.myradev.lunarcode.content.Look;
+import com.myradev.lunarcode.content.Sprite;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;

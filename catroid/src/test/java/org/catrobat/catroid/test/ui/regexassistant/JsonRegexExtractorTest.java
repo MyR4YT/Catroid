@@ -21,9 +21,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.ui.regexassistant;
+package com.myradev.lunarcode.test.ui.regexassistant;
 
-import org.catrobat.catroid.utils.JsonRegexExtractor;
+import com.myradev.lunarcode.utils.JsonRegexExtractor;
 import org.junit.Before;
 import org.junit.Test;
 

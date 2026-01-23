@@ -21,11 +21,11 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.physics.collision;
+package com.myradev.lunarcode.test.physics.collision;
 
 import com.badlogic.gdx.math.Polygon;
 
-import org.catrobat.catroid.sensing.CollisionDetection;
+import com.myradev.lunarcode.sensing.CollisionDetection;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;

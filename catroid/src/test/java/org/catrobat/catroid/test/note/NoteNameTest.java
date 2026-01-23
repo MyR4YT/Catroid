@@ -20,10 +20,10 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.catrobat.catroid.test.note;
+package com.myradev.lunarcode.test.note;
 
-import org.catrobat.catroid.pocketmusic.note.MusicalKey;
-import org.catrobat.catroid.pocketmusic.note.NoteName;
+import com.myradev.lunarcode.pocketmusic.note.MusicalKey;
+import com.myradev.lunarcode.pocketmusic.note.NoteName;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;

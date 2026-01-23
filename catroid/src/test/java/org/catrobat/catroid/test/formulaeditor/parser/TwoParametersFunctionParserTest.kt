@@ -21,25 +21,25 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.formulaeditor.parser
+package com.myradev.lunarcode.test.formulaeditor.parser
 
 import com.badlogic.gdx.scenes.scene2d.actions.SequenceAction
-import org.catrobat.catroid.ProjectManager
-import org.catrobat.catroid.content.Project
-import org.catrobat.catroid.content.Scope
-import org.catrobat.catroid.content.Sprite
-import org.catrobat.catroid.formulaeditor.Functions
-import org.catrobat.catroid.formulaeditor.Functions.ARCTAN2
-import org.catrobat.catroid.formulaeditor.Functions.MAX
-import org.catrobat.catroid.formulaeditor.Functions.MIN
-import org.catrobat.catroid.formulaeditor.Functions.MOD
-import org.catrobat.catroid.formulaeditor.Functions.RAND
-import org.catrobat.catroid.formulaeditor.InternToken
-import org.catrobat.catroid.formulaeditor.InternTokenType
-import org.catrobat.catroid.formulaeditor.Operators
-import org.catrobat.catroid.test.MockUtil
-import org.catrobat.catroid.test.formulaeditor.FormulaEditorTestUtil
-import org.catrobat.catroid.test.formulaeditor.FormulaEditorTestUtil.testDoubleParameterFunction
+import com.myradev.lunarcode.ProjectManager
+import com.myradev.lunarcode.content.Project
+import com.myradev.lunarcode.content.Scope
+import com.myradev.lunarcode.content.Sprite
+import com.myradev.lunarcode.formulaeditor.Functions
+import com.myradev.lunarcode.formulaeditor.Functions.ARCTAN2
+import com.myradev.lunarcode.formulaeditor.Functions.MAX
+import com.myradev.lunarcode.formulaeditor.Functions.MIN
+import com.myradev.lunarcode.formulaeditor.Functions.MOD
+import com.myradev.lunarcode.formulaeditor.Functions.RAND
+import com.myradev.lunarcode.formulaeditor.InternToken
+import com.myradev.lunarcode.formulaeditor.InternTokenType
+import com.myradev.lunarcode.formulaeditor.Operators
+import com.myradev.lunarcode.test.MockUtil
+import com.myradev.lunarcode.test.formulaeditor.FormulaEditorTestUtil
+import com.myradev.lunarcode.test.formulaeditor.FormulaEditorTestUtil.testDoubleParameterFunction
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith

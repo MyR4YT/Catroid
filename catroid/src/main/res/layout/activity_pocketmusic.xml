@@ -48,7 +48,7 @@
             android:weightSum="1"
             android:layout_above="@id/pocketmusic_play_button"
             android:orientation="horizontal"> 
-            <org.catrobat.catroid.pocketmusic.ui.PianoView
+            <com.myradev.lunarcode.pocketmusic.ui.PianoView
                 android:id="@+id/musicdroid_piano"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -61,12 +61,12 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
-                    <org.catrobat.catroid.pocketmusic.ui.TactScrollRecyclerView
+                    <com.myradev.lunarcode.pocketmusic.ui.TactScrollRecyclerView
                         android:id="@+id/tact_scroller"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:scrollbars="none"/>
-                    <org.catrobat.catroid.pocketmusic.fastscroller.FastScroller
+                    <com.myradev.lunarcode.pocketmusic.fastscroller.FastScroller
                         android:id="@+id/fastscroll"
                         android:orientation="horizontal"
                         android:layout_width="match_parent"

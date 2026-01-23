@@ -20,16 +20,16 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.catrobat.catroid.test.stage
+package com.myradev.lunarcode.test.stage
 
 import com.badlogic.gdx.scenes.scene2d.actions.SequenceAction
-import org.catrobat.catroid.ProjectManager
-import org.catrobat.catroid.content.Project
-import org.catrobat.catroid.content.Scope
-import org.catrobat.catroid.content.Sprite
-import org.catrobat.catroid.sensing.ColorCollisionDetection
-import org.catrobat.catroid.stage.StageListener
-import org.catrobat.catroid.test.MockUtil
+import com.myradev.lunarcode.ProjectManager
+import com.myradev.lunarcode.content.Project
+import com.myradev.lunarcode.content.Scope
+import com.myradev.lunarcode.content.Sprite
+import com.myradev.lunarcode.sensing.ColorCollisionDetection
+import com.myradev.lunarcode.stage.StageListener
+import com.myradev.lunarcode.test.MockUtil
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Test

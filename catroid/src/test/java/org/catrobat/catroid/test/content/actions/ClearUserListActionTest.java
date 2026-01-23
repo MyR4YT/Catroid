@@ -21,10 +21,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.content.actions;
+package com.myradev.lunarcode.test.content.actions;
 
-import org.catrobat.catroid.content.actions.ClearUserListAction;
-import org.catrobat.catroid.formulaeditor.UserList;
+import com.myradev.lunarcode.content.actions.ClearUserListAction;
+import com.myradev.lunarcode.formulaeditor.UserList;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

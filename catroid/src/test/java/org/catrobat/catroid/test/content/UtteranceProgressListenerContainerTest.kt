@@ -21,10 +21,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 /*
-package org.catrobat.catroid.test.content
+package com.myradev.lunarcode.test.content
 
 import android.speech.tts.UtteranceProgressListener
-import org.catrobat.catroid.stage.UtteranceProgressListenerContainer
+import com.myradev.lunarcode.stage.UtteranceProgressListenerContainer
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith

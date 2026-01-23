@@ -21,17 +21,17 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.ui.brickadapter
+package com.myradev.lunarcode.test.ui.brickadapter
 
-import org.catrobat.catroid.content.Script
-import org.catrobat.catroid.content.Sprite
-import org.catrobat.catroid.content.StartScript
-import org.catrobat.catroid.content.bricks.ChangeSizeByNBrick
-import org.catrobat.catroid.content.bricks.ForeverBrick
-import org.catrobat.catroid.content.bricks.IfLogicBeginBrick
-import org.catrobat.catroid.content.bricks.RepeatBrick
-import org.catrobat.catroid.content.bricks.SetXBrick
-import org.catrobat.catroid.ui.recyclerview.adapter.BrickAdapter
+import com.myradev.lunarcode.content.Script
+import com.myradev.lunarcode.content.Sprite
+import com.myradev.lunarcode.content.StartScript
+import com.myradev.lunarcode.content.bricks.ChangeSizeByNBrick
+import com.myradev.lunarcode.content.bricks.ForeverBrick
+import com.myradev.lunarcode.content.bricks.IfLogicBeginBrick
+import com.myradev.lunarcode.content.bricks.RepeatBrick
+import com.myradev.lunarcode.content.bricks.SetXBrick
+import com.myradev.lunarcode.ui.recyclerview.adapter.BrickAdapter
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue

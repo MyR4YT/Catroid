@@ -21,11 +21,11 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.utiltests;
+package com.myradev.lunarcode.test.utiltests;
 
 import com.google.common.collect.Lists;
 
-import org.catrobat.catroid.ui.recyclerview.util.UniqueNameProvider;
+import com.myradev.lunarcode.ui.recyclerview.util.UniqueNameProvider;
 import org.junit.Before;
 import org.junit.Test;
 

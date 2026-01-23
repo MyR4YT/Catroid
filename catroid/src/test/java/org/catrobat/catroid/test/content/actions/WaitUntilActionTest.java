@@ -20,19 +20,19 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.catrobat.catroid.test.content.actions;
+package com.myradev.lunarcode.test.content.actions;
 
-import org.catrobat.catroid.ProjectManager;
-import org.catrobat.catroid.content.Project;
-import org.catrobat.catroid.content.Sprite;
-import org.catrobat.catroid.content.StartScript;
-import org.catrobat.catroid.content.bricks.WaitUntilBrick;
-import org.catrobat.catroid.content.eventids.EventId;
-import org.catrobat.catroid.formulaeditor.Formula;
-import org.catrobat.catroid.formulaeditor.FormulaElement;
-import org.catrobat.catroid.formulaeditor.Operators;
-import org.catrobat.catroid.formulaeditor.UserVariable;
-import org.catrobat.catroid.test.MockUtil;
+import com.myradev.lunarcode.ProjectManager;
+import com.myradev.lunarcode.content.Project;
+import com.myradev.lunarcode.content.Sprite;
+import com.myradev.lunarcode.content.StartScript;
+import com.myradev.lunarcode.content.bricks.WaitUntilBrick;
+import com.myradev.lunarcode.content.eventids.EventId;
+import com.myradev.lunarcode.formulaeditor.Formula;
+import com.myradev.lunarcode.formulaeditor.FormulaElement;
+import com.myradev.lunarcode.formulaeditor.Operators;
+import com.myradev.lunarcode.formulaeditor.UserVariable;
+import com.myradev.lunarcode.test.MockUtil;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

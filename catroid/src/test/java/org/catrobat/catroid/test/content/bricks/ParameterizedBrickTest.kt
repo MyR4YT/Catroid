@@ -20,20 +20,20 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.catrobat.catroid.test.content.bricks
+package com.myradev.lunarcode.test.content.bricks
 
-import org.catrobat.catroid.ProjectManager
-import org.catrobat.catroid.content.Project
-import org.catrobat.catroid.content.Scene
-import org.catrobat.catroid.content.Script
-import org.catrobat.catroid.content.Sprite
-import org.catrobat.catroid.content.WhenScript
-import org.catrobat.catroid.content.bricks.ParameterizedBrick
-import org.catrobat.catroid.formulaeditor.UserData
-import org.catrobat.catroid.formulaeditor.UserList
-import org.catrobat.catroid.formulaeditor.UserVariable
-import org.catrobat.catroid.test.MockUtil
-import org.catrobat.catroid.utils.UserDataUtil.renameUserData
+import com.myradev.lunarcode.ProjectManager
+import com.myradev.lunarcode.content.Project
+import com.myradev.lunarcode.content.Scene
+import com.myradev.lunarcode.content.Script
+import com.myradev.lunarcode.content.Sprite
+import com.myradev.lunarcode.content.WhenScript
+import com.myradev.lunarcode.content.bricks.ParameterizedBrick
+import com.myradev.lunarcode.formulaeditor.UserData
+import com.myradev.lunarcode.formulaeditor.UserList
+import com.myradev.lunarcode.formulaeditor.UserVariable
+import com.myradev.lunarcode.test.MockUtil
+import com.myradev.lunarcode.utils.UserDataUtil.renameUserData
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Test

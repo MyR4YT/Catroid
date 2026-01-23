@@ -20,11 +20,11 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.catrobat.catroid.test.utiltests;
+package com.myradev.lunarcode.test.utiltests;
 
-import org.catrobat.catroid.content.XmlHeader;
-import org.catrobat.catroid.stage.ShowBubbleActor;
-import org.catrobat.catroid.utils.Utils;
+import com.myradev.lunarcode.content.XmlHeader;
+import com.myradev.lunarcode.stage.ShowBubbleActor;
+import com.myradev.lunarcode.utils.Utils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;

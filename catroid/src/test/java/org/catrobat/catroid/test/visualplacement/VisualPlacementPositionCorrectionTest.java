@@ -21,13 +21,13 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.visualplacement;
+package com.myradev.lunarcode.test.visualplacement;
 
 import android.view.MotionEvent;
 import android.widget.ImageView;
 
-import org.catrobat.catroid.visualplacement.CoordinateInterface;
-import org.catrobat.catroid.visualplacement.VisualPlacementTouchListener;
+import com.myradev.lunarcode.visualplacement.CoordinateInterface;
+import com.myradev.lunarcode.visualplacement.VisualPlacementTouchListener;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

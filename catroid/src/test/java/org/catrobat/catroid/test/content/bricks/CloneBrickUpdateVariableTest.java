@@ -20,26 +20,26 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.catrobat.catroid.test.content.bricks;
+package com.myradev.lunarcode.test.content.bricks;
 
-import org.catrobat.catroid.ProjectManager;
-import org.catrobat.catroid.content.Project;
-import org.catrobat.catroid.content.Sprite;
-import org.catrobat.catroid.content.StartScript;
-import org.catrobat.catroid.content.bricks.AskBrick;
-import org.catrobat.catroid.content.bricks.AskSpeechBrick;
-import org.catrobat.catroid.content.bricks.ChangeVariableBrick;
-import org.catrobat.catroid.content.bricks.HideTextBrick;
-import org.catrobat.catroid.content.bricks.ReadVariableFromDeviceBrick;
-import org.catrobat.catroid.content.bricks.SetVariableBrick;
-import org.catrobat.catroid.content.bricks.ShowTextBrick;
-import org.catrobat.catroid.content.bricks.ShowTextColorSizeAlignmentBrick;
-import org.catrobat.catroid.content.bricks.UserVariableBrickInterface;
-import org.catrobat.catroid.content.bricks.WebRequestBrick;
-import org.catrobat.catroid.content.bricks.WriteVariableOnDeviceBrick;
-import org.catrobat.catroid.formulaeditor.UserVariable;
-import org.catrobat.catroid.test.MockUtil;
-import org.catrobat.catroid.ui.recyclerview.controller.SpriteController;
+import com.myradev.lunarcode.ProjectManager;
+import com.myradev.lunarcode.content.Project;
+import com.myradev.lunarcode.content.Sprite;
+import com.myradev.lunarcode.content.StartScript;
+import com.myradev.lunarcode.content.bricks.AskBrick;
+import com.myradev.lunarcode.content.bricks.AskSpeechBrick;
+import com.myradev.lunarcode.content.bricks.ChangeVariableBrick;
+import com.myradev.lunarcode.content.bricks.HideTextBrick;
+import com.myradev.lunarcode.content.bricks.ReadVariableFromDeviceBrick;
+import com.myradev.lunarcode.content.bricks.SetVariableBrick;
+import com.myradev.lunarcode.content.bricks.ShowTextBrick;
+import com.myradev.lunarcode.content.bricks.ShowTextColorSizeAlignmentBrick;
+import com.myradev.lunarcode.content.bricks.UserVariableBrickInterface;
+import com.myradev.lunarcode.content.bricks.WebRequestBrick;
+import com.myradev.lunarcode.content.bricks.WriteVariableOnDeviceBrick;
+import com.myradev.lunarcode.formulaeditor.UserVariable;
+import com.myradev.lunarcode.test.MockUtil;
+import com.myradev.lunarcode.ui.recyclerview.controller.SpriteController;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

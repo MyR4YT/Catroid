@@ -20,9 +20,9 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.catrobat.catroid.ui
+package com.myradev.lunarcode.ui
 
-import org.catrobat.catroid.bluetooth.ConnectBluetoothDeviceActivity
+import com.myradev.lunarcode.bluetooth.ConnectBluetoothDeviceActivity
 
 class ConnectBluetoothDeviceTestActivity : ConnectBluetoothDeviceActivity() {
     override fun initBluetooth() = Unit

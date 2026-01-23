@@ -21,14 +21,14 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test;
+package com.myradev.lunarcode.test;
 
 import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 
-import org.catrobat.catroid.R;
-import org.catrobat.catroid.common.ScreenValues;
+import com.myradev.lunarcode.R;
+import com.myradev.lunarcode.common.ScreenValues;
 import org.mockito.Mockito;
 
 import static org.mockito.ArgumentMatchers.any;

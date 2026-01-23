@@ -20,17 +20,17 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.catrobat.catroid.test.note.trackgrid;
+package com.myradev.lunarcode.test.note.trackgrid;
 
-import org.catrobat.catroid.pocketmusic.note.MusicalBeat;
-import org.catrobat.catroid.pocketmusic.note.MusicalInstrument;
-import org.catrobat.catroid.pocketmusic.note.MusicalKey;
-import org.catrobat.catroid.pocketmusic.note.NoteLength;
-import org.catrobat.catroid.pocketmusic.note.NoteName;
-import org.catrobat.catroid.pocketmusic.note.trackgrid.GridRow;
-import org.catrobat.catroid.pocketmusic.note.trackgrid.GridRowPosition;
-import org.catrobat.catroid.pocketmusic.note.trackgrid.TrackGrid;
-import org.catrobat.catroid.pocketmusic.ui.TrackRowView;
+import com.myradev.lunarcode.pocketmusic.note.MusicalBeat;
+import com.myradev.lunarcode.pocketmusic.note.MusicalInstrument;
+import com.myradev.lunarcode.pocketmusic.note.MusicalKey;
+import com.myradev.lunarcode.pocketmusic.note.NoteLength;
+import com.myradev.lunarcode.pocketmusic.note.NoteName;
+import com.myradev.lunarcode.pocketmusic.note.trackgrid.GridRow;
+import com.myradev.lunarcode.pocketmusic.note.trackgrid.GridRowPosition;
+import com.myradev.lunarcode.pocketmusic.note.trackgrid.TrackGrid;
+import com.myradev.lunarcode.pocketmusic.ui.TrackRowView;
 
 import java.util.ArrayList;
 import java.util.List;

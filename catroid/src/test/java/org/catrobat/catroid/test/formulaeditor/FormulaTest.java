@@ -21,23 +21,23 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.formulaeditor;
+package com.myradev.lunarcode.test.formulaeditor;
 
 import android.content.Context;
 
-import org.catrobat.catroid.ProjectManager;
-import org.catrobat.catroid.content.Scope;
-import org.catrobat.catroid.content.bricks.Brick;
-import org.catrobat.catroid.formulaeditor.Formula;
-import org.catrobat.catroid.formulaeditor.Formula.StringProvider;
-import org.catrobat.catroid.formulaeditor.FormulaElement;
-import org.catrobat.catroid.formulaeditor.FormulaElement.ElementType;
-import org.catrobat.catroid.formulaeditor.Functions;
-import org.catrobat.catroid.formulaeditor.InternFormulaParser;
-import org.catrobat.catroid.formulaeditor.InternToken;
-import org.catrobat.catroid.formulaeditor.InternTokenType;
-import org.catrobat.catroid.formulaeditor.Operators;
-import org.catrobat.catroid.formulaeditor.Sensors;
+import com.myradev.lunarcode.ProjectManager;
+import com.myradev.lunarcode.content.Scope;
+import com.myradev.lunarcode.content.bricks.Brick;
+import com.myradev.lunarcode.formulaeditor.Formula;
+import com.myradev.lunarcode.formulaeditor.Formula.StringProvider;
+import com.myradev.lunarcode.formulaeditor.FormulaElement;
+import com.myradev.lunarcode.formulaeditor.FormulaElement.ElementType;
+import com.myradev.lunarcode.formulaeditor.Functions;
+import com.myradev.lunarcode.formulaeditor.InternFormulaParser;
+import com.myradev.lunarcode.formulaeditor.InternToken;
+import com.myradev.lunarcode.formulaeditor.InternTokenType;
+import com.myradev.lunarcode.formulaeditor.Operators;
+import com.myradev.lunarcode.formulaeditor.Sensors;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

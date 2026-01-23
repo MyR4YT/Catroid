@@ -21,10 +21,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 /*
-package org.catrobat.catroid.test.xmlformat
+package com.myradev.lunarcode.test.xmlformat
 
-import org.catrobat.catroid.content.Setting
-import org.catrobat.catroid.io.XstreamSerializer
+import com.myradev.lunarcode.content.Setting
+import com.myradev.lunarcode.io.XstreamSerializer
 import org.hamcrest.Matchers
 import org.junit.Assert
 import org.junit.Test
@@ -56,7 +56,7 @@ class SettingsXmlSerializerTest(
     @kotlin.jvm.Throws(InstantiationException::class, IllegalAccessException::class)
     fun testMissingAliasInComponent() {
         val xml = mockAndSerialize(componentClass)
-        Assert.assertThat(xml, Matchers.not(Matchers.containsString("org.catrobat.catroid")))
+        Assert.assertThat(xml, Matchers.not(Matchers.containsString("com.myradev.lunarcode")))
     }
 
     private fun mockAndSerialize(componentClass: Class<Serializable>): String {

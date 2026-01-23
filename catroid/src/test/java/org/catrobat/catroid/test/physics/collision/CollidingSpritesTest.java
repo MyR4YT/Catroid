@@ -21,10 +21,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.physics.collision;
+package com.myradev.lunarcode.test.physics.collision;
 
-import org.catrobat.catroid.content.Sprite;
-import org.catrobat.catroid.physics.CollidingSprites;
+import com.myradev.lunarcode.content.Sprite;
+import com.myradev.lunarcode.physics.CollidingSprites;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;

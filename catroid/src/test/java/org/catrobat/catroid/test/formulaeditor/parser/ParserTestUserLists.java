@@ -20,27 +20,27 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.catrobat.catroid.test.formulaeditor.parser;
+package com.myradev.lunarcode.test.formulaeditor.parser;
 
 import com.badlogic.gdx.scenes.scene2d.actions.SequenceAction;
 
-import org.catrobat.catroid.ProjectManager;
-import org.catrobat.catroid.content.Project;
-import org.catrobat.catroid.content.Scope;
-import org.catrobat.catroid.content.Sprite;
-import org.catrobat.catroid.content.StartScript;
-import org.catrobat.catroid.content.bricks.ChangeSizeByNBrick;
-import org.catrobat.catroid.formulaeditor.Formula;
-import org.catrobat.catroid.formulaeditor.FormulaElement;
-import org.catrobat.catroid.formulaeditor.Functions;
-import org.catrobat.catroid.formulaeditor.InternFormulaParser;
-import org.catrobat.catroid.formulaeditor.InternToken;
-import org.catrobat.catroid.formulaeditor.InternTokenType;
-import org.catrobat.catroid.formulaeditor.UserDataWrapper;
-import org.catrobat.catroid.formulaeditor.UserList;
-import org.catrobat.catroid.formulaeditor.UserVariable;
-import org.catrobat.catroid.test.MockUtil;
-import org.catrobat.catroid.test.formulaeditor.FormulaEditorTestUtil;
+import com.myradev.lunarcode.ProjectManager;
+import com.myradev.lunarcode.content.Project;
+import com.myradev.lunarcode.content.Scope;
+import com.myradev.lunarcode.content.Sprite;
+import com.myradev.lunarcode.content.StartScript;
+import com.myradev.lunarcode.content.bricks.ChangeSizeByNBrick;
+import com.myradev.lunarcode.formulaeditor.Formula;
+import com.myradev.lunarcode.formulaeditor.FormulaElement;
+import com.myradev.lunarcode.formulaeditor.Functions;
+import com.myradev.lunarcode.formulaeditor.InternFormulaParser;
+import com.myradev.lunarcode.formulaeditor.InternToken;
+import com.myradev.lunarcode.formulaeditor.InternTokenType;
+import com.myradev.lunarcode.formulaeditor.UserDataWrapper;
+import com.myradev.lunarcode.formulaeditor.UserList;
+import com.myradev.lunarcode.formulaeditor.UserVariable;
+import com.myradev.lunarcode.test.MockUtil;
+import com.myradev.lunarcode.test.formulaeditor.FormulaEditorTestUtil;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

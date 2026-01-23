@@ -21,12 +21,12 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.formulaeditor;
+package com.myradev.lunarcode.test.formulaeditor;
 
-import org.catrobat.catroid.formulaeditor.Functions;
-import org.catrobat.catroid.formulaeditor.InternFormulaUtils;
-import org.catrobat.catroid.formulaeditor.InternToken;
-import org.catrobat.catroid.formulaeditor.InternTokenType;
+import com.myradev.lunarcode.formulaeditor.Functions;
+import com.myradev.lunarcode.formulaeditor.InternFormulaUtils;
+import com.myradev.lunarcode.formulaeditor.InternToken;
+import com.myradev.lunarcode.formulaeditor.InternTokenType;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
@@ -40,7 +40,7 @@ import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertFalse;
 import static junit.framework.Assert.assertNull;
 
-import static org.catrobat.catroid.test.formulaeditor.FormulaEditorTestUtil.assertEqualsTokenLists;
+import static com.myradev.lunarcode.test.formulaeditor.FormulaEditorTestUtil.assertEqualsTokenLists;
 
 @RunWith(JUnit4.class)
 public class InternFormulaUtilsTest {

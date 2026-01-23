@@ -21,21 +21,21 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.formulaeditor;
+package com.myradev.lunarcode.test.formulaeditor;
 
-import org.catrobat.catroid.ProjectManager;
-import org.catrobat.catroid.common.BrickValues;
-import org.catrobat.catroid.common.LookData;
-import org.catrobat.catroid.content.Project;
-import org.catrobat.catroid.content.Script;
-import org.catrobat.catroid.content.Sprite;
-import org.catrobat.catroid.content.StartScript;
-import org.catrobat.catroid.content.bricks.SetXBrick;
-import org.catrobat.catroid.formulaeditor.Formula;
-import org.catrobat.catroid.formulaeditor.UserList;
-import org.catrobat.catroid.formulaeditor.UserVariable;
-import org.catrobat.catroid.test.MockUtil;
-import org.catrobat.catroid.utils.NumberFormats;
+import com.myradev.lunarcode.ProjectManager;
+import com.myradev.lunarcode.common.BrickValues;
+import com.myradev.lunarcode.common.LookData;
+import com.myradev.lunarcode.content.Project;
+import com.myradev.lunarcode.content.Script;
+import com.myradev.lunarcode.content.Sprite;
+import com.myradev.lunarcode.content.StartScript;
+import com.myradev.lunarcode.content.bricks.SetXBrick;
+import com.myradev.lunarcode.formulaeditor.Formula;
+import com.myradev.lunarcode.formulaeditor.UserList;
+import com.myradev.lunarcode.formulaeditor.UserVariable;
+import com.myradev.lunarcode.test.MockUtil;
+import com.myradev.lunarcode.utils.NumberFormats;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

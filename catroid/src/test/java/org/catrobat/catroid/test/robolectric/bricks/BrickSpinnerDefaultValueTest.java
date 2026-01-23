@@ -21,7 +21,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.robolectric.bricks;
+package com.myradev.lunarcode.test.robolectric.bricks;
 
 import android.app.Activity;
 import android.content.Context;
@@ -31,39 +31,39 @@ import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Spinner;
 
-import org.catrobat.catroid.ProjectManager;
-import org.catrobat.catroid.R;
-import org.catrobat.catroid.common.Nameable;
-import org.catrobat.catroid.content.Project;
-import org.catrobat.catroid.content.Script;
-import org.catrobat.catroid.content.Sprite;
-import org.catrobat.catroid.content.StartScript;
-import org.catrobat.catroid.content.bricks.AddItemToUserListBrick;
-import org.catrobat.catroid.content.bricks.AskBrick;
-import org.catrobat.catroid.content.bricks.AskSpeechBrick;
-import org.catrobat.catroid.content.bricks.Brick;
-import org.catrobat.catroid.content.bricks.BroadcastBrick;
-import org.catrobat.catroid.content.bricks.BroadcastReceiverBrick;
-import org.catrobat.catroid.content.bricks.ChangeVariableBrick;
-import org.catrobat.catroid.content.bricks.CloneBrick;
-import org.catrobat.catroid.content.bricks.DeleteItemOfUserListBrick;
-import org.catrobat.catroid.content.bricks.HideTextBrick;
-import org.catrobat.catroid.content.bricks.InsertItemIntoUserListBrick;
-import org.catrobat.catroid.content.bricks.PlaySoundAndWaitBrick;
-import org.catrobat.catroid.content.bricks.PlaySoundBrick;
-import org.catrobat.catroid.content.bricks.ReplaceItemInUserListBrick;
-import org.catrobat.catroid.content.bricks.SceneStartBrick;
-import org.catrobat.catroid.content.bricks.SceneTransitionBrick;
-import org.catrobat.catroid.content.bricks.SetBackgroundAndWaitBrick;
-import org.catrobat.catroid.content.bricks.SetBackgroundBrick;
-import org.catrobat.catroid.content.bricks.SetLookBrick;
-import org.catrobat.catroid.content.bricks.SetVariableBrick;
-import org.catrobat.catroid.content.bricks.SetXBrick;
-import org.catrobat.catroid.content.bricks.ShowTextBrick;
-import org.catrobat.catroid.content.bricks.WhenBackgroundChangesBrick;
-import org.catrobat.catroid.content.bricks.WhenBounceOffBrick;
-import org.catrobat.catroid.ui.SpriteActivity;
-import org.catrobat.catroid.ui.fragment.CategoryBricksFactory;
+import com.myradev.lunarcode.ProjectManager;
+import com.myradev.lunarcode.R;
+import com.myradev.lunarcode.common.Nameable;
+import com.myradev.lunarcode.content.Project;
+import com.myradev.lunarcode.content.Script;
+import com.myradev.lunarcode.content.Sprite;
+import com.myradev.lunarcode.content.StartScript;
+import com.myradev.lunarcode.content.bricks.AddItemToUserListBrick;
+import com.myradev.lunarcode.content.bricks.AskBrick;
+import com.myradev.lunarcode.content.bricks.AskSpeechBrick;
+import com.myradev.lunarcode.content.bricks.Brick;
+import com.myradev.lunarcode.content.bricks.BroadcastBrick;
+import com.myradev.lunarcode.content.bricks.BroadcastReceiverBrick;
+import com.myradev.lunarcode.content.bricks.ChangeVariableBrick;
+import com.myradev.lunarcode.content.bricks.CloneBrick;
+import com.myradev.lunarcode.content.bricks.DeleteItemOfUserListBrick;
+import com.myradev.lunarcode.content.bricks.HideTextBrick;
+import com.myradev.lunarcode.content.bricks.InsertItemIntoUserListBrick;
+import com.myradev.lunarcode.content.bricks.PlaySoundAndWaitBrick;
+import com.myradev.lunarcode.content.bricks.PlaySoundBrick;
+import com.myradev.lunarcode.content.bricks.ReplaceItemInUserListBrick;
+import com.myradev.lunarcode.content.bricks.SceneStartBrick;
+import com.myradev.lunarcode.content.bricks.SceneTransitionBrick;
+import com.myradev.lunarcode.content.bricks.SetBackgroundAndWaitBrick;
+import com.myradev.lunarcode.content.bricks.SetBackgroundBrick;
+import com.myradev.lunarcode.content.bricks.SetLookBrick;
+import com.myradev.lunarcode.content.bricks.SetVariableBrick;
+import com.myradev.lunarcode.content.bricks.SetXBrick;
+import com.myradev.lunarcode.content.bricks.ShowTextBrick;
+import com.myradev.lunarcode.content.bricks.WhenBackgroundChangesBrick;
+import com.myradev.lunarcode.content.bricks.WhenBounceOffBrick;
+import com.myradev.lunarcode.ui.SpriteActivity;
+import com.myradev.lunarcode.ui.fragment.CategoryBricksFactory;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -81,8 +81,8 @@ import java.util.List;
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.TestCase.assertNotNull;
 
-import static org.catrobat.catroid.ui.settingsfragments.SettingsFragment.SETTINGS_SHOW_AI_SPEECH_RECOGNITION_SENSORS;
-import static org.catrobat.catroid.ui.settingsfragments.SettingsFragment.SETTINGS_SHOW_AI_SPEECH_SYNTHETIZATION_SENSORS;
+import static com.myradev.lunarcode.ui.settingsfragments.SettingsFragment.SETTINGS_SHOW_AI_SPEECH_RECOGNITION_SENSORS;
+import static com.myradev.lunarcode.ui.settingsfragments.SettingsFragment.SETTINGS_SHOW_AI_SPEECH_SYNTHETIZATION_SENSORS;
 
 @RunWith(ParameterizedRobolectricTestRunner.class)
 @Config(sdk = {Build.VERSION_CODES.P})

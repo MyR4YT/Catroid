@@ -21,9 +21,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.utils
+package com.myradev.lunarcode.utils
 
-import org.catrobat.catroid.utils.FormatNumberUtil.cutTrailingZeros
+import com.myradev.lunarcode.utils.FormatNumberUtil.cutTrailingZeros
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotEquals
 import org.junit.Test

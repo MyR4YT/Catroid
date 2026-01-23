@@ -21,10 +21,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test
+package com.myradev.lunarcode.test
 
 import android.content.Context
-import org.catrobat.catroid.ProjectManager
+import com.myradev.lunarcode.ProjectManager
 
 /**
  * Static singleton methods need to be initialized until they are removed entirely.

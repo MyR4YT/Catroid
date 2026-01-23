@@ -21,23 +21,23 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 /*
-package org.catrobat.catroid.test.content.actions
+package com.myradev.lunarcode.test.content.actions
 
 import com.badlogic.gdx.utils.GdxNativesLoader
-import org.catrobat.catroid.ProjectManager
-import org.catrobat.catroid.content.BroadcastScript
-import org.catrobat.catroid.content.Project
-import org.catrobat.catroid.content.Script
-import org.catrobat.catroid.content.Sprite
-import org.catrobat.catroid.content.StartScript
-import org.catrobat.catroid.content.bricks.BroadcastBrick
-import org.catrobat.catroid.content.bricks.BroadcastWaitBrick
-import org.catrobat.catroid.content.bricks.ChangeXByNBrick
-import org.catrobat.catroid.content.bricks.SetXBrick
-import org.catrobat.catroid.content.bricks.WaitBrick
-import org.catrobat.catroid.content.eventids.EventId
-import org.catrobat.catroid.formulaeditor.Formula
-import org.catrobat.catroid.test.MockUtil
+import com.myradev.lunarcode.ProjectManager
+import com.myradev.lunarcode.content.BroadcastScript
+import com.myradev.lunarcode.content.Project
+import com.myradev.lunarcode.content.Script
+import com.myradev.lunarcode.content.Sprite
+import com.myradev.lunarcode.content.StartScript
+import com.myradev.lunarcode.content.bricks.BroadcastBrick
+import com.myradev.lunarcode.content.bricks.BroadcastWaitBrick
+import com.myradev.lunarcode.content.bricks.ChangeXByNBrick
+import com.myradev.lunarcode.content.bricks.SetXBrick
+import com.myradev.lunarcode.content.bricks.WaitBrick
+import com.myradev.lunarcode.content.eventids.EventId
+import com.myradev.lunarcode.formulaeditor.Formula
+import com.myradev.lunarcode.test.MockUtil
 import org.hamcrest.Matchers
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotEquals

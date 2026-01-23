@@ -21,11 +21,11 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.ui.settingsfragments;
+package com.myradev.lunarcode.test.ui.settingsfragments;
 
 import android.content.SharedPreferences;
 
-import org.catrobat.catroid.ui.settingsfragments.AccessibilityProfile;
+import com.myradev.lunarcode.ui.settingsfragments.AccessibilityProfile;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

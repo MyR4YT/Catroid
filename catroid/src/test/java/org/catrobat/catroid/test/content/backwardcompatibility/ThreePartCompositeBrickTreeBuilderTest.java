@@ -21,16 +21,16 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.content.backwardcompatibility;
+package com.myradev.lunarcode.test.content.backwardcompatibility;
 
-import org.catrobat.catroid.content.backwardcompatibility.BrickTreeBuilder;
-import org.catrobat.catroid.content.bricks.Brick;
-import org.catrobat.catroid.content.bricks.CompositeBrick;
-import org.catrobat.catroid.content.bricks.IfLogicBeginBrick;
-import org.catrobat.catroid.content.bricks.IfLogicElseBrick;
-import org.catrobat.catroid.content.bricks.IfLogicEndBrick;
-import org.catrobat.catroid.content.bricks.PhiroIfLogicBeginBrick;
-import org.catrobat.catroid.content.bricks.RaspiIfLogicBeginBrick;
+import com.myradev.lunarcode.content.backwardcompatibility.BrickTreeBuilder;
+import com.myradev.lunarcode.content.bricks.Brick;
+import com.myradev.lunarcode.content.bricks.CompositeBrick;
+import com.myradev.lunarcode.content.bricks.IfLogicBeginBrick;
+import com.myradev.lunarcode.content.bricks.IfLogicElseBrick;
+import com.myradev.lunarcode.content.bricks.IfLogicEndBrick;
+import com.myradev.lunarcode.content.bricks.PhiroIfLogicBeginBrick;
+import com.myradev.lunarcode.content.bricks.RaspiIfLogicBeginBrick;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;

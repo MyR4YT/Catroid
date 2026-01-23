@@ -20,9 +20,9 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.catrobat.catroid.test.utiltests;
+package com.myradev.lunarcode.test.utiltests;
 
-import org.catrobat.catroid.utils.FileMetaDataExtractor;
+import com.myradev.lunarcode.utils.FileMetaDataExtractor;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;

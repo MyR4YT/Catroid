@@ -21,13 +21,13 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.stage;
+package com.myradev.lunarcode.stage;
 
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 
-import org.catrobat.catroid.embroidery.EmbroideryPatternManager;
-import org.catrobat.catroid.embroidery.StitchPoint;
+import com.myradev.lunarcode.embroidery.EmbroideryPatternManager;
+import com.myradev.lunarcode.embroidery.StitchPoint;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

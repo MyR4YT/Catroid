@@ -21,31 +21,31 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 /*
-package org.catrobat.catroid.test.content.actions
+package com.myradev.lunarcode.test.content.actions
 
 import android.content.Context
 import com.badlogic.gdx.scenes.scene2d.actions.SequenceAction
-import org.catrobat.catroid.CatroidApplication
-import org.catrobat.catroid.ProjectManager
-import org.catrobat.catroid.common.Constants
-import org.catrobat.catroid.common.FlavoredConstants
-import org.catrobat.catroid.content.Project
-import org.catrobat.catroid.content.Scope
-import org.catrobat.catroid.content.Sprite
-import org.catrobat.catroid.content.actions.SpeakAction
-import org.catrobat.catroid.content.bricks.Brick
-import org.catrobat.catroid.content.bricks.Brick.ResourcesSet
-import org.catrobat.catroid.content.bricks.SpeakBrick
-import org.catrobat.catroid.formulaeditor.Formula
-import org.catrobat.catroid.formulaeditor.FormulaElement
-import org.catrobat.catroid.formulaeditor.FormulaElement.ElementType.FUNCTION
-import org.catrobat.catroid.formulaeditor.FormulaElement.ElementType.STRING
-import org.catrobat.catroid.formulaeditor.Functions.JOIN
-import org.catrobat.catroid.stage.SpeechSynthesizer
-import org.catrobat.catroid.test.MockUtil
-import org.catrobat.catroid.test.PowerMockUtil.Companion.mockStaticAppContextAndInitializeStaticSingletons
-import org.catrobat.catroid.test.utils.Reflection.getPrivateField
-import org.catrobat.catroid.utils.MobileServiceAvailability
+import com.myradev.lunarcode.CatroidApplication
+import com.myradev.lunarcode.ProjectManager
+import com.myradev.lunarcode.common.Constants
+import com.myradev.lunarcode.common.FlavoredConstants
+import com.myradev.lunarcode.content.Project
+import com.myradev.lunarcode.content.Scope
+import com.myradev.lunarcode.content.Sprite
+import com.myradev.lunarcode.content.actions.SpeakAction
+import com.myradev.lunarcode.content.bricks.Brick
+import com.myradev.lunarcode.content.bricks.Brick.ResourcesSet
+import com.myradev.lunarcode.content.bricks.SpeakBrick
+import com.myradev.lunarcode.formulaeditor.Formula
+import com.myradev.lunarcode.formulaeditor.FormulaElement
+import com.myradev.lunarcode.formulaeditor.FormulaElement.ElementType.FUNCTION
+import com.myradev.lunarcode.formulaeditor.FormulaElement.ElementType.STRING
+import com.myradev.lunarcode.formulaeditor.Functions.JOIN
+import com.myradev.lunarcode.stage.SpeechSynthesizer
+import com.myradev.lunarcode.test.MockUtil
+import com.myradev.lunarcode.test.PowerMockUtil.Companion.mockStaticAppContextAndInitializeStaticSingletons
+import com.myradev.lunarcode.test.utils.Reflection.getPrivateField
+import com.myradev.lunarcode.utils.MobileServiceAvailability
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Before

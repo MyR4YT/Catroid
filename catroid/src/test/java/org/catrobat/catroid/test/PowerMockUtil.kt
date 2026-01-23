@@ -21,10 +21,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 /*
-package org.catrobat.catroid.test
+package com.myradev.lunarcode.test
 
 import android.content.Context
-import org.catrobat.catroid.CatroidApplication
+import com.myradev.lunarcode.CatroidApplication
 import org.mockito.Mockito
 import org.powermock.api.mockito.PowerMockito
 

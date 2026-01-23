@@ -21,9 +21,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.web
+package com.myradev.lunarcode.test.web
 
-import org.catrobat.catroid.web.Cookie
+import com.myradev.lunarcode.web.Cookie
 import org.junit.Assert.assertEquals
 import org.junit.Test
 

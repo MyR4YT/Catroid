@@ -21,14 +21,14 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.content.actions;
+package com.myradev.lunarcode.test.content.actions;
 
 import com.badlogic.gdx.scenes.scene2d.Action;
 
-import org.catrobat.catroid.common.BrickValues;
-import org.catrobat.catroid.content.ActionFactory;
-import org.catrobat.catroid.content.Sprite;
-import org.catrobat.catroid.content.actions.GoToRandomPositionAction;
+import com.myradev.lunarcode.common.BrickValues;
+import com.myradev.lunarcode.content.ActionFactory;
+import com.myradev.lunarcode.content.Sprite;
+import com.myradev.lunarcode.content.actions.GoToRandomPositionAction;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;

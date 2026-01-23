@@ -36,7 +36,7 @@
         android:gravity="center_vertical"
         android:visibility="gone" />
 
-    <org.catrobat.catroid.ui.BrickLayout
+    <com.myradev.lunarcode.ui.BrickLayout
         android:id="@+id/brick_ev3_motor_move_layout"
         style="@style/BrickContainer.Lego.Big">
 
@@ -80,6 +80,6 @@
             android:text="@string/nxt_motor_speed">
         </TextView>
 
-    </org.catrobat.catroid.ui.BrickLayout>
+    </com.myradev.lunarcode.ui.BrickLayout>
 
 </LinearLayout>

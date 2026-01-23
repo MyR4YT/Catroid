@@ -21,10 +21,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 /*
-package org.catrobat.catroid.test.web;
+package com.myradev.lunarcode.test.web;
 
-import org.catrobat.catroid.ui.recyclerview.fragment.MainMenuFragment;
-import org.catrobat.catroid.utils.ProjectDownloadUtil;
+import com.myradev.lunarcode.ui.recyclerview.fragment.MainMenuFragment;
+import com.myradev.lunarcode.utils.ProjectDownloadUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;

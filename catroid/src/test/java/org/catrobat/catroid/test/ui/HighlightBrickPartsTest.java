@@ -21,24 +21,24 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.ui;
+package com.myradev.lunarcode.test.ui;
 
 import android.content.Context;
 import android.graphics.Canvas;
 import android.view.View;
 
-import org.catrobat.catroid.ProjectManager;
-import org.catrobat.catroid.content.Project;
-import org.catrobat.catroid.content.Script;
-import org.catrobat.catroid.content.Sprite;
-import org.catrobat.catroid.content.StartScript;
-import org.catrobat.catroid.content.bricks.Brick;
-import org.catrobat.catroid.content.bricks.ForeverBrick;
-import org.catrobat.catroid.content.bricks.IfLogicBeginBrick;
-import org.catrobat.catroid.content.bricks.IfThenLogicBeginBrick;
-import org.catrobat.catroid.test.MockUtil;
-import org.catrobat.catroid.ui.dragndrop.BrickListView;
-import org.catrobat.catroid.ui.recyclerview.adapter.BrickAdapter;
+import com.myradev.lunarcode.ProjectManager;
+import com.myradev.lunarcode.content.Project;
+import com.myradev.lunarcode.content.Script;
+import com.myradev.lunarcode.content.Sprite;
+import com.myradev.lunarcode.content.StartScript;
+import com.myradev.lunarcode.content.bricks.Brick;
+import com.myradev.lunarcode.content.bricks.ForeverBrick;
+import com.myradev.lunarcode.content.bricks.IfLogicBeginBrick;
+import com.myradev.lunarcode.content.bricks.IfThenLogicBeginBrick;
+import com.myradev.lunarcode.test.MockUtil;
+import com.myradev.lunarcode.ui.dragndrop.BrickListView;
+import com.myradev.lunarcode.ui.recyclerview.adapter.BrickAdapter;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

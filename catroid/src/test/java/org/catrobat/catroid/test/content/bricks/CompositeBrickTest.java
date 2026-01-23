@@ -21,19 +21,19 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.content.bricks;
+package com.myradev.lunarcode.test.content.bricks;
 
-import org.catrobat.catroid.content.ActionFactory;
-import org.catrobat.catroid.content.Script;
-import org.catrobat.catroid.content.Sprite;
-import org.catrobat.catroid.content.actions.ScriptSequenceAction;
-import org.catrobat.catroid.content.bricks.Brick;
-import org.catrobat.catroid.content.bricks.BrickBaseType;
-import org.catrobat.catroid.content.bricks.CompositeBrick;
-import org.catrobat.catroid.content.bricks.ForeverBrick;
-import org.catrobat.catroid.content.bricks.IfThenLogicBeginBrick;
-import org.catrobat.catroid.content.bricks.RepeatBrick;
-import org.catrobat.catroid.content.bricks.RepeatUntilBrick;
+import com.myradev.lunarcode.content.ActionFactory;
+import com.myradev.lunarcode.content.Script;
+import com.myradev.lunarcode.content.Sprite;
+import com.myradev.lunarcode.content.actions.ScriptSequenceAction;
+import com.myradev.lunarcode.content.bricks.Brick;
+import com.myradev.lunarcode.content.bricks.BrickBaseType;
+import com.myradev.lunarcode.content.bricks.CompositeBrick;
+import com.myradev.lunarcode.content.bricks.ForeverBrick;
+import com.myradev.lunarcode.content.bricks.IfThenLogicBeginBrick;
+import com.myradev.lunarcode.content.bricks.RepeatBrick;
+import com.myradev.lunarcode.content.bricks.RepeatUntilBrick;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -45,7 +45,7 @@ import java.util.List;
 
 import static junit.framework.Assert.assertNull;
 
-import static org.catrobat.catroid.test.StaticSingletonInitializer.initializeStaticSingletonMethods;
+import static com.myradev.lunarcode.test.StaticSingletonInitializer.initializeStaticSingletonMethods;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotSame;

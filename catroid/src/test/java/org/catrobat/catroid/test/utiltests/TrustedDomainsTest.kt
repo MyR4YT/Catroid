@@ -21,14 +21,14 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 /*
-package org.catrobat.catroid.test.utiltests
+package com.myradev.lunarcode.test.utiltests
 
 import android.content.Context
-import org.catrobat.catroid.CatroidApplication
-import org.catrobat.catroid.TrustedDomainManager
-import org.catrobat.catroid.TrustedDomainManager.isURLTrusted
-import org.catrobat.catroid.common.Constants
-import org.catrobat.catroid.utils.Utils
+import com.myradev.lunarcode.CatroidApplication
+import com.myradev.lunarcode.TrustedDomainManager
+import com.myradev.lunarcode.TrustedDomainManager.isURLTrusted
+import com.myradev.lunarcode.common.Constants
+import com.myradev.lunarcode.utils.Utils
 import org.json.JSONArray
 import org.json.JSONObject
 import org.junit.Assert.assertFalse

@@ -28,20 +28,20 @@
     android:layout_weight="1"
     android:orientation="vertical" >
 
-    <org.catrobat.catroid.ui.ScriptFinder
+    <com.myradev.lunarcode.ui.ScriptFinder
         android:id="@+id/findview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="gone"/>
 
-    <org.catrobat.catroid.ui.dragndrop.BrickListView
+    <com.myradev.lunarcode.ui.dragndrop.BrickListView
         android:id="@android:id/list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clickable="false"
         android:divider="@android:color/transparent"
         android:dividerHeight="@dimen/script_spacing" >
-    </org.catrobat.catroid.ui.dragndrop.BrickListView>
+    </com.myradev.lunarcode.ui.dragndrop.BrickListView>
 
     <RelativeLayout
         android:id="@android:id/empty"

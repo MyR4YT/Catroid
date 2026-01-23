@@ -21,19 +21,19 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.formulaeditor;
+package com.myradev.lunarcode.test.formulaeditor;
 
 import com.badlogic.gdx.scenes.scene2d.actions.SequenceAction;
 
-import org.catrobat.catroid.ProjectManager;
-import org.catrobat.catroid.common.Constants;
-import org.catrobat.catroid.content.Look;
-import org.catrobat.catroid.content.Project;
-import org.catrobat.catroid.content.Scope;
-import org.catrobat.catroid.content.Sprite;
-import org.catrobat.catroid.formulaeditor.FormulaElement;
-import org.catrobat.catroid.formulaeditor.Sensors;
-import org.catrobat.catroid.test.MockUtil;
+import com.myradev.lunarcode.ProjectManager;
+import com.myradev.lunarcode.common.Constants;
+import com.myradev.lunarcode.content.Look;
+import com.myradev.lunarcode.content.Project;
+import com.myradev.lunarcode.content.Scope;
+import com.myradev.lunarcode.content.Sprite;
+import com.myradev.lunarcode.formulaeditor.FormulaElement;
+import com.myradev.lunarcode.formulaeditor.Sensors;
+import com.myradev.lunarcode.test.MockUtil;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

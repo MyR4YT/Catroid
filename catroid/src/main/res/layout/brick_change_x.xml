@@ -37,7 +37,7 @@
         android:visibility="gone">
     </CheckBox>
 
-    <org.catrobat.catroid.ui.BrickLayout
+    <com.myradev.lunarcode.ui.BrickLayout
         android:id="@+id/brick_change_x_layout"
         style="@style/BrickContainer.Motion.Small">
 
@@ -54,6 +54,6 @@
             style="@style/BrickEditText">
         </TextView>
         
-    </org.catrobat.catroid.ui.BrickLayout>
+    </com.myradev.lunarcode.ui.BrickLayout>
 
 </LinearLayout>

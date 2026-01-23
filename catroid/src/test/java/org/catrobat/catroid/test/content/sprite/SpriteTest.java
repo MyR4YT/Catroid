@@ -20,24 +20,24 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.catrobat.catroid.test.content.sprite;
+package com.myradev.lunarcode.test.content.sprite;
 
-import org.catrobat.catroid.ProjectManager;
-import org.catrobat.catroid.content.Project;
-import org.catrobat.catroid.content.Script;
-import org.catrobat.catroid.content.Sprite;
-import org.catrobat.catroid.content.StartScript;
-import org.catrobat.catroid.content.bricks.Brick;
-import org.catrobat.catroid.content.bricks.ChangeBrightnessByNBrick;
-import org.catrobat.catroid.content.bricks.CloneBrick;
-import org.catrobat.catroid.content.bricks.ForeverBrick;
-import org.catrobat.catroid.content.bricks.SetXBrick;
-import org.catrobat.catroid.formulaeditor.Formula;
-import org.catrobat.catroid.formulaeditor.FormulaElement;
-import org.catrobat.catroid.formulaeditor.FormulaElement.ElementType;
-import org.catrobat.catroid.formulaeditor.UserVariable;
-import org.catrobat.catroid.test.MockUtil;
-import org.catrobat.catroid.ui.recyclerview.controller.SpriteController;
+import com.myradev.lunarcode.ProjectManager;
+import com.myradev.lunarcode.content.Project;
+import com.myradev.lunarcode.content.Script;
+import com.myradev.lunarcode.content.Sprite;
+import com.myradev.lunarcode.content.StartScript;
+import com.myradev.lunarcode.content.bricks.Brick;
+import com.myradev.lunarcode.content.bricks.ChangeBrightnessByNBrick;
+import com.myradev.lunarcode.content.bricks.CloneBrick;
+import com.myradev.lunarcode.content.bricks.ForeverBrick;
+import com.myradev.lunarcode.content.bricks.SetXBrick;
+import com.myradev.lunarcode.formulaeditor.Formula;
+import com.myradev.lunarcode.formulaeditor.FormulaElement;
+import com.myradev.lunarcode.formulaeditor.FormulaElement.ElementType;
+import com.myradev.lunarcode.formulaeditor.UserVariable;
+import com.myradev.lunarcode.test.MockUtil;
+import com.myradev.lunarcode.ui.recyclerview.controller.SpriteController;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

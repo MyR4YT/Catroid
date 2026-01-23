@@ -51,7 +51,7 @@
         android:weightSum="1"
         android:layout_above="@id/note_picker_button_ok"
         android:orientation="horizontal"> 
-        <org.catrobat.catroid.pocketmusic.ui.PianoView
+        <com.myradev.lunarcode.pocketmusic.ui.PianoView
             android:id="@+id/musicdroid_piano_notepicker"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -61,7 +61,7 @@
             android:layout_height="match_parent"
             android:layout_weight=".78"
             android:background="@color/solid_black">
-            <org.catrobat.catroid.pocketmusic.ui.NotePickerView
+            <com.myradev.lunarcode.pocketmusic.ui.NotePickerView
                 android:id="@+id/note_picker_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

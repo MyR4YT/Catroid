@@ -21,7 +21,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.robolectric.bricks;
+package com.myradev.lunarcode.test.robolectric.bricks;
 
 import android.app.Activity;
 import android.content.SharedPreferences;
@@ -30,15 +30,15 @@ import android.os.Looper;
 import android.preference.PreferenceManager;
 import android.widget.ListAdapter;
 
-import org.catrobat.catroid.ProjectManager;
-import org.catrobat.catroid.R;
-import org.catrobat.catroid.content.Project;
-import org.catrobat.catroid.content.Script;
-import org.catrobat.catroid.content.Sprite;
-import org.catrobat.catroid.content.StartScript;
-import org.catrobat.catroid.content.bricks.SetXBrick;
-import org.catrobat.catroid.ui.SpriteActivity;
-import org.catrobat.catroid.ui.fragment.BrickCategoryFragment;
+import com.myradev.lunarcode.ProjectManager;
+import com.myradev.lunarcode.R;
+import com.myradev.lunarcode.content.Project;
+import com.myradev.lunarcode.content.Script;
+import com.myradev.lunarcode.content.Sprite;
+import com.myradev.lunarcode.content.StartScript;
+import com.myradev.lunarcode.content.bricks.SetXBrick;
+import com.myradev.lunarcode.ui.SpriteActivity;
+import com.myradev.lunarcode.ui.fragment.BrickCategoryFragment;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -57,15 +57,15 @@ import androidx.fragment.app.Fragment;
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.TestCase.assertNotNull;
 
-import static org.catrobat.catroid.ui.settingsfragments.SettingsFragment.SETTINGS_MINDSTORMS_EV3_BRICKS_CHECKBOX_PREFERENCE;
-import static org.catrobat.catroid.ui.settingsfragments.SettingsFragment.SETTINGS_MINDSTORMS_NXT_BRICKS_CHECKBOX_PREFERENCE;
-import static org.catrobat.catroid.ui.settingsfragments.SettingsFragment.SETTINGS_SHOW_ARDUINO_BRICKS;
-import static org.catrobat.catroid.ui.settingsfragments.SettingsFragment.SETTINGS_SHOW_EMBROIDERY_BRICKS_CHECKBOX_PREFERENCE;
-import static org.catrobat.catroid.ui.settingsfragments.SettingsFragment.SETTINGS_SHOW_JUMPING_SUMO_BRICKS;
-import static org.catrobat.catroid.ui.settingsfragments.SettingsFragment.SETTINGS_SHOW_NFC_BRICKS;
-import static org.catrobat.catroid.ui.settingsfragments.SettingsFragment.SETTINGS_SHOW_PARROT_AR_DRONE_BRICKS;
-import static org.catrobat.catroid.ui.settingsfragments.SettingsFragment.SETTINGS_SHOW_PHIRO_BRICKS_CHECKBOX_PREFERENCE;
-import static org.catrobat.catroid.ui.settingsfragments.SettingsFragment.SETTINGS_SHOW_RASPI_BRICKS;
+import static com.myradev.lunarcode.ui.settingsfragments.SettingsFragment.SETTINGS_MINDSTORMS_EV3_BRICKS_CHECKBOX_PREFERENCE;
+import static com.myradev.lunarcode.ui.settingsfragments.SettingsFragment.SETTINGS_MINDSTORMS_NXT_BRICKS_CHECKBOX_PREFERENCE;
+import static com.myradev.lunarcode.ui.settingsfragments.SettingsFragment.SETTINGS_SHOW_ARDUINO_BRICKS;
+import static com.myradev.lunarcode.ui.settingsfragments.SettingsFragment.SETTINGS_SHOW_EMBROIDERY_BRICKS_CHECKBOX_PREFERENCE;
+import static com.myradev.lunarcode.ui.settingsfragments.SettingsFragment.SETTINGS_SHOW_JUMPING_SUMO_BRICKS;
+import static com.myradev.lunarcode.ui.settingsfragments.SettingsFragment.SETTINGS_SHOW_NFC_BRICKS;
+import static com.myradev.lunarcode.ui.settingsfragments.SettingsFragment.SETTINGS_SHOW_PARROT_AR_DRONE_BRICKS;
+import static com.myradev.lunarcode.ui.settingsfragments.SettingsFragment.SETTINGS_SHOW_PHIRO_BRICKS_CHECKBOX_PREFERENCE;
+import static com.myradev.lunarcode.ui.settingsfragments.SettingsFragment.SETTINGS_SHOW_RASPI_BRICKS;
 import static org.robolectric.Shadows.shadowOf;
 
 @RunWith(RobolectricTestRunner.class)

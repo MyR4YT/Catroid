@@ -34,7 +34,7 @@
         android:gravity="center_vertical"
         android:visibility="gone" />
 
-    <org.catrobat.catroid.ui.BrickLayout
+    <com.myradev.lunarcode.ui.BrickLayout
         android:id="@+id/brick_delete_clone_layout"
         style="@style/BrickContainer.Control.Small">
 
@@ -44,6 +44,6 @@
             android:id="@+id/brick_delete_clone_label"
             style="@style/BrickText.SingleLine"
             android:text="@string/brick_delete_this_clone" />
-    </org.catrobat.catroid.ui.BrickLayout>
+    </com.myradev.lunarcode.ui.BrickLayout>
 
 </LinearLayout>

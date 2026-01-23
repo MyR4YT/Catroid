@@ -20,12 +20,12 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.catrobat.catroid.test.xmlformat;
+package com.myradev.lunarcode.test.xmlformat;
 
 import com.thoughtworks.xstream.converters.basic.FloatConverter;
 
-import org.catrobat.catroid.content.Script;
-import org.catrobat.catroid.io.XstreamSerializer;
+import com.myradev.lunarcode.content.Script;
+import com.myradev.lunarcode.io.XstreamSerializer;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -34,9 +34,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-import static org.catrobat.catroid.test.xmlformat.ClassDiscoverer.getAllSubClassesOf;
-import static org.catrobat.catroid.test.xmlformat.ClassDiscoverer.removeAbstractClasses;
-import static org.catrobat.catroid.test.xmlformat.ClassDiscoverer.removeInnerClasses;
+import static com.myradev.lunarcode.test.xmlformat.ClassDiscoverer.getAllSubClassesOf;
+import static com.myradev.lunarcode.test.xmlformat.ClassDiscoverer.removeAbstractClasses;
+import static com.myradev.lunarcode.test.xmlformat.ClassDiscoverer.removeInnerClasses;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -82,6 +82,6 @@ public class ScriptsXmlSerializerTest {
 	public void testStrayMissingAliasInComponent() throws InstantiationException, IllegalAccessException {
 		Script script = (Script) scriptClass.newInstance();
 		String xml = XstreamSerializer.getInstance().getXstream().toXML(script);
-		assertThat(xml, not(containsString("org.catrobat.catroid")));
+		assertThat(xml, not(containsString("com.myradev.lunarcode")));
 	}
 }

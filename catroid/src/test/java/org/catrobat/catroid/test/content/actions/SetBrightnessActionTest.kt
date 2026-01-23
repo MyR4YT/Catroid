@@ -20,18 +20,18 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.catrobat.catroid.test.content.actions
+package com.myradev.lunarcode.test.content.actions
 
 import org.junit.runner.RunWith
 import org.junit.runners.JUnit4
 import org.junit.rules.ExpectedException
-import org.catrobat.catroid.formulaeditor.Formula
+import com.myradev.lunarcode.formulaeditor.Formula
 import org.junit.Before
-import org.catrobat.catroid.ProjectManager
+import com.myradev.lunarcode.ProjectManager
 import com.badlogic.gdx.scenes.scene2d.actions.SequenceAction
-import org.catrobat.catroid.content.Project
-import org.catrobat.catroid.content.Sprite
-import org.catrobat.catroid.test.MockUtil
+import com.myradev.lunarcode.content.Project
+import com.myradev.lunarcode.content.Sprite
+import com.myradev.lunarcode.test.MockUtil
 import org.junit.Assert
 import org.junit.Rule
 import org.junit.Test

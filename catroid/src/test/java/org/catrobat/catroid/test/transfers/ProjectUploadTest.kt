@@ -21,15 +21,15 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 /*
-package org.catrobat.catroid.test.transfers
+package com.myradev.lunarcode.test.transfers
 
 import android.content.SharedPreferences
-import org.catrobat.catroid.common.Constants
-import org.catrobat.catroid.io.ProjectAndSceneScreenshotLoader
-import org.catrobat.catroid.io.ZipArchiver
-import org.catrobat.catroid.transfers.project.ProjectUpload
-import org.catrobat.catroid.transfers.project.ProjectUploadData
-import org.catrobat.catroid.web.ServerCalls
+import com.myradev.lunarcode.common.Constants
+import com.myradev.lunarcode.io.ProjectAndSceneScreenshotLoader
+import com.myradev.lunarcode.io.ZipArchiver
+import com.myradev.lunarcode.transfers.project.ProjectUpload
+import com.myradev.lunarcode.transfers.project.ProjectUploadData
+import com.myradev.lunarcode.web.ServerCalls
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Assert.fail

@@ -20,9 +20,9 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.catrobat.catroid.test.physics;
+package com.myradev.lunarcode.test.physics;
 
-import org.catrobat.catroid.physics.PhysicsDebugSettings;
+import com.myradev.lunarcode.physics.PhysicsDebugSettings;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;

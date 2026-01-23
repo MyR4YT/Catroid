@@ -21,16 +21,16 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.common;
+package com.myradev.lunarcode.common;
 
 import android.os.Environment;
 
-import org.catrobat.catroid.CatroidApplication;
+import com.myradev.lunarcode.CatroidApplication;
 
 import java.io.File;
 
-import static org.catrobat.catroid.common.Constants.MAIN_URL_HTTPS;
-import static org.catrobat.catroid.common.Constants.UPLOAD_URL;
+import static com.myradev.lunarcode.common.Constants.MAIN_URL_HTTPS;
+import static com.myradev.lunarcode.common.Constants.UPLOAD_URL;
 
 public final class FlavoredConstants {
 	// Web:

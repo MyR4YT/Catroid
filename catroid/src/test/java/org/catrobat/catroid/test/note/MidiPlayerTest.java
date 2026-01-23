@@ -21,14 +21,14 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 /*
-package org.catrobat.catroid.test.note;
+package com.myradev.lunarcode.test.note;
 
-import org.catrobat.catroid.pocketmusic.mididriver.MidiNotePlayer;
-import org.catrobat.catroid.pocketmusic.mididriver.MidiPlayer;
-import org.catrobat.catroid.pocketmusic.note.MusicalBeat;
-import org.catrobat.catroid.pocketmusic.note.Project;
-import org.catrobat.catroid.pocketmusic.note.Track;
-import org.catrobat.catroid.pocketmusic.note.midi.MidiException;
+import com.myradev.lunarcode.pocketmusic.mididriver.MidiNotePlayer;
+import com.myradev.lunarcode.pocketmusic.mididriver.MidiPlayer;
+import com.myradev.lunarcode.pocketmusic.note.MusicalBeat;
+import com.myradev.lunarcode.pocketmusic.note.Project;
+import com.myradev.lunarcode.pocketmusic.note.Track;
+import com.myradev.lunarcode.pocketmusic.note.midi.MidiException;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,0 +1,64 @@
+/*
+ * Catroid: An on-device visual programming system for Android devices
+ * Copyright (C) 2010-2025 The Catrobat Team
+ * (<http://developer.catrobat.org/credits>)
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ * An additional term exception under section 7 of the GNU Affero
+ * General Public License, version 3, is available at
+ * http://developer.catrobat.org/license_additional_term
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+package com.myradev.lunarcode.content.actions;
+
+import com.badlogic.gdx.scenes.scene2d.actions.TemporalAction;
+
+import com.myradev.lunarcode.bluetooth.base.BluetoothDevice;
+import com.myradev.lunarcode.bluetooth.base.BluetoothDeviceService;
+import com.myradev.lunarcode.common.CatroidService;
+import com.myradev.lunarcode.common.ServiceProvider;
+import com.myradev.lunarcode.content.bricks.PhiroMotorStopBrick.Motor;
+import com.myradev.lunarcode.devices.arduino.phiro.Phiro;
+
+public class PhiroMotorStopAction extends TemporalAction {
+
+	private Motor motorEnum;
+
+	private BluetoothDeviceService btService = ServiceProvider.getService(CatroidService.BLUETOOTH_DEVICE_SERVICE);
+
+	@Override
+	protected void update(float percent) {
+
+		Phiro phiro = btService.getDevice(BluetoothDevice.PHIRO);
+		if (phiro == null) {
+			return;
+		}
+
+		switch (motorEnum) {
+			case MOTOR_LEFT:
+				phiro.stopLeftMotor();
+				break;
+			case MOTOR_RIGHT:
+				phiro.stopRightMotor();
+				break;
+			case MOTOR_BOTH:
+				phiro.stopAllMovements();
+				break;
+		}
+	}
+
+	public void setMotorEnum(Motor motorEnum) {
+		this.motorEnum = motorEnum;
+	}
+}

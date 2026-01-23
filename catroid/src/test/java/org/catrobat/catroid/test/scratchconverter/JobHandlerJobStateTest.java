@@ -21,12 +21,12 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.scratchconverter;
+package com.myradev.lunarcode.test.scratchconverter;
 
-import org.catrobat.catroid.scratchconverter.Client;
-import org.catrobat.catroid.scratchconverter.protocol.Job;
-import org.catrobat.catroid.scratchconverter.protocol.JobHandler;
-import org.catrobat.catroid.scratchconverter.protocol.message.job.JobMessage;
+import com.myradev.lunarcode.scratchconverter.Client;
+import com.myradev.lunarcode.scratchconverter.protocol.Job;
+import com.myradev.lunarcode.scratchconverter.protocol.JobHandler;
+import com.myradev.lunarcode.scratchconverter.protocol.message.job.JobMessage;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;

@@ -21,18 +21,18 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.content.backwardcompatibility;
+package com.myradev.lunarcode.test.content.backwardcompatibility;
 
-import org.catrobat.catroid.content.backwardcompatibility.BrickTreeBuilder;
-import org.catrobat.catroid.content.bricks.Brick;
-import org.catrobat.catroid.content.bricks.CompositeBrick;
-import org.catrobat.catroid.content.bricks.ForeverBrick;
-import org.catrobat.catroid.content.bricks.IfThenLogicBeginBrick;
-import org.catrobat.catroid.content.bricks.IfThenLogicEndBrick;
-import org.catrobat.catroid.content.bricks.LoopEndBrick;
-import org.catrobat.catroid.content.bricks.LoopEndlessBrick;
-import org.catrobat.catroid.content.bricks.RepeatBrick;
-import org.catrobat.catroid.content.bricks.RepeatUntilBrick;
+import com.myradev.lunarcode.content.backwardcompatibility.BrickTreeBuilder;
+import com.myradev.lunarcode.content.bricks.Brick;
+import com.myradev.lunarcode.content.bricks.CompositeBrick;
+import com.myradev.lunarcode.content.bricks.ForeverBrick;
+import com.myradev.lunarcode.content.bricks.IfThenLogicBeginBrick;
+import com.myradev.lunarcode.content.bricks.IfThenLogicEndBrick;
+import com.myradev.lunarcode.content.bricks.LoopEndBrick;
+import com.myradev.lunarcode.content.bricks.LoopEndlessBrick;
+import com.myradev.lunarcode.content.bricks.RepeatBrick;
+import com.myradev.lunarcode.content.bricks.RepeatUntilBrick;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;

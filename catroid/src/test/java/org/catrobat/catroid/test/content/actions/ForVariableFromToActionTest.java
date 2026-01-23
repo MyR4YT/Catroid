@@ -21,16 +21,16 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.content.actions;
+package com.myradev.lunarcode.test.content.actions;
 
-import org.catrobat.catroid.content.Script;
-import org.catrobat.catroid.content.Sprite;
-import org.catrobat.catroid.content.StartScript;
-import org.catrobat.catroid.content.bricks.ChangeVariableBrick;
-import org.catrobat.catroid.content.bricks.ForVariableFromToBrick;
-import org.catrobat.catroid.content.eventids.EventId;
-import org.catrobat.catroid.formulaeditor.Formula;
-import org.catrobat.catroid.formulaeditor.UserVariable;
+import com.myradev.lunarcode.content.Script;
+import com.myradev.lunarcode.content.Sprite;
+import com.myradev.lunarcode.content.StartScript;
+import com.myradev.lunarcode.content.bricks.ChangeVariableBrick;
+import com.myradev.lunarcode.content.bricks.ForVariableFromToBrick;
+import com.myradev.lunarcode.content.eventids.EventId;
+import com.myradev.lunarcode.formulaeditor.Formula;
+import com.myradev.lunarcode.formulaeditor.UserVariable;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -38,7 +38,7 @@ import org.junit.runners.JUnit4;
 
 import static junit.framework.Assert.assertEquals;
 
-import static org.catrobat.catroid.test.StaticSingletonInitializer.initializeStaticSingletonMethods;
+import static com.myradev.lunarcode.test.StaticSingletonInitializer.initializeStaticSingletonMethods;
 
 @RunWith(JUnit4.class)
 public class ForVariableFromToActionTest {

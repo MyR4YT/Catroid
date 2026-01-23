@@ -47,7 +47,7 @@ repositories {
 }
 
 ext {
-    appId = 'org.catrobat.catroid'
+    appId = 'com.myradev.lunarcode'
     appName = '@string/app_name'
     manifestAppName = '@string/app_name'
     manifestAppIcon = '@mipmap/ic_launcher'
@@ -105,7 +105,7 @@ def defaultVersionName = "1.3.1"
 android {
     compileSdk = 34
 
-    namespace 'org.catrobat.catroid'
+    namespace 'com.myradev.lunarcode'
 
     buildFeatures {
         buildConfig = true
@@ -116,7 +116,7 @@ android {
         minSdkVersion 28
         targetSdkVersion 34
         applicationId appId
-        testInstrumentationRunner 'org.catrobat.catroid.runner.UiTestApplicationRunner'
+        testInstrumentationRunner 'com.myradev.lunarcode.runner.UiTestApplicationRunner'
         versionCode defaultVersionCode
         versionName defaultVersionName
         println "VersionCode is $versionCode"

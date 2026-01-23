@@ -20,10 +20,10 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.catrobat.catroid.test.web
+package com.myradev.lunarcode.test.web
 
-import org.catrobat.catroid.web.WebConnection
-import org.catrobat.catroid.web.WebConnectionHolder
+import com.myradev.lunarcode.web.WebConnection
+import com.myradev.lunarcode.web.WebConnectionHolder
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue

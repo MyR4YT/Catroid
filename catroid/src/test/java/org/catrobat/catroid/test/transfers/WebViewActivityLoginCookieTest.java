@@ -21,12 +21,12 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.transfers;
+package com.myradev.lunarcode.test.transfers;
 
 import android.content.SharedPreferences;
 import android.webkit.CookieManager;
 
-import org.catrobat.catroid.ui.WebViewActivity;
+import com.myradev.lunarcode.ui.WebViewActivity;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -36,12 +36,12 @@ import org.mockito.Mockito;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
-import static org.catrobat.catroid.common.Constants.NO_TOKEN;
-import static org.catrobat.catroid.common.Constants.NO_USERNAME;
-import static org.catrobat.catroid.common.Constants.TOKEN;
-import static org.catrobat.catroid.common.Constants.TOKEN_COOKIE_NAME;
-import static org.catrobat.catroid.common.Constants.USERNAME;
-import static org.catrobat.catroid.common.Constants.USERNAME_COOKIE_NAME;
+import static com.myradev.lunarcode.common.Constants.NO_TOKEN;
+import static com.myradev.lunarcode.common.Constants.NO_USERNAME;
+import static com.myradev.lunarcode.common.Constants.TOKEN;
+import static com.myradev.lunarcode.common.Constants.TOKEN_COOKIE_NAME;
+import static com.myradev.lunarcode.common.Constants.USERNAME;
+import static com.myradev.lunarcode.common.Constants.USERNAME_COOKIE_NAME;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;

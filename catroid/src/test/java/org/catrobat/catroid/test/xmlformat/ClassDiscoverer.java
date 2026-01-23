@@ -21,7 +21,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.xmlformat;
+package com.myradev.lunarcode.test.xmlformat;
 
 import org.reflections.Reflections;
 
@@ -36,7 +36,7 @@ public final class ClassDiscoverer {
 	}
 
 	public static <T> Set<Class<? extends T>> getAllSubClassesOf(Class<T> clazz) {
-		Reflections reflections = new Reflections("org.catrobat.catroid");
+		Reflections reflections = new Reflections("com.myradev.lunarcode");
 		return reflections.getSubTypesOf(clazz);
 	}
 

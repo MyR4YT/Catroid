@@ -20,18 +20,18 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.catrobat.catroid.test.content.project;
+package com.myradev.lunarcode.test.content.project;
 
 import android.content.Context;
 import android.os.Build;
 
-import org.catrobat.catroid.R;
-import org.catrobat.catroid.common.Constants;
-import org.catrobat.catroid.content.Project;
-import org.catrobat.catroid.content.Scene;
-import org.catrobat.catroid.content.Sprite;
-import org.catrobat.catroid.content.XmlHeader;
-import org.catrobat.catroid.test.MockUtil;
+import com.myradev.lunarcode.R;
+import com.myradev.lunarcode.common.Constants;
+import com.myradev.lunarcode.content.Project;
+import com.myradev.lunarcode.content.Scene;
+import com.myradev.lunarcode.content.Sprite;
+import com.myradev.lunarcode.content.XmlHeader;
+import com.myradev.lunarcode.test.MockUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;

@@ -21,14 +21,14 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 /*
-package org.catrobat.catroid.test.web
+package com.myradev.lunarcode.test.web
 
 import okhttp3.Call
 import okhttp3.OkHttpClient
 import okhttp3.Request
-import org.catrobat.catroid.common.Constants.ERROR_BAD_REQUEST
-import org.catrobat.catroid.web.WebConnection
-import org.catrobat.catroid.web.WebConnection.WebRequestListener
+import com.myradev.lunarcode.common.Constants.ERROR_BAD_REQUEST
+import com.myradev.lunarcode.web.WebConnection
+import com.myradev.lunarcode.web.WebConnection.WebRequestListener
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith

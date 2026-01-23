@@ -21,7 +21,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 /*
-package org.catrobat.catroid.test.stage;
+package com.myradev.lunarcode.test.stage;
 
 import android.graphics.Bitmap;
 
@@ -29,9 +29,9 @@ import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 
-import org.catrobat.catroid.common.Constants;
-import org.catrobat.catroid.content.Sprite;
-import org.catrobat.catroid.stage.ShowBubbleActor;
+import com.myradev.lunarcode.common.Constants;
+import com.myradev.lunarcode.content.Sprite;
+import com.myradev.lunarcode.stage.ShowBubbleActor;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

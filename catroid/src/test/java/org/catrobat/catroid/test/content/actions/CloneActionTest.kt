@@ -21,13 +21,13 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 /*
-package org.catrobat.catroid.test.content.actions
+package com.myradev.lunarcode.test.content.actions
 
 import com.badlogic.gdx.utils.GdxNativesLoader
-import org.catrobat.catroid.content.ActionFactory
-import org.catrobat.catroid.content.Sprite
-import org.catrobat.catroid.stage.StageActivity
-import org.catrobat.catroid.stage.StageListener
+import com.myradev.lunarcode.content.ActionFactory
+import com.myradev.lunarcode.content.Sprite
+import com.myradev.lunarcode.stage.StageActivity
+import com.myradev.lunarcode.stage.StageListener
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith

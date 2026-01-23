@@ -21,7 +21,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.utils;
+package com.myradev.lunarcode.test.utils;
 
 public final class PhysicsWorldConverterAngleTestUtils {
 	public static final double DELTA = 0.00001;

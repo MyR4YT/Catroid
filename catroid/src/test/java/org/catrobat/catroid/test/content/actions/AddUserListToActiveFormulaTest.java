@@ -21,15 +21,15 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 /*
-package org.catrobat.catroid.test.content.actions;
+package com.myradev.lunarcode.test.content.actions;
 
-import org.catrobat.catroid.R;
-import org.catrobat.catroid.formulaeditor.UserList;
-import org.catrobat.catroid.ui.recyclerview.adapter.CategoryListRVAdapter;
-import org.catrobat.catroid.ui.recyclerview.dialog.TextInputDialog;
-import org.catrobat.catroid.ui.recyclerview.fragment.CategoryListFragment;
-import org.catrobat.catroid.ui.recyclerview.util.UniqueNameProvider;
-import org.catrobat.catroid.utils.AddUserListDialog;
+import com.myradev.lunarcode.R;
+import com.myradev.lunarcode.formulaeditor.UserList;
+import com.myradev.lunarcode.ui.recyclerview.adapter.CategoryListRVAdapter;
+import com.myradev.lunarcode.ui.recyclerview.dialog.TextInputDialog;
+import com.myradev.lunarcode.ui.recyclerview.fragment.CategoryListFragment;
+import com.myradev.lunarcode.ui.recyclerview.util.UniqueNameProvider;
+import com.myradev.lunarcode.utils.AddUserListDialog;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

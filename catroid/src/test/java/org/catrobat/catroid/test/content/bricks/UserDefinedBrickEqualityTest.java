@@ -21,14 +21,14 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.content.bricks;
+package com.myradev.lunarcode.test.content.bricks;
 
-import org.catrobat.catroid.content.Sprite;
-import org.catrobat.catroid.content.bricks.Brick;
-import org.catrobat.catroid.content.bricks.UserDefinedBrick;
-import org.catrobat.catroid.userbrick.UserDefinedBrickData;
-import org.catrobat.catroid.userbrick.UserDefinedBrickInput;
-import org.catrobat.catroid.userbrick.UserDefinedBrickLabel;
+import com.myradev.lunarcode.content.Sprite;
+import com.myradev.lunarcode.content.bricks.Brick;
+import com.myradev.lunarcode.content.bricks.UserDefinedBrick;
+import com.myradev.lunarcode.userbrick.UserDefinedBrickData;
+import com.myradev.lunarcode.userbrick.UserDefinedBrickInput;
+import com.myradev.lunarcode.userbrick.UserDefinedBrickLabel;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

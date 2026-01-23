@@ -21,23 +21,23 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 /*
-package org.catrobat.catroid.test.content.script;
+package com.myradev.lunarcode.test.content.script;
 
 import com.badlogic.gdx.utils.GdxNativesLoader;
 
-import org.catrobat.catroid.ProjectManager;
-import org.catrobat.catroid.common.Constants;
-import org.catrobat.catroid.common.LookData;
-import org.catrobat.catroid.content.Project;
-import org.catrobat.catroid.content.Scene;
-import org.catrobat.catroid.content.Script;
-import org.catrobat.catroid.content.Sprite;
-import org.catrobat.catroid.content.StartScript;
-import org.catrobat.catroid.content.WhenBackgroundChangesScript;
-import org.catrobat.catroid.content.bricks.SetBackgroundBrick;
-import org.catrobat.catroid.content.bricks.SetXBrick;
-import org.catrobat.catroid.content.eventids.EventId;
-import org.catrobat.catroid.test.MockUtil;
+import com.myradev.lunarcode.ProjectManager;
+import com.myradev.lunarcode.common.Constants;
+import com.myradev.lunarcode.common.LookData;
+import com.myradev.lunarcode.content.Project;
+import com.myradev.lunarcode.content.Scene;
+import com.myradev.lunarcode.content.Script;
+import com.myradev.lunarcode.content.Sprite;
+import com.myradev.lunarcode.content.StartScript;
+import com.myradev.lunarcode.content.WhenBackgroundChangesScript;
+import com.myradev.lunarcode.content.bricks.SetBackgroundBrick;
+import com.myradev.lunarcode.content.bricks.SetXBrick;
+import com.myradev.lunarcode.content.eventids.EventId;
+import com.myradev.lunarcode.test.MockUtil;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

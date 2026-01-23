@@ -21,7 +21,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.robolectric.bricks;
+package com.myradev.lunarcode.test.robolectric.bricks;
 
 import android.app.Activity;
 import android.content.Context;
@@ -29,32 +29,32 @@ import android.os.Build;
 import android.view.View;
 import android.widget.Spinner;
 
-import org.catrobat.catroid.ProjectManager;
-import org.catrobat.catroid.R;
-import org.catrobat.catroid.content.Project;
-import org.catrobat.catroid.content.Script;
-import org.catrobat.catroid.content.Sprite;
-import org.catrobat.catroid.content.StartScript;
-import org.catrobat.catroid.content.bricks.Brick;
-import org.catrobat.catroid.content.bricks.CameraBrick;
-import org.catrobat.catroid.content.bricks.ChooseCameraBrick;
-import org.catrobat.catroid.content.bricks.FlashBrick;
-import org.catrobat.catroid.content.bricks.LegoEv3MotorMoveBrick;
-import org.catrobat.catroid.content.bricks.LegoEv3MotorStopBrick;
-import org.catrobat.catroid.content.bricks.LegoEv3MotorTurnAngleBrick;
-import org.catrobat.catroid.content.bricks.LegoEv3SetLedBrick;
-import org.catrobat.catroid.content.bricks.LegoNxtMotorMoveBrick;
-import org.catrobat.catroid.content.bricks.LegoNxtMotorStopBrick;
-import org.catrobat.catroid.content.bricks.LegoNxtMotorTurnAngleBrick;
-import org.catrobat.catroid.content.bricks.PhiroMotorMoveBackwardBrick;
-import org.catrobat.catroid.content.bricks.PhiroMotorMoveForwardBrick;
-import org.catrobat.catroid.content.bricks.PhiroMotorStopBrick;
-import org.catrobat.catroid.content.bricks.PhiroPlayToneBrick;
-import org.catrobat.catroid.content.bricks.PhiroRGBLightBrick;
-import org.catrobat.catroid.content.bricks.SetXBrick;
-import org.catrobat.catroid.content.bricks.StopScriptBrick;
-import org.catrobat.catroid.ui.SpriteActivity;
-import org.catrobat.catroid.ui.fragment.CategoryBricksFactory;
+import com.myradev.lunarcode.ProjectManager;
+import com.myradev.lunarcode.R;
+import com.myradev.lunarcode.content.Project;
+import com.myradev.lunarcode.content.Script;
+import com.myradev.lunarcode.content.Sprite;
+import com.myradev.lunarcode.content.StartScript;
+import com.myradev.lunarcode.content.bricks.Brick;
+import com.myradev.lunarcode.content.bricks.CameraBrick;
+import com.myradev.lunarcode.content.bricks.ChooseCameraBrick;
+import com.myradev.lunarcode.content.bricks.FlashBrick;
+import com.myradev.lunarcode.content.bricks.LegoEv3MotorMoveBrick;
+import com.myradev.lunarcode.content.bricks.LegoEv3MotorStopBrick;
+import com.myradev.lunarcode.content.bricks.LegoEv3MotorTurnAngleBrick;
+import com.myradev.lunarcode.content.bricks.LegoEv3SetLedBrick;
+import com.myradev.lunarcode.content.bricks.LegoNxtMotorMoveBrick;
+import com.myradev.lunarcode.content.bricks.LegoNxtMotorStopBrick;
+import com.myradev.lunarcode.content.bricks.LegoNxtMotorTurnAngleBrick;
+import com.myradev.lunarcode.content.bricks.PhiroMotorMoveBackwardBrick;
+import com.myradev.lunarcode.content.bricks.PhiroMotorMoveForwardBrick;
+import com.myradev.lunarcode.content.bricks.PhiroMotorStopBrick;
+import com.myradev.lunarcode.content.bricks.PhiroPlayToneBrick;
+import com.myradev.lunarcode.content.bricks.PhiroRGBLightBrick;
+import com.myradev.lunarcode.content.bricks.SetXBrick;
+import com.myradev.lunarcode.content.bricks.StopScriptBrick;
+import com.myradev.lunarcode.ui.SpriteActivity;
+import com.myradev.lunarcode.ui.fragment.CategoryBricksFactory;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

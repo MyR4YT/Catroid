@@ -21,12 +21,12 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 /*
-package org.catrobat.catroid.test.io;
+package com.myradev.lunarcode.test.io;
 
 import com.google.gson.Gson;
 
-import org.catrobat.catroid.formulaeditor.UserVariable;
-import org.catrobat.catroid.io.DeviceVariableAccessor;
+import com.myradev.lunarcode.formulaeditor.UserVariable;
+import com.myradev.lunarcode.io.DeviceVariableAccessor;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -21,18 +21,18 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.content.controller;
+package com.myradev.lunarcode.test.content.controller;
 
-import org.catrobat.catroid.content.Script;
-import org.catrobat.catroid.content.Sprite;
-import org.catrobat.catroid.content.actions.ScriptSequenceAction;
-import org.catrobat.catroid.content.bricks.Brick;
-import org.catrobat.catroid.content.bricks.BrickBaseType;
-import org.catrobat.catroid.content.bricks.CompositeBrick;
-import org.catrobat.catroid.content.bricks.ScriptBrick;
-import org.catrobat.catroid.content.bricks.ScriptBrickBaseType;
-import org.catrobat.catroid.content.eventids.EventId;
-import org.catrobat.catroid.ui.recyclerview.controller.BrickController;
+import com.myradev.lunarcode.content.Script;
+import com.myradev.lunarcode.content.Sprite;
+import com.myradev.lunarcode.content.actions.ScriptSequenceAction;
+import com.myradev.lunarcode.content.bricks.Brick;
+import com.myradev.lunarcode.content.bricks.BrickBaseType;
+import com.myradev.lunarcode.content.bricks.CompositeBrick;
+import com.myradev.lunarcode.content.bricks.ScriptBrick;
+import com.myradev.lunarcode.content.bricks.ScriptBrickBaseType;
+import com.myradev.lunarcode.content.eventids.EventId;
+import com.myradev.lunarcode.ui.recyclerview.controller.BrickController;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

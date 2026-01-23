@@ -21,14 +21,14 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 /*
-package org.catrobat.catroid.test.transfers;
+package com.myradev.lunarcode.test.transfers;
 
 import android.content.Context;
 
-import org.catrobat.catroid.R;
-import org.catrobat.catroid.ui.recyclerview.dialog.ReplaceExistingProjectDialogFragment;
-import org.catrobat.catroid.utils.ToastUtil;
-import org.catrobat.catroid.web.ProjectDownloader;
+import com.myradev.lunarcode.R;
+import com.myradev.lunarcode.ui.recyclerview.dialog.ReplaceExistingProjectDialogFragment;
+import com.myradev.lunarcode.utils.ToastUtil;
+import com.myradev.lunarcode.web.ProjectDownloader;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

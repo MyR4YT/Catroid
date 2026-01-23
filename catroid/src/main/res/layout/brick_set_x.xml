@@ -36,7 +36,7 @@
         android:gravity="center_vertical"
         android:visibility="gone" />
 
-    <org.catrobat.catroid.ui.BrickLayout
+    <com.myradev.lunarcode.ui.BrickLayout
         android:id="@+id/brick_set_x_layout"
         style="@style/BrickContainer.Motion.Small">
 
@@ -51,6 +51,6 @@
             android:id="@+id/brick_set_x_edit_text"
             style="@style/BrickEditText">
         </TextView>
-    </org.catrobat.catroid.ui.BrickLayout>
+    </com.myradev.lunarcode.ui.BrickLayout>
 
 </LinearLayout>

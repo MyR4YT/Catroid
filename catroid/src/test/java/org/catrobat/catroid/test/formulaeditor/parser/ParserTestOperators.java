@@ -20,17 +20,17 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.catrobat.catroid.test.formulaeditor.parser;
+package com.myradev.lunarcode.test.formulaeditor.parser;
 
-import org.catrobat.catroid.content.Scope;
-import org.catrobat.catroid.formulaeditor.FormulaElement;
-import org.catrobat.catroid.formulaeditor.FormulaElement.ElementType;
-import org.catrobat.catroid.formulaeditor.Functions;
-import org.catrobat.catroid.formulaeditor.InternFormulaParser;
-import org.catrobat.catroid.formulaeditor.InternToken;
-import org.catrobat.catroid.formulaeditor.InternTokenType;
-import org.catrobat.catroid.formulaeditor.Operators;
-import org.catrobat.catroid.test.formulaeditor.FormulaEditorTestUtil;
+import com.myradev.lunarcode.content.Scope;
+import com.myradev.lunarcode.formulaeditor.FormulaElement;
+import com.myradev.lunarcode.formulaeditor.FormulaElement.ElementType;
+import com.myradev.lunarcode.formulaeditor.Functions;
+import com.myradev.lunarcode.formulaeditor.InternFormulaParser;
+import com.myradev.lunarcode.formulaeditor.InternToken;
+import com.myradev.lunarcode.formulaeditor.InternTokenType;
+import com.myradev.lunarcode.formulaeditor.Operators;
+import com.myradev.lunarcode.test.formulaeditor.FormulaEditorTestUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;

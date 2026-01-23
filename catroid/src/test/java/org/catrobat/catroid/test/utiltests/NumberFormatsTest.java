@@ -21,9 +21,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.utiltests;
+package com.myradev.lunarcode.test.utiltests;
 
-import org.catrobat.catroid.utils.NumberFormats;
+import com.myradev.lunarcode.utils.NumberFormats;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;

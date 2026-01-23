@@ -20,10 +20,10 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.catrobat.catroid.test.ui;
+package com.myradev.lunarcode.test.ui;
 
-import org.catrobat.catroid.test.utils.Reflection;
-import org.catrobat.catroid.ui.ViewSwitchLock;
+import com.myradev.lunarcode.test.utils.Reflection;
+import com.myradev.lunarcode.ui.ViewSwitchLock;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;

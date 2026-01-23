@@ -37,7 +37,7 @@
         android:visibility="gone">
     </CheckBox>
 
-    <org.catrobat.catroid.ui.BrickLayout
+    <com.myradev.lunarcode.ui.BrickLayout
         android:id="@+id/brick_raspi_pwm_layout"
         style="@style/BrickContainer.Arduino.Medium">
 
@@ -74,5 +74,5 @@
             android:text="@string/hertz_symbol"
             app:layout_newLine="true" />
 
-    </org.catrobat.catroid.ui.BrickLayout>
+    </com.myradev.lunarcode.ui.BrickLayout>
 </LinearLayout>

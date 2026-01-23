@@ -34,9 +34,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
 import androidx.core.content.ContextCompat.startActivity
-import org.catrobat.catroid.R
-import org.catrobat.catroid.TrustedDomainManager
-import org.catrobat.catroid.common.Constants
+import com.myradev.lunarcode.R
+import com.myradev.lunarcode.TrustedDomainManager
+import com.myradev.lunarcode.common.Constants
 
 class TrustListEditorPreference(context: Context, attrs: AttributeSet) : EditTextPreference(context, attrs) {
     private val neutralButtonText = context.getString(R.string.brick_context_dialog_help)

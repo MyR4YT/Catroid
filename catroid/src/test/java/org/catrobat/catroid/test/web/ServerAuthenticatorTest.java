@@ -21,14 +21,14 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 /*
-package org.catrobat.catroid.test.web;
+package com.myradev.lunarcode.test.web;
 
 import android.content.SharedPreferences;
 
-import org.catrobat.catroid.common.Constants;
-import org.catrobat.catroid.web.CatrobatWebClientKt;
-import org.catrobat.catroid.web.ServerAuthenticator;
-import org.catrobat.catroid.web.WebConnectionException;
+import com.myradev.lunarcode.common.Constants;
+import com.myradev.lunarcode.web.CatrobatWebClientKt;
+import com.myradev.lunarcode.web.ServerAuthenticator;
+import com.myradev.lunarcode.web.WebConnectionException;
 import org.apache.commons.lang3.StringUtils;
 import org.json.JSONObject;
 import org.junit.Before;
@@ -43,22 +43,22 @@ import java.util.HashMap;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 
-import static org.catrobat.catroid.common.SharedPreferenceKeys.DEVICE_LANGUAGE;
-import static org.catrobat.catroid.web.CatrobatWebClientKt.createFormEncodedRequest;
-import static org.catrobat.catroid.web.ServerAuthenticationConstants.CATROBAT_COUNTRY_KEY;
-import static org.catrobat.catroid.web.ServerAuthenticationConstants.CATROBAT_EMAIL_KEY;
-import static org.catrobat.catroid.web.ServerAuthenticationConstants.CATROBAT_PASSWORD_KEY;
-import static org.catrobat.catroid.web.ServerAuthenticationConstants.CATROBAT_USERNAME_KEY;
-import static org.catrobat.catroid.web.ServerAuthenticationConstants.JSON_ANSWER;
-import static org.catrobat.catroid.web.ServerAuthenticationConstants.JSON_STATUS_CODE;
-import static org.catrobat.catroid.web.ServerAuthenticationConstants.JSON_TOKEN;
-import static org.catrobat.catroid.web.ServerAuthenticationConstants.LOGIN_URL_APPENDING;
-import static org.catrobat.catroid.web.ServerAuthenticationConstants.REGISTRATION_URL_APPENDING;
-import static org.catrobat.catroid.web.ServerAuthenticationConstants.SERVER_RESPONSE_REGISTER_OK;
-import static org.catrobat.catroid.web.ServerAuthenticationConstants.SERVER_RESPONSE_TOKEN_OK;
-import static org.catrobat.catroid.web.ServerAuthenticationConstants.TOKEN_LENGTH;
-import static org.catrobat.catroid.web.ServerAuthenticator.TaskListener;
-import static org.catrobat.catroid.web.ServerCalls.BASE_URL_TEST_HTTPS;
+import static com.myradev.lunarcode.common.SharedPreferenceKeys.DEVICE_LANGUAGE;
+import static com.myradev.lunarcode.web.CatrobatWebClientKt.createFormEncodedRequest;
+import static com.myradev.lunarcode.web.ServerAuthenticationConstants.CATROBAT_COUNTRY_KEY;
+import static com.myradev.lunarcode.web.ServerAuthenticationConstants.CATROBAT_EMAIL_KEY;
+import static com.myradev.lunarcode.web.ServerAuthenticationConstants.CATROBAT_PASSWORD_KEY;
+import static com.myradev.lunarcode.web.ServerAuthenticationConstants.CATROBAT_USERNAME_KEY;
+import static com.myradev.lunarcode.web.ServerAuthenticationConstants.JSON_ANSWER;
+import static com.myradev.lunarcode.web.ServerAuthenticationConstants.JSON_STATUS_CODE;
+import static com.myradev.lunarcode.web.ServerAuthenticationConstants.JSON_TOKEN;
+import static com.myradev.lunarcode.web.ServerAuthenticationConstants.LOGIN_URL_APPENDING;
+import static com.myradev.lunarcode.web.ServerAuthenticationConstants.REGISTRATION_URL_APPENDING;
+import static com.myradev.lunarcode.web.ServerAuthenticationConstants.SERVER_RESPONSE_REGISTER_OK;
+import static com.myradev.lunarcode.web.ServerAuthenticationConstants.SERVER_RESPONSE_TOKEN_OK;
+import static com.myradev.lunarcode.web.ServerAuthenticationConstants.TOKEN_LENGTH;
+import static com.myradev.lunarcode.web.ServerAuthenticator.TaskListener;
+import static com.myradev.lunarcode.web.ServerCalls.BASE_URL_TEST_HTTPS;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;

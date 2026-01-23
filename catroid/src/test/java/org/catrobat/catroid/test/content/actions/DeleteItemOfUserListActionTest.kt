@@ -20,16 +20,16 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.catrobat.catroid.test.content.actions
+package com.myradev.lunarcode.test.content.actions
 
 import com.badlogic.gdx.scenes.scene2d.actions.SequenceAction
-import org.catrobat.catroid.content.ActionFactory
-import org.catrobat.catroid.content.Project
-import org.catrobat.catroid.content.Scope
-import org.catrobat.catroid.content.Sprite
-import org.catrobat.catroid.content.actions.DeleteItemOfUserListAction
-import org.catrobat.catroid.formulaeditor.Formula
-import org.catrobat.catroid.formulaeditor.UserList
+import com.myradev.lunarcode.content.ActionFactory
+import com.myradev.lunarcode.content.Project
+import com.myradev.lunarcode.content.Scope
+import com.myradev.lunarcode.content.Sprite
+import com.myradev.lunarcode.content.actions.DeleteItemOfUserListAction
+import com.myradev.lunarcode.formulaeditor.Formula
+import com.myradev.lunarcode.formulaeditor.UserList
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Test

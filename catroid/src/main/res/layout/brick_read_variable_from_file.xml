@@ -36,7 +36,7 @@
         android:gravity="center_vertical"
         android:visibility="gone" />
 
-    <org.catrobat.catroid.ui.BrickLayout
+    <com.myradev.lunarcode.ui.BrickLayout
         android:id="@+id/brick_write_variable_to_file_layout"
         style="@style/BrickContainer.UserVariables.Big">
 
@@ -75,6 +75,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textDirection="locale" />
-    </org.catrobat.catroid.ui.BrickLayout>
+    </com.myradev.lunarcode.ui.BrickLayout>
 
 </LinearLayout>

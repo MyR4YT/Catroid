@@ -20,11 +20,11 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.catrobat.catroid.test.code;
+package com.myradev.lunarcode.test.code;
 
 import junit.framework.TestCase;
 
-import org.catrobat.catroid.test.utils.Utils;
+import com.myradev.lunarcode.test.utils.Utils;
 
 import java.io.BufferedReader;
 import java.io.File;

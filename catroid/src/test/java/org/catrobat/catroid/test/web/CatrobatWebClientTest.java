@@ -21,9 +21,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 /*
-package org.catrobat.catroid.test.web;
+package com.myradev.lunarcode.test.web;
 
-import org.catrobat.catroid.web.WebConnectionException;
+import com.myradev.lunarcode.web.WebConnectionException;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -42,7 +42,7 @@ import okhttp3.Request;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
 
-import static org.catrobat.catroid.web.CatrobatWebClientKt.performCallWith;
+import static com.myradev.lunarcode.web.CatrobatWebClientKt.performCallWith;
 
 @RunWith(PowerMockRunner.class)
 @PrepareForTest({Request.class, Response.class, ResponseBody.class})

@@ -1,0 +1,115 @@
+/*
+ * Catroid: An on-device visual programming system for Android devices
+ * Copyright (C) 2010-2025 The Catrobat Team
+ * (<http://developer.catrobat.org/credits>)
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ * An additional term exception under section 7 of the GNU Affero
+ * General Public License, version 3, is available at
+ * http://developer.catrobat.org/license_additional_term
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+package com.myradev.lunarcode.uiespresso.content.brick.stage
+
+import android.Manifest
+import androidx.test.espresso.Espresso
+import androidx.test.espresso.action.ViewActions
+import androidx.test.espresso.matcher.ViewMatchers
+import androidx.test.rule.GrantPermissionRule
+import com.myradev.lunarcode.R
+import com.myradev.lunarcode.content.bricks.SetSizeToBrick
+import com.myradev.lunarcode.formulaeditor.Formula
+import com.myradev.lunarcode.formulaeditor.FormulaElement
+import com.myradev.lunarcode.formulaeditor.Sensors
+import com.myradev.lunarcode.stage.StageActivity
+import com.myradev.lunarcode.testsuites.annotations.Cat.AppUi
+import com.myradev.lunarcode.testsuites.annotations.Cat.Quarantine
+import com.myradev.lunarcode.testsuites.annotations.Level.Functional
+import com.myradev.lunarcode.ui.SpriteActivity
+import com.myradev.lunarcode.uiespresso.stage.utils.ScriptEvaluationGateBrick
+import com.myradev.lunarcode.uiespresso.util.UiTestUtils
+import com.myradev.lunarcode.uiespresso.util.rules.FragmentActivityTestRule
+import org.junit.Assert
+import org.junit.Assert.assertFalse
+import org.junit.Rule
+import org.junit.Test
+import org.junit.experimental.categories.Category
+
+class FaceDetectionResourceTest {
+    private lateinit var formula: Formula
+    private lateinit var lastBrickInScript: ScriptEvaluationGateBrick
+
+    @get:Rule var runtimePermissionRule: GrantPermissionRule = GrantPermissionRule.grant(Manifest.permission.CAMERA)
+
+    @get:Rule
+    val baseActivityTestRule = FragmentActivityTestRule(
+        SpriteActivity::class.java,
+        SpriteActivity.EXTRA_FRAGMENT_POSITION,
+        SpriteActivity.FRAGMENT_SCRIPTS
+    )
+
+    @Category(AppUi::class, Functional::class, Quarantine::class)
+    @Test
+    fun testFaceDetectionEnabled() {
+        createProject(FormulaElement.ElementType.SENSOR, Sensors.FACE_SIZE.name)
+        baseActivityTestRule.launchActivity()
+
+        Espresso.onView(ViewMatchers.withId(R.id.button_play)).perform(ViewActions.click())
+        lastBrickInScript.waitUntilEvaluated(3000)
+
+        Assert.assertTrue(faceDetectionOn())
+    }
+
+    @Category(AppUi::class, Functional::class, Quarantine::class)
+    @Test
+    fun testFaceDetectionDisabled() {
+        createProject(FormulaElement.ElementType.NUMBER, "42")
+        baseActivityTestRule.launchActivity()
+
+        Espresso.onView(ViewMatchers.withId(R.id.button_play)).perform(ViewActions.click())
+        lastBrickInScript.waitUntilEvaluated(3000)
+
+        assertFalse(faceDetectionOn())
+    }
+
+    @Category(AppUi::class, Functional::class, Quarantine::class)
+    @Test
+    fun testFaceDetectionChanged() {
+        createProject(FormulaElement.ElementType.SENSOR, Sensors.FACE_SIZE.name)
+        baseActivityTestRule.launchActivity()
+
+        Espresso.onView(ViewMatchers.withId(R.id.button_play)).perform(ViewActions.click())
+        lastBrickInScript.waitUntilEvaluated(3000)
+
+        Assert.assertTrue(faceDetectionOn())
+
+        Espresso.pressBack()
+        Espresso.onView(ViewMatchers.withId(R.id.stage_dialog_button_back)).perform(ViewActions.click())
+        formula.root = FormulaElement(FormulaElement.ElementType.NUMBER, "42", null)
+        Espresso.onView(ViewMatchers.withId(R.id.button_play)).perform(ViewActions.click())
+
+        assertFalse(faceDetectionOn())
+    }
+
+    private fun createProject(type: FormulaElement.ElementType, value: String) {
+        formula = Formula(FormulaElement(type, value, null))
+
+        val script = UiTestUtils.createProjectAndGetStartScript("FaceDetectionResourceTest").also {
+            it.addBrick(SetSizeToBrick(formula))
+        }
+        lastBrickInScript = ScriptEvaluationGateBrick.appendToScript(script)
+    }
+
+    private fun faceDetectionOn() = StageActivity.getActiveCameraManager()?.detectionOn ?: false
+}

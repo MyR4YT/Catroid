@@ -21,11 +21,11 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.ui.regexassistant;
+package com.myradev.lunarcode.test.ui.regexassistant;
 
 import android.app.Activity;
 
-import org.catrobat.catroid.utils.HtmlRegexExtractor;
+import com.myradev.lunarcode.utils.HtmlRegexExtractor;
 import org.junit.Before;
 import org.junit.Test;
 

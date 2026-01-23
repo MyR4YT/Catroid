@@ -20,15 +20,15 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.catrobat.catroid.test.content.script;
+package com.myradev.lunarcode.test.content.script;
 
-import org.catrobat.catroid.common.LookData;
-import org.catrobat.catroid.content.Sprite;
-import org.catrobat.catroid.content.eventids.BroadcastEventId;
-import org.catrobat.catroid.content.eventids.RaspiEventId;
-import org.catrobat.catroid.content.eventids.SetLookEventId;
-import org.catrobat.catroid.content.eventids.WhenConditionEventId;
-import org.catrobat.catroid.formulaeditor.Formula;
+import com.myradev.lunarcode.common.LookData;
+import com.myradev.lunarcode.content.Sprite;
+import com.myradev.lunarcode.content.eventids.BroadcastEventId;
+import com.myradev.lunarcode.content.eventids.RaspiEventId;
+import com.myradev.lunarcode.content.eventids.SetLookEventId;
+import com.myradev.lunarcode.content.eventids.WhenConditionEventId;
+import com.myradev.lunarcode.formulaeditor.Formula;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;

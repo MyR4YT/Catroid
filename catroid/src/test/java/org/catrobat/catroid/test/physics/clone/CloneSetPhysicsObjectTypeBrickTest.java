@@ -21,10 +21,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.physics.clone;
+package com.myradev.lunarcode.test.physics.clone;
 
-import org.catrobat.catroid.content.bricks.SetPhysicsObjectTypeBrick;
-import org.catrobat.catroid.physics.PhysicsObject;
+import com.myradev.lunarcode.content.bricks.SetPhysicsObjectTypeBrick;
+import com.myradev.lunarcode.physics.PhysicsObject;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

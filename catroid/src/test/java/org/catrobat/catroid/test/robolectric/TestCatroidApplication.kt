@@ -21,9 +21,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.robolectric
+package com.myradev.lunarcode.test.robolectric
 
-import org.catrobat.catroid.CatroidApplication
+import com.myradev.lunarcode.CatroidApplication
 import org.koin.core.context.stopKoin
 import org.robolectric.TestLifecycleApplication
 import java.lang.reflect.Method

@@ -21,7 +21,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.robolectric.formulaeditor;
+package com.myradev.lunarcode.test.robolectric.formulaeditor;
 
 import android.app.Activity;
 import android.os.Build;
@@ -32,16 +32,16 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import org.catrobat.catroid.ProjectManager;
-import org.catrobat.catroid.R;
-import org.catrobat.catroid.content.Project;
-import org.catrobat.catroid.content.Script;
-import org.catrobat.catroid.content.Sprite;
-import org.catrobat.catroid.content.StartScript;
-import org.catrobat.catroid.content.bricks.Brick;
-import org.catrobat.catroid.content.bricks.FormulaBrick;
-import org.catrobat.catroid.content.bricks.SetXBrick;
-import org.catrobat.catroid.ui.SpriteActivity;
+import com.myradev.lunarcode.ProjectManager;
+import com.myradev.lunarcode.R;
+import com.myradev.lunarcode.content.Project;
+import com.myradev.lunarcode.content.Script;
+import com.myradev.lunarcode.content.Sprite;
+import com.myradev.lunarcode.content.StartScript;
+import com.myradev.lunarcode.content.bricks.Brick;
+import com.myradev.lunarcode.content.bricks.FormulaBrick;
+import com.myradev.lunarcode.content.bricks.SetXBrick;
+import com.myradev.lunarcode.ui.SpriteActivity;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

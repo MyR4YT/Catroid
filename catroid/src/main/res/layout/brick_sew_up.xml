@@ -37,7 +37,7 @@
         android:visibility="gone" />
 
 
-    <org.catrobat.catroid.ui.BrickLayout
+    <com.myradev.lunarcode.ui.BrickLayout
         android:id="@+id/brick_sew_up_layout"
         style="@style/BrickContainer.Embroidery.Small">
 
@@ -47,6 +47,6 @@
             style="@style/BrickText.SingleLine"
             android:text="@string/brick_sew_up" />
 
-    </org.catrobat.catroid.ui.BrickLayout>
+    </com.myradev.lunarcode.ui.BrickLayout>
 
 </LinearLayout>

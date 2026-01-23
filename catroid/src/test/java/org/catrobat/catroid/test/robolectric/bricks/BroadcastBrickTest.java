@@ -21,7 +21,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.robolectric.bricks;
+package com.myradev.lunarcode.test.robolectric.bricks;
 
 import android.app.Activity;
 import android.content.DialogInterface;
@@ -29,17 +29,17 @@ import android.os.Build;
 import android.view.View;
 import android.widget.Spinner;
 
-import org.catrobat.catroid.ProjectManager;
-import org.catrobat.catroid.R;
-import org.catrobat.catroid.common.Nameable;
-import org.catrobat.catroid.content.BroadcastScript;
-import org.catrobat.catroid.content.Project;
-import org.catrobat.catroid.content.Sprite;
-import org.catrobat.catroid.content.bricks.BroadcastBrick;
-import org.catrobat.catroid.content.bricks.BroadcastMessageBrick;
-import org.catrobat.catroid.content.bricks.BroadcastReceiverBrick;
-import org.catrobat.catroid.content.bricks.BroadcastWaitBrick;
-import org.catrobat.catroid.ui.SpriteActivity;
+import com.myradev.lunarcode.ProjectManager;
+import com.myradev.lunarcode.R;
+import com.myradev.lunarcode.common.Nameable;
+import com.myradev.lunarcode.content.BroadcastScript;
+import com.myradev.lunarcode.content.Project;
+import com.myradev.lunarcode.content.Sprite;
+import com.myradev.lunarcode.content.bricks.BroadcastBrick;
+import com.myradev.lunarcode.content.bricks.BroadcastMessageBrick;
+import com.myradev.lunarcode.content.bricks.BroadcastReceiverBrick;
+import com.myradev.lunarcode.content.bricks.BroadcastWaitBrick;
+import com.myradev.lunarcode.ui.SpriteActivity;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

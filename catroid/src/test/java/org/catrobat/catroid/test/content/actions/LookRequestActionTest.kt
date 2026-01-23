@@ -21,26 +21,26 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 /*
-package org.catrobat.catroid.test.content.actions
+package com.myradev.lunarcode.test.content.actions
 
 import com.badlogic.gdx.scenes.scene2d.actions.SequenceAction
 import com.badlogic.gdx.utils.GdxNativesLoader
 import okhttp3.Response
 import okhttp3.ResponseBody
-import org.catrobat.catroid.ProjectManager
-import org.catrobat.catroid.common.Constants
-import org.catrobat.catroid.common.LookData
-import org.catrobat.catroid.content.Project
-import org.catrobat.catroid.content.Scope
-import org.catrobat.catroid.content.Sprite
-import org.catrobat.catroid.content.actions.LookRequestAction
-import org.catrobat.catroid.content.actions.WebAction
-import org.catrobat.catroid.formulaeditor.Formula
-import org.catrobat.catroid.stage.StageActivity
-import org.catrobat.catroid.stage.StageListener
-import org.catrobat.catroid.test.MockUtil
-import org.catrobat.catroid.web.WebConnection
-import org.catrobat.catroid.web.WebConnectionHolder
+import com.myradev.lunarcode.ProjectManager
+import com.myradev.lunarcode.common.Constants
+import com.myradev.lunarcode.common.LookData
+import com.myradev.lunarcode.content.Project
+import com.myradev.lunarcode.content.Scope
+import com.myradev.lunarcode.content.Sprite
+import com.myradev.lunarcode.content.actions.LookRequestAction
+import com.myradev.lunarcode.content.actions.WebAction
+import com.myradev.lunarcode.formulaeditor.Formula
+import com.myradev.lunarcode.stage.StageActivity
+import com.myradev.lunarcode.stage.StageListener
+import com.myradev.lunarcode.test.MockUtil
+import com.myradev.lunarcode.web.WebConnection
+import com.myradev.lunarcode.web.WebConnectionHolder
 import org.junit.After
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse

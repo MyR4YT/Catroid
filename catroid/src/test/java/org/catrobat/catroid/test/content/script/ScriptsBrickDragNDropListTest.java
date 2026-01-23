@@ -20,8 +20,8 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.catrobat.catroid.test.content.script;
-import org.catrobat.catroid.content.bricks.ScriptBrick;
+package com.myradev.lunarcode.test.content.script;
+import com.myradev.lunarcode.content.bricks.ScriptBrick;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -30,9 +30,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-import static org.catrobat.catroid.test.xmlformat.ClassDiscoverer.getAllSubClassesOf;
-import static org.catrobat.catroid.test.xmlformat.ClassDiscoverer.removeAbstractClasses;
-import static org.catrobat.catroid.test.xmlformat.ClassDiscoverer.removeInnerClasses;
+import static com.myradev.lunarcode.test.xmlformat.ClassDiscoverer.getAllSubClassesOf;
+import static com.myradev.lunarcode.test.xmlformat.ClassDiscoverer.removeAbstractClasses;
+import static com.myradev.lunarcode.test.xmlformat.ClassDiscoverer.removeInnerClasses;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 

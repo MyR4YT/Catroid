@@ -20,10 +20,10 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.catrobat.catroid.test.physics;
+package com.myradev.lunarcode.test.physics;
 
-import org.catrobat.catroid.physics.PhysicsWorldConverter;
-import org.catrobat.catroid.test.utils.PhysicsWorldConverterAngleTestUtils;
+import com.myradev.lunarcode.physics.PhysicsWorldConverter;
+import com.myradev.lunarcode.test.utils.PhysicsWorldConverterAngleTestUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;

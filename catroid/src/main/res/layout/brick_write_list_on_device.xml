@@ -35,7 +35,7 @@
         android:gravity="center_vertical"
         android:visibility="gone" />
 
-    <org.catrobat.catroid.ui.BrickLayout
+    <com.myradev.lunarcode.ui.BrickLayout
         android:id="@+id/brick_write_list_layout"
         style="@style/BrickContainer.UserList.Medium"
         android:layout_width="match_parent"
@@ -54,6 +54,6 @@
             android:layout_height="wrap_content"
             android:textDirection="locale" />
 
-    </org.catrobat.catroid.ui.BrickLayout>
+    </com.myradev.lunarcode.ui.BrickLayout>
 
 </LinearLayout>

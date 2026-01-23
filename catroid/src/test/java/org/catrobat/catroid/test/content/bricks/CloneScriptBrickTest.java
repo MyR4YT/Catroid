@@ -21,22 +21,22 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.content.bricks;
+package com.myradev.lunarcode.test.content.bricks;
 
-import org.catrobat.catroid.content.BroadcastScript;
-import org.catrobat.catroid.content.RaspiInterruptScript;
-import org.catrobat.catroid.content.Script;
-import org.catrobat.catroid.content.StartScript;
-import org.catrobat.catroid.content.UserDefinedScript;
-import org.catrobat.catroid.content.WhenBackgroundChangesScript;
-import org.catrobat.catroid.content.WhenBounceOffScript;
-import org.catrobat.catroid.content.WhenClonedScript;
-import org.catrobat.catroid.content.WhenConditionScript;
-import org.catrobat.catroid.content.WhenGamepadButtonScript;
-import org.catrobat.catroid.content.WhenNfcScript;
-import org.catrobat.catroid.content.WhenScript;
-import org.catrobat.catroid.content.WhenTouchDownScript;
-import org.catrobat.catroid.content.bricks.ScriptBrick;
+import com.myradev.lunarcode.content.BroadcastScript;
+import com.myradev.lunarcode.content.RaspiInterruptScript;
+import com.myradev.lunarcode.content.Script;
+import com.myradev.lunarcode.content.StartScript;
+import com.myradev.lunarcode.content.UserDefinedScript;
+import com.myradev.lunarcode.content.WhenBackgroundChangesScript;
+import com.myradev.lunarcode.content.WhenBounceOffScript;
+import com.myradev.lunarcode.content.WhenClonedScript;
+import com.myradev.lunarcode.content.WhenConditionScript;
+import com.myradev.lunarcode.content.WhenGamepadButtonScript;
+import com.myradev.lunarcode.content.WhenNfcScript;
+import com.myradev.lunarcode.content.WhenScript;
+import com.myradev.lunarcode.content.WhenTouchDownScript;
+import com.myradev.lunarcode.content.bricks.ScriptBrick;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;

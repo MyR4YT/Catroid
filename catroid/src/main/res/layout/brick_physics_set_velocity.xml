@@ -35,7 +35,7 @@
         android:gravity="center_vertical"
         android:visibility="gone" />
 
-    <org.catrobat.catroid.ui.BrickLayout
+    <com.myradev.lunarcode.ui.BrickLayout
         android:id="@+id/brick_set_velocity_layout"
         style="@style/BrickContainer.Motion.Medium">
 
@@ -75,6 +75,6 @@
             android:text="@string/brick_set_velocity_unit">
         </TextView>
 
-	</org.catrobat.catroid.ui.BrickLayout>
+	</com.myradev.lunarcode.ui.BrickLayout>
 
 </LinearLayout>

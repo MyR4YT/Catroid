@@ -21,7 +21,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.common.defaultprojectcreators;
+package com.myradev.lunarcode.common.defaultprojectcreators;
 
 public class DefaultExampleProject extends DefaultProjectCreator {
 }

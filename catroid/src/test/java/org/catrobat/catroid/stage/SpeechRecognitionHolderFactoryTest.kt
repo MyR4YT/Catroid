@@ -21,10 +21,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.stage
+package com.myradev.lunarcode.stage
 
 import android.content.Context
-import org.catrobat.catroid.utils.MobileServiceAvailability
+import com.myradev.lunarcode.utils.MobileServiceAvailability
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNotEquals

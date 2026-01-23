@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:background="@color/solid_white" >
 
-            <org.catrobat.catroid.formulaeditor.FormulaEditorEditText
+            <com.myradev.lunarcode.formulaeditor.FormulaEditorEditText
                 android:id="@+id/formula_editor_edit_field"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

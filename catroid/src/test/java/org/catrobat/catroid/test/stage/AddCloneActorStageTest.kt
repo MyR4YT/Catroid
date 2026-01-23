@@ -21,16 +21,16 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 /*
-package org.catrobat.catroid.test.stage
+package com.myradev.lunarcode.test.stage
 
 import com.badlogic.gdx.scenes.scene2d.Actor
 import com.badlogic.gdx.scenes.scene2d.Group
 import com.badlogic.gdx.scenes.scene2d.Stage
 import com.badlogic.gdx.utils.Array
-import org.catrobat.catroid.content.Look
-import org.catrobat.catroid.content.Sprite
-import org.catrobat.catroid.stage.StageListener
-import org.catrobat.catroid.web.WebConnectionHolder
+import com.myradev.lunarcode.content.Look
+import com.myradev.lunarcode.content.Sprite
+import com.myradev.lunarcode.stage.StageListener
+import com.myradev.lunarcode.web.WebConnectionHolder
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith

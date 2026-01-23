@@ -21,39 +21,39 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.common.defaultprojectcreators;
+package com.myradev.lunarcode.common.defaultprojectcreators;
 
 import android.content.Context;
 import android.graphics.BitmapFactory;
 
-import org.catrobat.catroid.R;
-import org.catrobat.catroid.common.LookData;
-import org.catrobat.catroid.common.ScreenValues;
-import org.catrobat.catroid.content.Project;
-import org.catrobat.catroid.content.Scene;
-import org.catrobat.catroid.content.Script;
-import org.catrobat.catroid.content.Sprite;
-import org.catrobat.catroid.content.StartScript;
-import org.catrobat.catroid.content.bricks.MoveNStepsBrick;
-import org.catrobat.catroid.content.bricks.RepeatBrick;
-import org.catrobat.catroid.content.bricks.SetVariableBrick;
-import org.catrobat.catroid.content.bricks.TurnRightBrick;
-import org.catrobat.catroid.content.bricks.ZigZagStitchBrick;
-import org.catrobat.catroid.formulaeditor.Formula;
-import org.catrobat.catroid.formulaeditor.FormulaElement;
-import org.catrobat.catroid.formulaeditor.Operators;
-import org.catrobat.catroid.formulaeditor.UserVariable;
-import org.catrobat.catroid.io.ResourceImporter;
-import org.catrobat.catroid.io.XstreamSerializer;
-import org.catrobat.catroid.utils.ImageEditing;
+import com.myradev.lunarcode.R;
+import com.myradev.lunarcode.common.LookData;
+import com.myradev.lunarcode.common.ScreenValues;
+import com.myradev.lunarcode.content.Project;
+import com.myradev.lunarcode.content.Scene;
+import com.myradev.lunarcode.content.Script;
+import com.myradev.lunarcode.content.Sprite;
+import com.myradev.lunarcode.content.StartScript;
+import com.myradev.lunarcode.content.bricks.MoveNStepsBrick;
+import com.myradev.lunarcode.content.bricks.RepeatBrick;
+import com.myradev.lunarcode.content.bricks.SetVariableBrick;
+import com.myradev.lunarcode.content.bricks.TurnRightBrick;
+import com.myradev.lunarcode.content.bricks.ZigZagStitchBrick;
+import com.myradev.lunarcode.formulaeditor.Formula;
+import com.myradev.lunarcode.formulaeditor.FormulaElement;
+import com.myradev.lunarcode.formulaeditor.Operators;
+import com.myradev.lunarcode.formulaeditor.UserVariable;
+import com.myradev.lunarcode.io.ResourceImporter;
+import com.myradev.lunarcode.io.XstreamSerializer;
+import com.myradev.lunarcode.utils.ImageEditing;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-import static org.catrobat.catroid.common.Constants.DEFAULT_IMAGE_EXTENSION;
-import static org.catrobat.catroid.common.Constants.IMAGE_DIRECTORY_NAME;
-import static org.catrobat.catroid.common.Constants.SCREENSHOT_AUTOMATIC_FILE_NAME;
+import static com.myradev.lunarcode.common.Constants.DEFAULT_IMAGE_EXTENSION;
+import static com.myradev.lunarcode.common.Constants.IMAGE_DIRECTORY_NAME;
+import static com.myradev.lunarcode.common.Constants.SCREENSHOT_AUTOMATIC_FILE_NAME;
 
 public class DefaultExampleProject extends DefaultProjectCreator {
 	public DefaultExampleProject() {

@@ -20,17 +20,17 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.catrobat.catroid.test.content.actions
+package com.myradev.lunarcode.test.content.actions
 
 import com.badlogic.gdx.scenes.scene2d.actions.RepeatAction
 import com.badlogic.gdx.scenes.scene2d.actions.SequenceAction
 import com.badlogic.gdx.scenes.scene2d.actions.TemporalAction
-import org.catrobat.catroid.ProjectManager
-import org.catrobat.catroid.content.Project
-import org.catrobat.catroid.content.Sprite
-import org.catrobat.catroid.formulaeditor.Formula
-import org.catrobat.catroid.test.StaticSingletonInitializer.Companion.initializeStaticSingletonMethods
-import org.catrobat.catroid.test.utils.Reflection
+import com.myradev.lunarcode.ProjectManager
+import com.myradev.lunarcode.content.Project
+import com.myradev.lunarcode.content.Sprite
+import com.myradev.lunarcode.formulaeditor.Formula
+import com.myradev.lunarcode.test.StaticSingletonInitializer.Companion.initializeStaticSingletonMethods
+import com.myradev.lunarcode.test.utils.Reflection
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Test

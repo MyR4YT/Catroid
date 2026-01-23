@@ -21,15 +21,15 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.catroid.test.common;
+package com.myradev.lunarcode.test.common;
 
 import com.badlogic.gdx.scenes.scene2d.Actor;
 
-import org.catrobat.catroid.common.ThreadScheduler;
-import org.catrobat.catroid.content.Look;
-import org.catrobat.catroid.content.Script;
-import org.catrobat.catroid.content.Sprite;
-import org.catrobat.catroid.content.actions.ScriptSequenceAction;
+import com.myradev.lunarcode.common.ThreadScheduler;
+import com.myradev.lunarcode.content.Look;
+import com.myradev.lunarcode.content.Script;
+import com.myradev.lunarcode.content.Sprite;
+import com.myradev.lunarcode.content.actions.ScriptSequenceAction;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

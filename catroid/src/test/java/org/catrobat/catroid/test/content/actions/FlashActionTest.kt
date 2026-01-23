@@ -21,12 +21,12 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 /*
-package org.catrobat.catroid.test.content.actions
+package com.myradev.lunarcode.test.content.actions
 
 import com.badlogic.gdx.utils.GdxNativesLoader
-import org.catrobat.catroid.content.Sprite
-import org.catrobat.catroid.content.actions.FlashAction
-import org.catrobat.catroid.stage.StageActivity
+import com.myradev.lunarcode.content.Sprite
+import com.myradev.lunarcode.content.actions.FlashAction
+import com.myradev.lunarcode.stage.StageActivity
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -42,13 +42,13 @@ import org.powermock.modules.junit4.PowerMockRunner
 @PrepareForTest(GdxNativesLoader::class, StageActivity::class)
 class FlashActionTest {
     private lateinit var testSprite: Sprite
-    private lateinit var cameraManager: org.catrobat.catroid.camera.CameraManager
+    private lateinit var cameraManager: com.myradev.lunarcode.camera.CameraManager
 
     @Before
     @Throws(Exception::class)
     fun setUp() {
         testSprite = Sprite("testSprite")
-        cameraManager = mock(org.catrobat.catroid.camera.CameraManager::class.java)
+        cameraManager = mock(com.myradev.lunarcode.camera.CameraManager::class.java)
         mockStatic(GdxNativesLoader::class.java)
         mockStatic(StageActivity::class.java)
         given(StageActivity.getActiveCameraManager()).willReturn(cameraManager)

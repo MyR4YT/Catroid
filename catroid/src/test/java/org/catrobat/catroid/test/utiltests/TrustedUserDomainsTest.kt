@@ -21,20 +21,20 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 /*
-package org.catrobat.catroid.test.utiltests
+package com.myradev.lunarcode.test.utiltests
 
 import android.content.Context
-import org.catrobat.catroid.CatroidApplication
-import org.catrobat.catroid.TrustedDomainManager.addToUserTrustList
-import org.catrobat.catroid.TrustedDomainManager.getUserTrustList
-import org.catrobat.catroid.TrustedDomainManager.isURLTrusted
-import org.catrobat.catroid.TrustedDomainManager.reset
-import org.catrobat.catroid.TrustedDomainManager.setUserTrustList
-import org.catrobat.catroid.common.Constants
-import org.catrobat.catroid.common.Constants.TRUSTED_USER_DOMAINS_FILE
-import org.catrobat.catroid.common.Constants.TRUST_LIST_JSON_ARRAY_NAME
-import org.catrobat.catroid.common.FlavoredConstants
-import org.catrobat.catroid.utils.Utils
+import com.myradev.lunarcode.CatroidApplication
+import com.myradev.lunarcode.TrustedDomainManager.addToUserTrustList
+import com.myradev.lunarcode.TrustedDomainManager.getUserTrustList
+import com.myradev.lunarcode.TrustedDomainManager.isURLTrusted
+import com.myradev.lunarcode.TrustedDomainManager.reset
+import com.myradev.lunarcode.TrustedDomainManager.setUserTrustList
+import com.myradev.lunarcode.common.Constants
+import com.myradev.lunarcode.common.Constants.TRUSTED_USER_DOMAINS_FILE
+import com.myradev.lunarcode.common.Constants.TRUST_LIST_JSON_ARRAY_NAME
+import com.myradev.lunarcode.common.FlavoredConstants
+import com.myradev.lunarcode.utils.Utils
 import org.json.JSONArray
 import org.json.JSONObject
 import org.junit.After
