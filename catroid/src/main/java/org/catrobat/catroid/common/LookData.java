@@ -75,6 +75,11 @@ public class LookData implements Cloneable, Nameable, Serializable {
 
 	private boolean isWebRequest = false;
 
+	private File getOverrideFile() {
+		if (file == null) return null;
+		return org.catrobat.catroid.modloader.ModManager.INSTANCE.getOverrideFile("looks/" + file.getName());
+	}
+
 	public LookData() {
 	}
 
@@ -182,7 +187,7 @@ public class LookData implements Cloneable, Nameable, Serializable {
 	public Pixmap getPixmap() {
 		if (pixmap == null) {
 			try {
-				pixmap = new Pixmap(Gdx.files.absolute(file.getAbsolutePath()));
+				pixmap = new Pixmap(Gdx.files.absolute(getOverrideFile() != null ? getOverrideFile().getAbsolutePath() : file.getAbsolutePath()));
 			} catch (GdxRuntimeException gdxRuntimeException) {
 				Log.e(TAG, Log.getStackTraceString(gdxRuntimeException));
 				if (gdxRuntimeException.getMessage().startsWith("Couldn't load file:")) {

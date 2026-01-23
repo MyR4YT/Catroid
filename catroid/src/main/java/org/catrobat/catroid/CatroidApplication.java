@@ -68,6 +68,8 @@ public class CatroidApplication extends Application {
 
 		CatroidKoinHelperKt.start(this, CatroidKoinHelperKt.getMyModules());
 
+		org.catrobat.catroid.modloader.ModManager.INSTANCE.init(this);
+
 		Utils.fetchSpeechRecognitionSupportedLanguages(this);
 
 		defaultSystemLanguage = Locale.getDefault().toLanguageTag();
