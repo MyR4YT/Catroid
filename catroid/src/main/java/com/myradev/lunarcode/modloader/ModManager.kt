@@ -9,17 +9,18 @@ import org.luaj.vm2.lib.jse.JsePlatform
 import org.luaj.vm2.LuaValue
 import org.luaj.vm2.lib.TwoArgFunction
 import org.luaj.vm2.lib.OneArgFunction
+import com.myradev.lunarcode.content.Sprite
+import com.myradev.lunarcode.CatroidApplication
 
 object ModManager {
     private const val MODS_DIR = "mods"
     private val activeMods = mutableListOf<ModData>()
     private lateinit var globals: Globals
     private val customCategories = mutableListOf<CustomCategory>()
-    private val customBricks = mutableListOf<CustomBrickData>()
+    private val customBricks = mutableMapOf<String, LuaValue>()
 
     data class ModData(val id: String, val name: String, val path: String)
     data class CustomCategory(val name: String, val color: String)
-    data class CustomBrickData(val name: String, val category: String)
 
     fun init(context: Context) {
         globals = JsePlatform.standardGlobals()
@@ -38,8 +39,8 @@ object ModManager {
         })
 
         lunarLib.set("register_brick", object : TwoArgFunction() {
-            override fun call(name: LuaValue, category: LuaValue): LuaValue {
-                customBricks.add(CustomBrickData(name.tojstring(), category.tojstring()))
+            override fun call(brickName: LuaValue, callback: LuaValue): LuaValue {
+                customBricks[brickName.tojstring()] = callback
                 return LuaValue.NIL
             }
         })
@@ -54,42 +55,45 @@ object ModManager {
         globals.set("lunar", lunarLib)
     }
 
+    fun executeBrick(name: String, sprite: Sprite?) {
+        val callback = customBricks[name]
+        if (callback != null && callback.isfunction()) {
+            try {
+                callback.call(LuaValue.userdataOf(sprite))
+            } catch (e: Exception) {
+                Log.e("ModManager", "Lua execution error: ${e.message}")
+            }
+        }
+    }
+
     private fun loadActiveMods(context: Context) {
         activeMods.clear()
         customCategories.clear()
         customBricks.clear()
-        
         val modDir = File(context.filesDir, MODS_DIR)
         if (!modDir.exists()) modDir.mkdirs()
-        
         modDir.listFiles()?.filter { it.isDirectory }?.forEach { file ->
             val luaFile = File(file, "main.lua")
             if (luaFile.exists()) {
                 try {
                     globals.loadfile(luaFile.absolutePath).call()
-                } catch (e: Exception) { 
-                    Log.e("ModManager", "Lua Error in ${file.name}: ${e.message}") 
-                }
+                } catch (e: Exception) { Log.e("ModManager", "Lua Error: ${e.message}") }
             }
             activeMods.add(ModData(file.name, file.name, file.absolutePath))
         }
     }
 
     fun getCustomCategories(): List<CustomCategory> = customCategories
-    fun getCustomBricks(): List<CustomBrickData> = customBricks
+    fun getCustomBricks(): List<String> = customBricks.keys.toList()
 
     fun getOverrideFile(resourceName: String): File? {
-        activeMods.forEach { mod ->
-            val override = File(mod.path, resourceName)
+        val context = CatroidApplication.getAppContext()
+        val modDir = File(context.filesDir, MODS_DIR)
+        if (!modDir.exists()) return null
+        modDir.listFiles()?.forEach { mod ->
+            val override = File(mod, resourceName)
             if (override.exists()) return override
         }
         return null
-    }
-
-    fun deleteMod(context: Context, modId: String): Boolean {
-        val modDir = File(File(context.filesDir, MODS_DIR), modId)
-        val deleted = modDir.deleteRecursively()
-        if (deleted) loadActiveMods(context)
-        return deleted
     }
 }

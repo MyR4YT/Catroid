@@ -4,7 +4,7 @@
       <option name="executionName" />
       <option name="externalProjectPath" value="$PROJECT_DIR$/catroid" />
       <option name="externalSystemIdString" value="GRADLE" />
-      <option name="scriptParameters" value="-PenableCoverage -Pandroid.testInstrumentationRunnerArguments.class=org.catrobat.catroid.testsuites.UiEspressoPullRequestTriggerSuite" />
+      <option name="scriptParameters" value="-PenableCoverage -Pandroid.testInstrumentationRunnerArguments.class=com.myradev.lunarcode.testsuites.UiEspressoPullRequestTriggerSuite" />
       <option name="taskDescriptions">
         <list />
       </option>

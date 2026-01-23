@@ -20,10 +20,10 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.catrobat.catroid.bluetoothtestserver.clienthandlers;
+package com.myradev.lunarcode.bluetoothtestserver.clienthandlers;
 
-import org.catrobat.catroid.bluetoothtestserver.BTClientHandler;
-import org.catrobat.catroid.bluetoothtestserver.BTServer;
+import com.myradev.lunarcode.bluetoothtestserver.BTClientHandler;
+import com.myradev.lunarcode.bluetoothtestserver.BTServer;
 
 import java.io.DataInputStream;
 import java.io.IOException;

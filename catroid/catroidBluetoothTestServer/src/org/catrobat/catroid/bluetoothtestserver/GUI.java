@@ -20,7 +20,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.catrobat.catroid.bluetoothtestserver;
+package com.myradev.lunarcode.bluetoothtestserver;
 
 import java.awt.event.AdjustmentEvent;
 import java.awt.event.AdjustmentListener;

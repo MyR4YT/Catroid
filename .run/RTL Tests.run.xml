@@ -3,7 +3,7 @@
     <module name="Catroid.catroid.androidTest" />
     <option name="TESTING_TYPE" value="2" />
     <option name="METHOD_NAME" value="" />
-    <option name="CLASS_NAME" value="org.catrobat.catroid.testsuites.UiEspressoRtlTestSuite" />
+    <option name="CLASS_NAME" value="com.myradev.lunarcode.testsuites.UiEspressoRtlTestSuite" />
     <option name="PACKAGE_NAME" value="" />
     <option name="TEST_NAME_REGEX" value="" />
     <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
