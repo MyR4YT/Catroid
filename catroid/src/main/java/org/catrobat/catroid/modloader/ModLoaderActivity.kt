@@ -38,7 +38,6 @@ class ModLoaderActivity : BaseActivity() {
         recyclerView = findViewById(R.id.mod_list)
         recyclerView.layoutManager = LinearLayoutManager(this)
         adapter = ModAdapter(modList) { modId ->
-n		val emptyText = findViewById<TextView>(R.id.empty_mods_text)
             if (ModManager.deleteMod(this, modId)) {
                 ToastUtil.showSuccess(this, "Mod deleted")
                 loadMods()
