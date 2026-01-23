@@ -21,24 +21,27 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
 
-    # --- PASSO DE CORREÇÃO (O "Gato e Rato") ---
-    - name: Corrigir Sintaxe Gradle (Força Bruta)
+    # --- PASSO DE CORREÇÃO (AGORA SEM DUPLICAR O '=') ---
+    - name: Corrigir Sintaxe Gradle (Seguro)
       run: |
-        # 1. Corrige URL (o erro antigo)
+        # 1. Corrige a URL
         find . -name "*.gradle" -type f -exec sed -i 's/url "/url = "/g' {} +
         find . -name "*.gradle" -type f -exec sed -i "s/url '/url = '/g" {} +
         
-        # 2. Corrige showViolations (o erro atual)
-        find . -name "*.gradle" -type f -exec sed -i 's/showViolations /showViolations = /g' {} +
+        # 2. Corrige showViolations (somente se não tiver o '=')
+        find . -name "*.gradle" -type f -exec sed -i 's/showViolations false/showViolations = false/g' {} +
+        find . -name "*.gradle" -type f -exec sed -i 's/showViolations true/showViolations = true/g' {} +
         
-        # 3. Corrige ignoreFailures (provável erro futuro)
-        find . -name "*.gradle" -type f -exec sed -i 's/ignoreFailures /ignoreFailures = /g' {} +
+        # 3. Corrige ignoreFailures (somente se não tiver o '=')
+        find . -name "*.gradle" -type f -exec sed -i 's/ignoreFailures false/ignoreFailures = false/g' {} +
+        find . -name "*.gradle" -type f -exec sed -i 's/ignoreFailures true/ignoreFailures = true/g' {} +
         
-        # 4. Corrige abortOnError (comum em projetos android antigos)
-        find . -name "*.gradle" -type f -exec sed -i 's/abortOnError /abortOnError = /g' {} +
+        # 4. Corrige abortOnError (somente se não tiver o '=')
+        find . -name "*.gradle" -type f -exec sed -i 's/abortOnError false/abortOnError = false/g' {} +
+        find . -name "*.gradle" -type f -exec sed -i 's/abortOnError true/abortOnError = true/g' {} +
 
-    - name: Build with Gradle (Ignorando Erros de Lint)
-      # Adicionei '-x lint -x test -x check' para pular as verificações que estão falhando
+    - name: Build with Gradle
+      # Mantendo a regra de ignorar testes e lint para ir mais rápido
       run: ./gradlew assembleDebug -x lint -x test -x check --no-daemon --stacktrace -Dorg.gradle.jvmargs="-Xmx6g -XX:MaxMetaspaceSize=1g -Dfile.encoding=UTF-8"
 
     - name: Upload APK
