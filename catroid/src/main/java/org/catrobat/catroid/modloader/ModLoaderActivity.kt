@@ -157,7 +157,6 @@ class ModAdapter(
         val descView: TextView = view.findViewById(R.id.mod_description)
         val iconView: ImageView = view.findViewById(R.id.mod_icon)
         val deleteBtn: ImageButton = view.findViewById(R.id.btn_delete_mod)
-        val container: View = view.findViewById(R.id.mod_icon).parent as View // Approx way to get container if id is generic layout
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ModViewHolder {
