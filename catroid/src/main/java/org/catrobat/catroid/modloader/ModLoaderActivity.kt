@@ -27,7 +27,7 @@ class ModLoaderActivity : BaseActivity() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: ModAdapter
     private val modList = mutableListOf<Mod>()
-    private val luaExecutor = LuaExecutor()
+    
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -97,7 +97,7 @@ class ModLoaderActivity : BaseActivity() {
         // Here we can trigger the Lua execution
         val mainLua = File(mod.file, "main.lua")
         if (mainLua.exists()) {
-            luaExecutor.loadFile(mainLua.absolutePath)
+            LuaExecutor.loadFile(mainLua.absolutePath)
             ToastUtil.showSuccess(this, "Loaded Lua script")
         } else {
             ToastUtil.showError(this, "main.lua not found in mod")

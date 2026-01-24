@@ -73,11 +73,7 @@ class LuaDynamicBrick : BrickBaseType {
         return view
     }
 
-    override fun copyBrick(): Brick {
-        val copy = LuaDynamicBrick(luaFunctionName, brickName)
-        copy.inputValues.putAll(this.inputValues)
-        return copy
-    }
+    
 
     override fun addActionToSequence(sprite: Sprite, sequence: ScriptSequenceAction) {
         // Passa os valores coletados para o executor
