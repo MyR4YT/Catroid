@@ -78,6 +78,7 @@ public class CatroidApplication extends Application {
 		googleAnalytics.setDryRun(BuildConfig.DEBUG);
 
 		setupHuaweiMobileServices();
+                ModManager.INSTANCE.createDemoMod(this);
                 ModManager.INSTANCE.loadAllMods(this);
 	}
 

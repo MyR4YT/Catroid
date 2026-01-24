@@ -1,6 +1,7 @@
 package org.catrobat.catroid.modloader
 
 import android.content.Context
+import android.util.Log
 import java.io.File
 
 object ModManager {
@@ -16,5 +17,15 @@ object ModManager {
                 }
             }
         }
+    }
+
+    fun createDemoMod(context: Context) {
+        val modDir = File(context.filesDir, "mods")
+        val tweenDir = File(modDir, "TweenEngine")
+        if (tweenDir.exists()) return
+        
+        tweenDir.mkdirs()
+        File(tweenDir, "mod.json").writeText("{\"name\": \"Tween Engine\", \"description\": \"Mod nativo de interpolacao Lua\"}")
+        File(tweenDir, "main.lua").writeText("catroid.registerBrick(\"Cubic Out\", \"Tweening\", \"applyCubicOut\", {\"steps\", \"distance\"}, \"#E91E63\")\n\nfunction applyCubicOut(args)\n    local steps = tonumber(args[\"steps\"]) or 10\n    catroid.log(\"Animacao Lua rodando!\")\nend")
     }
 }
