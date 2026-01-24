@@ -2,7 +2,7 @@ package org.catrobat.catroid.modloader
 
 import org.catrobat.catroid.content.actions.ScriptSequenceAction
 import org.catrobat.catroid.content.Sprite
-import com.badlogicgames.gdx.scenes.scene2d.Action
+import com.badlogic.gdx.scenes.scene2d.Action
 
 class LuaDynamicAction(
     private val functionName: String,
