@@ -31,7 +31,6 @@ object LuaExecutor {
         globals.set("catroid", catroidTable)
     }
 
-    
     fun executeFunction(functionName: String, args: Map<String, String>) {
         try {
             val func = globals.get(functionName)
@@ -51,18 +50,6 @@ object LuaExecutor {
             }
         } catch (e: Exception) {
             Log.e("LuaExecutor", "Erro na execucao Lua: ${e.message}")
-        }
-    }
-
-
-            if (args.isNotEmpty()) {
-                val firstVal = args.values.firstOrNull() ?: "0"
-                func.call(LuaValue.valueOf(firstVal))
-            } else {
-                func.call()
-            }
-        } catch (e: Exception) {
-            Log.e("LuaExecutor", "Erro na execução Lua: ${e.message}")
         }
     }
 
