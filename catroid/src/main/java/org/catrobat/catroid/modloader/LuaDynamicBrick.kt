@@ -6,15 +6,22 @@ import org.catrobat.catroid.content.Sprite
 import org.catrobat.catroid.content.actions.ScriptSequenceAction
 import android.content.Context
 import android.view.View
-import android.widget.BaseAdapter
+import android.view.LayoutInflater
+import android.widget.LinearLayout
+import android.widget.TextView
+import android.widget.EditText
+import android.text.TextWatcher
+import android.text.Editable
 import org.catrobat.catroid.R
+import org.catrobat.catroid.formulaeditor.Formula
 
 class LuaDynamicBrick : BrickBaseType {
 
     private var luaFunctionName: String = ""
     private var brickName: String = ""
+    // Armazena os valores (Formulas) dos inputs. Chave = nome do parametro
+    private var inputValues: MutableMap<String, String> = mutableMapOf()
 
-    // Required empty constructor for serialization
     constructor() : super()
 
     constructor(luaFunctionName: String, brickName: String) : super() {
@@ -23,27 +30,57 @@ class LuaDynamicBrick : BrickBaseType {
     }
 
     override fun getViewResource(): Int {
-        // Return a generic layout resource. 
-        // Ideally, we should have a generic brick layout like R.layout.brick_base
-        // For now, using R.layout.brick_user_brick as a placeholder if available or standard one
-        return R.layout.brick_user_brick 
+        return R.layout.brick_lua_dynamic
     }
 
-    override fun addRequiredResources(requiredResourcesSet: Brick.ResourcesSet) {
-        // Add resources if needed, e.g., Brick.Resources.USER_DEFINED_BRICK if that existed
-        // For now, we can leave it empty or add general resources
+    override fun getView(context: Context): View {
+        val view = super.getView(context)
+        
+        val titleView = view.findViewById<TextView>(R.id.brick_lua_title)
+        titleView.text = brickName
+
+        val container = view.findViewById<LinearLayout>(R.id.brick_lua_inputs_container)
+        container.removeAllViews()
+
+        // Buscar definição para saber os parametros
+        val def = LuaBrickRegistry.getByName(brickName)
+        
+        def?.parameters?.forEach { paramName ->
+            // Criar layout simples para input: Label + Edit
+            val inputLayout = LinearLayout(context)
+            inputLayout.orientation = LinearLayout.HORIZONTAL
+            
+            val label = TextView(context)
+            label.text = paramName + ": "
+            inputLayout.addView(label)
+
+            val input = EditText(context)
+            input.width = 200 // largura fixa por enquanto
+            input.setText(inputValues[paramName] ?: "0")
+            
+            input.addTextChangedListener(object : TextWatcher {
+                override fun afterTextChanged(s: Editable?) {
+                    inputValues[paramName] = s.toString()
+                }
+                override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+                override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
+            })
+
+            inputLayout.addView(input)
+            container.addView(inputLayout)
+        }
+
+        return view
+    }
+
+    override fun copyBrick(): Brick {
+        val copy = LuaDynamicBrick(luaFunctionName, brickName)
+        copy.inputValues.putAll(this.inputValues)
+        return copy
     }
 
     override fun addActionToSequence(sprite: Sprite, sequence: ScriptSequenceAction) {
-        // This is where the brick logic is added to the execution sequence
-        // We will add a custom Action that calls the LuaExecutor
-        // sequence.addAction(LuaDynamicAction(luaFunctionName))
-        
-        // Since we cannot easily create a new Action class without defining it elsewhere,
-        // we might stub this for now or use a generic action if available.
-        // For the purpose of compiling, we leave this stubbed.
-        
-        // Example logic:
-        // LuaExecutor().execute("$luaFunctionName()")
+        // Passa os valores coletados para o executor
+        LuaExecutor.executeFunction(luaFunctionName, inputValues)
     }
 }
