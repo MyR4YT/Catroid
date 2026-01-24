@@ -1,6 +1,6 @@
 {
   "name": "Tweening Animations",
-  "description": "Adiciona a categoria Tweening e blocos de suavização de movimento.",
-  "version": "1.0",
+  "description": "Adiciona blocos funcionais de interpolação em Lua.",
+  "version": "1.1",
   "author": "User"
 }

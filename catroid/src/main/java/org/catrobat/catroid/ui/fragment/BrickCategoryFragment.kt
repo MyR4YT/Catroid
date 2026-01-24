@@ -26,6 +26,7 @@ import android.content.Context
 import org.catrobat.catroid.modloader.LuaBrickRegistry
 import android.widget.TextView
 import android.widget.LinearLayout
+import android.graphics.Color
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -156,11 +157,19 @@ class BrickCategoryFragment : ListFragment() {
             }
             
             if (!exists) {
-                // We use "User Bricks" layout as a template for now
                 val view = inflater.inflate(R.layout.brick_category_userbrick, null) as LinearLayout
                 val textView = view.getChildAt(1) as TextView
                 textView.text = categoryName
-                // Ideally we should also change the icon
+                
+                // Get color from registry
+                val brickDef = LuaBrickRegistry.getAll().find { it.category == categoryName }
+                brickDef?.let {
+                    try {
+                        val color = Color.parseColor(it.colorHex)
+                        view.setBackgroundColor(color)
+                    } catch (e: Exception) {}
+                }
+                
                 categories.add(view)
             }
         }

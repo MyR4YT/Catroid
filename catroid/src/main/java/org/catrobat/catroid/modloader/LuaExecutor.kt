@@ -31,13 +31,29 @@ object LuaExecutor {
         globals.set("catroid", catroidTable)
     }
 
+    
     fun executeFunction(functionName: String, args: Map<String, String>) {
         try {
             val func = globals.get(functionName)
             if (func.isnil()) {
-                Log.e("LuaExecutor", "Função nao encontrada: $functionName")
+                Log.e("LuaExecutor", "Funcao nao encontrada: $functionName")
                 return
             }
+
+            if (args.isNotEmpty()) {
+                val table = LuaValue.tableOf()
+                args.forEach { (k, v) ->
+                    table.set(k, LuaValue.valueOf(v))
+                }
+                func.call(table)
+            } else {
+                func.call()
+            }
+        } catch (e: Exception) {
+            Log.e("LuaExecutor", "Erro na execucao Lua: ${e.message}")
+        }
+    }
+
 
             if (args.isNotEmpty()) {
                 val firstVal = args.values.firstOrNull() ?: "0"

@@ -22,6 +22,8 @@
  */
 package org.catrobat.catroid;
 
+import org.catrobat.catroid.modloader.ModManager;
+
 import android.annotation.TargetApi;
 import android.app.Application;
 import android.content.Context;
@@ -76,6 +78,7 @@ public class CatroidApplication extends Application {
 		googleAnalytics.setDryRun(BuildConfig.DEBUG);
 
 		setupHuaweiMobileServices();
+                ModManager.INSTANCE.loadAllMods(this);
 	}
 
 	private void setupHuaweiMobileServices() {
