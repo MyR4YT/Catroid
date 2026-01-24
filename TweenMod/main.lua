@@ -1,13 +1,14 @@
-catroid.registerBrick("Cubic Out", "Tweening", "cubicOut", {"steps"}, "#FF00FF")
+catroid.registerBrick("Cubic Out", "Tweening", "applyCubicOut", {"steps", "distance"}, "#E91E63")
 
-function cubicOut(args)
+function applyCubicOut(args)
     local steps = tonumber(args["steps"]) or 10
-    catroid.log("Iniciando Tween Cubic Out com " .. steps .. " passos")
+    local dist = tonumber(args["distance"]) or 100
     
-    for i = 0, steps, 1 do
+    catroid.log("Iniciando Cubic Out: " .. dist .. "px em " .. steps .. " passos")
+    
+    for i = 0, steps do
         local t = i / steps
-        local val = 1 - (1 - t)^3
-        catroid.log("Interpolação: " .. val)
-        catroid.moveX(val * 100)
+        local progress = 1 - (1 - t)^3
+        catroid.moveX(progress * dist)
     end
 end
