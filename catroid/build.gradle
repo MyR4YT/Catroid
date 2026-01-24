@@ -323,7 +323,7 @@ configurations {
 }
 
 dependencies {
-    implementation org.luaj:luaj-jse:3.0.1
+implementation 'org.luaj:luaj-jse:3.0.1'
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     // Paintroid local aar lib files
@@ -331,8 +331,7 @@ dependencies {
         catroidImplementation "org.catrobat.paintroid:paintroid:-LOCAL"
         implementation "org.catrobat.paintroid:colorpicker:-LOCAL"
     } else {
-        implementation org.luaj:luaj-jse:3.0.1
-    implementation fileTree(dir: 'src/main/libs', include: ['*.aar'])
+implementation fileTree(dir: 'src/main/libs', include: ['*.aar'])
     }
     implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
     implementation ('com.esotericsoftware:kryo:5.1.1')
