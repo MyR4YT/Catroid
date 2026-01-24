@@ -127,7 +127,15 @@ class ModLoaderActivity : BaseActivity() {
                      val targetDir = File(modDir, modFolderName)
                      targetDir.mkdirs()
                      
+                     
                      ZipArchiver().unzip(tempFile, targetDir)
+                     
+                     // CARGA IMEDIATA
+                     val mainLua = File(targetDir, "main.lua")
+                     if (mainLua.exists()) {
+                         LuaExecutor.loadFile(mainLua.absolutePath)
+                     }
+
                      
                      ToastUtil.showSuccess(this, "Mod imported successfully")
                      loadMods()

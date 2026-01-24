@@ -6,6 +6,9 @@ import org.luaj.vm2.Globals
 import org.luaj.vm2.LuaValue
 import org.luaj.vm2.lib.jse.JsePlatform
 import org.luaj.vm2.lib.OneArgFunction
+import org.luaj.vm2.lib.LibFunction
+import org.luaj.vm2.lib.VarArgFunction
+import org.luaj.vm2.Varargs
 
 object LuaExecutor {
 
@@ -14,9 +17,35 @@ object LuaExecutor {
     init {
         val catroidTable = LuaValue.tableOf()
         
+        // API: catroid.registerBrick(name, category, funcName, {params}, color)
+        catroidTable.set("registerBrick", object : VarArgFunction() {
+            override fun oncall(args: Varargs): Varargs {
+                val name = args.checkjstring(1)
+                val category = args.checkjstring(2)
+                val funcName = args.checkjstring(3)
+                
+                val params = mutableListOf<String>()
+                if (args.narg() >= 4 && args.istable(4)) {
+                    val table = args.checktable(4)
+                    var i = 1
+                    while (true) {
+                        val v = table.get(i++)
+                        if (v.isnil()) break
+                        params.add(v.tojstring())
+                    }
+                }
+                
+                val color = if (args.narg() >= 5) args.checkjstring(5) else "#FFFFFF"
+                
+                LuaBrickRegistry.register(name, category, funcName, params, color)
+                Log.d("LuaExecutor", "Bloco registrado via Lua: $name")
+                return LuaValue.NIL
+            }
+        })
+
         catroidTable.set("moveX", object : OneArgFunction() {
             override fun call(arg: LuaValue): LuaValue {
-                Log.i("LuaAPI", "MoveX chamado com: " + arg.todouble())
+                Log.i("LuaAPI", "MoveX: " + arg.todouble())
                 return LuaValue.NIL
             }
         })
@@ -34,68 +63,24 @@ object LuaExecutor {
     fun executeFunction(functionName: String, args: Map<String, String>) {
         try {
             val func = globals.get(functionName)
-            if (func.isnil()) {
-                Log.e("LuaExecutor", "Funcao nao encontrada: $functionName")
-                return
-            }
+            if (func.isnil()) return
 
-            if (args.isNotEmpty()) {
-                val table = LuaValue.tableOf()
-                args.forEach { (k, v) ->
-                    table.set(k, LuaValue.valueOf(v))
-                }
-                func.call(table)
-            } else {
-                func.call()
-            }
+            val table = LuaValue.tableOf()
+            args.forEach { (k, v) -> table.set(k, LuaValue.valueOf(v)) }
+            func.call(table)
         } catch (e: Exception) {
-            Log.e("LuaExecutor", "Erro na execucao Lua: ${e.message}")
+            Log.e("LuaExecutor", "Erro exec: ${e.message}")
         }
     }
 
     fun loadFile(path: String) {
         val file = File(path)
         if (!file.exists()) return
-
         try {
             globals.loadfile(path).call()
-            
-            val lines = file.readLines()
-            for (line in lines) {
-                val trimmed = line.trim()
-                if (trimmed.startsWith("catroid.registerBrick(")) {
-                    parseRegisterLine(trimmed)
-                }
-            }
+            Log.d("LuaExecutor", "Arquivo carregado: $path")
         } catch (e: Exception) {
-            Log.e("LuaExecutor", "Erro ao carregar script: ${e.message}")
-        }
-    }
-
-    private fun parseRegisterLine(line: String) {
-        try {
-            val content = line.substringAfter("(").substringBeforeLast(")")
-            val parts = content.split(",")
-            
-            if (parts.size >= 3) {
-                val name = cleanStr(parts[0])
-                val category = cleanStr(parts[1])
-                val func = cleanStr(parts[2])
-                
-                val params = mutableListOf<String>()
-                if (parts.size >= 4) {
-                    val paramStr = parts[3].trim().removePrefix("{").removeSuffix("}")
-                    if (paramStr.isNotEmpty()) {
-                        paramStr.split(",").forEach { params.add(cleanStr(it)) }
-                    }
-                }
-
-                val color = if (parts.size >= 5) cleanStr(parts[4]) else "#FFFFFF"
-
-                LuaBrickRegistry.register(name, category, func, params, color)
-            }
-        } catch (e: Exception) {
-            Log.e("LuaExecutor", "Erro parse register: $line")
+            Log.e("LuaExecutor", "Erro load: ${e.message}")
         }
     }
 
