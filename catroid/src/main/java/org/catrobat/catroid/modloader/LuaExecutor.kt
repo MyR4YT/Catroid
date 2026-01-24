@@ -5,28 +5,22 @@ import java.io.File
 import org.luaj.vm2.Globals
 import org.luaj.vm2.LuaValue
 import org.luaj.vm2.lib.jse.JsePlatform
-import org.luaj.vm2.lib.TwoArgFunction
 import org.luaj.vm2.lib.OneArgFunction
-import org.luaj.vm2.lib.ZeroArgFunction
 
 object LuaExecutor {
 
     private val globals: Globals = JsePlatform.standardGlobals()
 
     init {
-        // Registrar API 'catroid' no Lua
         val catroidTable = LuaValue.tableOf()
         
-        // Função para mover X (Exemplo de ponte)
         catroidTable.set("moveX", object : OneArgFunction() {
             override fun call(arg: LuaValue): LuaValue {
                 Log.i("LuaAPI", "MoveX chamado com: " + arg.todouble())
-                // TODO: Conectar com Sprite real: SpriteManager.currentSprite.changeX(arg.todouble())
                 return LuaValue.NIL
             }
         })
 
-        // Função log
         catroidTable.set("log", object : OneArgFunction() {
             override fun call(arg: LuaValue): LuaValue {
                 Log.d("LuaScript", arg.tojstring())
@@ -45,10 +39,7 @@ object LuaExecutor {
                 return
             }
 
-            // Converter mapa de argumentos para LuaValues (simplificado: passando 1o valor)
-            // Num caso real, precisaria alinhar a ordem dos parametros ou passar tabela
             if (args.isNotEmpty()) {
-                // Passa o primeiro valor como exemplo
                 val firstVal = args.values.firstOrNull() ?: "0"
                 func.call(LuaValue.valueOf(firstVal))
             } else {
@@ -59,17 +50,13 @@ object LuaExecutor {
         }
     }
 
-    // Carrega o arquivo e interpreta
     fun loadFile(path: String) {
         val file = File(path)
         if (!file.exists()) return
 
         try {
-            // Executa o script para carregar funções na memoria
             globals.loadfile(path).call()
             
-            // Parse manual APENAS para os registros (pois precisamos saber antes de rodar o bloco)
-            // O resto da logica fica na memoria do LuaJ
             val lines = file.readLines()
             for (line in lines) {
                 val trimmed = line.trim()
@@ -84,9 +71,8 @@ object LuaExecutor {
 
     private fun parseRegisterLine(line: String) {
         try {
-            // Ex: catroid.registerBrick("Nome", "Cat", "func", {"p1", "p2"}, "#COLOR")
             val content = line.substringAfter("(").substringBeforeLast(")")
-            val parts = content.split(",") // Split simples (falha se tiver virgula na string, mas ok por agora)
+            val parts = content.split(",")
             
             if (parts.size >= 3) {
                 val name = cleanStr(parts[0])
@@ -110,5 +96,5 @@ object LuaExecutor {
         }
     }
 
-    private fun cleanStr(s: String) = s.trim().replace(""", "").replace("'", "")
+    private fun cleanStr(s: String) = s.trim().replace("\"", "").replace("\u0027", "")
 }
