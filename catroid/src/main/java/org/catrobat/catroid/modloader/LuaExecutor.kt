@@ -6,7 +6,6 @@ import org.luaj.vm2.Globals
 import org.luaj.vm2.LuaValue
 import org.luaj.vm2.lib.jse.JsePlatform
 import org.luaj.vm2.lib.OneArgFunction
-import org.luaj.vm2.lib.LibFunction
 import org.luaj.vm2.lib.VarArgFunction
 import org.luaj.vm2.Varargs
 
@@ -19,7 +18,7 @@ object LuaExecutor {
         
         // API: catroid.registerBrick(name, category, funcName, {params}, color)
         catroidTable.set("registerBrick", object : VarArgFunction() {
-            override fun oncall(args: Varargs): Varargs {
+            override fun invoke(args: Varargs): Varargs {
                 val name = args.checkjstring(1)
                 val category = args.checkjstring(2)
                 val funcName = args.checkjstring(3)
@@ -45,7 +44,7 @@ object LuaExecutor {
 
         catroidTable.set("moveX", object : OneArgFunction() {
             override fun call(arg: LuaValue): LuaValue {
-                Log.i("LuaAPI", "MoveX: " + arg.todouble())
+                Log.i("LuaAPI", "MoveX chamado com: " + arg.todouble())
                 return LuaValue.NIL
             }
         })
@@ -63,26 +62,30 @@ object LuaExecutor {
     fun executeFunction(functionName: String, args: Map<String, String>) {
         try {
             val func = globals.get(functionName)
-            if (func.isnil()) return
+            if (func.isnil()) {
+                Log.e("LuaExecutor", "Função nao encontrada: $functionName")
+                return
+            }
 
             val table = LuaValue.tableOf()
-            args.forEach { (k, v) -> table.set(k, LuaValue.valueOf(v)) }
+            args.forEach { (k, v) ->
+                table.set(k, LuaValue.valueOf(v))
+            }
             func.call(table)
         } catch (e: Exception) {
-            Log.e("LuaExecutor", "Erro exec: ${e.message}")
+            Log.e("LuaExecutor", "Erro na execução Lua: ${e.message}")
         }
     }
 
     fun loadFile(path: String) {
         val file = File(path)
         if (!file.exists()) return
+
         try {
             globals.loadfile(path).call()
             Log.d("LuaExecutor", "Arquivo carregado: $path")
         } catch (e: Exception) {
-            Log.e("LuaExecutor", "Erro load: ${e.message}")
+            Log.e("LuaExecutor", "Erro ao carregar script: ${e.message}")
         }
     }
-
-    private fun cleanStr(s: String) = s.trim().replace("\"", "").replace("\u0027", "")
 }
